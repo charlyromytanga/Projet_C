@@ -1,0 +1,90 @@
+
+LE DEPOT DISTANT CENTRALISE DU PROJET C
+
+
+I-INTRODUCTION
+---------------------------------------------------------------------
+********************************************************************
+
+Issu : 
+
+Du répertoire local de charly : renommé en :Projet_c_a_rendre
+
+La branche principale du projet porte le nom de : master_c
+
+---------------------------------------------------------------------
+********************************************************************
+
+
+
+
+II-Les commandes pour avoir une telle branche:
+---------------------------------------------------------------------
+********************************************************************
+
+Déjà il faut avoir en local ce motif de rangement de dossier :
+
+
+
+-------------------------------------------------------------------------
+***** Plan de travail : pour faire des branches de tests de code en local
+-------------------------------------------------------------------------
+*
+*
+*----> Projet_a_rendre : 
+*		
+*	------> Depôt_git : serivra de remote
+*	
+*	------> Fichier_codes_sources_Projet_C : 
+*
+*			----> build      : pour une définitions large du makife
+*			----> Manuel Git : pour les lignes de commandes
+*
+*			----> sources    : Pour les fichiers du projet :
+*
+*								-------> automate.c
+*								-------> Automate.h
+*								-------> makefile
+*************************************************************************************
+
+echo "# Projet_C" >> README.md
+git init
+git add README.md
+git commit -m "first commit"
+git branch -M main
+git remote add origin https://github.com/charlyromytanga/Projet_C.git
+git push -u origin main
+
+
+git remote add origin https://github.com/charlyromytanga/Projet_C.git
+git branch -M main
+git push -u origin main
+****************************************************************************************
+
+
+
+Le dépôt à distance a une unique branche : master_c 
+
+Règle cette banche de dois pas être utilisée pour faire des tests de code
+
+Son unique usage sera de faire un clône du projet en local.
+Et faire rapatrier une branche d'un d'entre nous après validation et relecture des autres 
+sur le code produit et la réponse apportée à une question. 
+
+
+
+
+III-Le dépôt est crée : inspection des branches
+---------------------------------------------------------------------
+********************************************************************
+Ic il doit y avoir trois branches car nous sommes trois dans le projet, soit donc un total 
+de 04 branches en plus de la branche principale : master_c
+
+
+Mise en place des branches :
+
+Consultation des branches présentes : 
+Commmande : git branch -r
+
+****************************************************************************************
+
