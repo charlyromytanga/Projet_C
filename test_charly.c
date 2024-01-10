@@ -36,8 +36,8 @@ int main(){
     m1 = mot_saisi(a);
     m2 = mot_saisi(b);
 
-    affichage_mot(a);
-    affichage_mot(b);
+    affichage_mot(m1);
+    affichage_mot(m2);
     /**************Fin Mot****************/
 
 
