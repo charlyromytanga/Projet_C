@@ -84,7 +84,7 @@ $(BUILD_DIR)/%.o : %.c Automate.h $(BUILD_DIR)
 		$(CC) -c $< -o $@
 
 $(BUILD_DIR)/exec: $(OBJ2)
-		$(CC) $^ -o $@
+		$(CC) -c $^ -o $@
 
 #creation repertoire
 $(BUILD_DIR):

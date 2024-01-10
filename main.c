@@ -5,7 +5,7 @@
 #include <math.h>
 
 #include "Automate.h"
-
+#include "automate.c"
 
 
 
