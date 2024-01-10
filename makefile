@@ -49,46 +49,46 @@
 #******************************
 #__Avant : pas dynamique
 #___Première cible : all
-#all : exec
+all : exec
 
 #__Les autres cibles
 
-#Test.o: Test.c Automate.h
-#		gcc -c $< -o $@
+Test.o: main.c Automate.h
+		gcc -c $< -o $@
 	
-#automate.o: automate.c Automate.h
-#			gcc -c $< -o $@
+automate.o: automate.c Automate.h
+			gcc -c $< -o $@
 
-#exec: Test.o automate.o
-#		gcc $^ -o $@
+exec: main.o automate.o
+		gcc $^ -o $@
 #*********************************
 
 
 #**********************************
 #__Après : DYNAMIQUE 
 
-CC = gcc
-SRC = $(wildcard *.c)
-OBJ = $(SRC: .c =.o)
+#CC = gcc
+#SRC = $(wildcard *.c)
+#OBJ = $(SRC: .c =.o)
 
 #nom repertoire
-BUILD_DIR = build
+#BUILD_DIR = cytech@student-laptop:~/Projet_C/build
 
 #mise à jour liste obj avec nom dossier
-OBJ2 = $(addprefix $(BUILD_DIR)/, $(OBJ))
+#OBJ2 = $(addprefix $(BUILD_DIR)/, $(OBJ))
 
-all : $(BUILD_DIR)/exec
+#all : $(BUILD_DIR)/exec
 
 #BUILD_DIR sert de dépendance
-$(BUILD_DIR)/%.o : %.c Automate.h $(BUILD_DIR)
-		$(CC) -c $< -o $@
+#$(BUILD_DIR)/%.o : %.c Automate.h $(BUILD_DIR)
+#		$(CC) -c $< -o $@
 
-$(BUILD_DIR)/exec: $(OBJ2)
-		$(CC) -c $< -o $@
+#$(BUILD_DIR)/exec: $(OBJ2)
+#		$(CC)  $^ -o $@
 
 #creation repertoire
-$(BUILD_DIR):
-		mkdir -p $(BUILD_DIR)/
+#$(BUILD_DIR):
+#		mkdir -p $(BUILD_DIR)/
 
 
 
