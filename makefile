@@ -69,18 +69,18 @@
 
 CC = gcc
 SRF = $(wildcard *.c)
-OBJ = $(SRC: .c =.o)
+OBJ = $(SRC :.c=.o)
 
 #nom repertoire
-BUILD_DIR = build
+BUILD_DIR = cytech@student-laptop:~/Projet_C
 
 #mise à jour liste obj avec nom dossier
 OBJ2 = $(addprefix $(BUILD_DIR)/, $(OBJ))
 
-all : $(BUILD_DIR)/exec
+all : $(BUILD_DIR)/.exec
 
 #BUILD_DIR sert de dépendance
-$(BUILD_DIR)/%.o : %.c Automate.h $(BUILD_DIR)
+$(BUILD_DIR)/.o : .c Automate.h $(BUILD_DIR)
 		$(CC) -c $< -o $@
 
 $(BUILD_DIR)/exec: $(OBJ2)
