@@ -10,7 +10,7 @@
 #__Définition des varaibles : 
 # $@ : pour ne plus écrire la variable
 # $< : 1ere dépendance : ici l'unique dépendance Automate.h
-# $^ : La liste des dépendance : utile pour lister tous les .o qui seront exécutés
+# $^ : La liste des dépendances : utile pour lister tous les .o qui seront exécutés
 
 
 
@@ -68,7 +68,7 @@
 #__Après : DYNAMIQUE 
 
 CC = gcc
-SRF = $(wildcard *.c)
+SRC = $(wildcard *.c)
 OBJ = $(SRC: .c =.o)
 
 #nom repertoire
@@ -84,7 +84,7 @@ $(BUILD_DIR)/%.o : %.c Automate.h $(BUILD_DIR)
 		$(CC) -c $< -o $@
 
 $(BUILD_DIR)/exec: $(OBJ2)
-		$(CC) -c $^ -o $@
+		$(CC) -c $< -o $@
 
 #creation repertoire
 $(BUILD_DIR):
