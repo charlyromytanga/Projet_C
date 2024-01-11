@@ -1,0 +1,81 @@
+
+INFOS DE CONNEXION AU REPOSITORY GIT PROJET C
+---------------------------------------------------------------------
+********************************************************************
+ Avant de pouvoir travailler avec git il faut le config
+ 
+ help de la commande avant :
+ git --help config
+ 
+ De là : savoir qu'on aura à définir les éléments de config
+ 
+ Important 
+ la vairalbe user.email
+ la variable user.name
+ 
+ Ce qu'il faut faire :
+ 
+ sur le terminal : git config --global user.email "entrer son email"
+ 
+
+ sur le terminal : git config --global user.name "entrer son nom"
+ 
+
+En plus on peut aussi en option faire une troisième config : les coleurs 
+sur le terminal : git config --global color.ui true
+
+Bilan pour savoir toute les configs qui ont été faire :
+sur le terminal : git config --list
+
+---------------------------------------------------------------------
+********************************************************************
+
+
+
+
+CE QU'IL FAUT FAIRE
+---------------------------------------------------------------------
+********************************************************************
+
+SAVOIR QUE :
+ -> Mon email : charlyromytanga.cytech@gmail.com
+ -> Nom : charlyromytanga
+ 
+ FAIRE git --list pour voir les config
+ 
+ ---------------------------------------------------------------------
+********************************************************************
+
+
+
+
+CE QUI A ETE FAIT :
+---------------------------------------------------------------------
+********************************************************************
+
+Le chemin du projet à rendre a été mis à jour. 
+
+Avec la commande:
+git config --global --add safe.directory '/data/ECOLE/COURS_ECOLE/COURS/2023-2024/S1/UE-1 INFO  - ECT =9.5/Projet C - AEF/Using for Ubuntu/Projet_a_rendre/depôt_git'
+
+Puis un test de git config --list pour s'assurer que le chemin a bien changé :
+
+user.email=charlyromytanga.cytech@gmail.com
+user.name=charly
+color.ui=true
+
+safe.directory=/data/ECOLE/COURS_ECOLE/COURS/2023-2024/S1/UE-1 INFO  - ECT =9.5/Projet C - AEF/master
+
+safe.directory=/data/ECOLE/COURS_ECOLE/COURS/2023-2024/S1/UE-1 INFO  - ECT =9.5/Projet C - AEF/Using for Ubuntu/Projet_a_rendre/depôt_git
+
+core.repositoryformatversion=0
+core.filemode=false
+core.bare=false
+core.logallrefupdates=true
+---------------------------------------------------------------------
+********************************************************************
+
+
+
+
+
