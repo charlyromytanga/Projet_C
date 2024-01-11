@@ -205,7 +205,7 @@ JAVADOC_AUTOBRIEF      = NO
 # interpreted by doxygen.
 # The default value is: NO.
 
-JAVADOC_BANNER         = NO
+JAVADOC_BANNER         = YES
 
 # If the QT_AUTOBRIEF tag is set to YES then doxygen will interpret the first
 # line (until the first dot) of a Qt-style comment as the brief description. If
@@ -328,7 +328,9 @@ OPTIMIZE_OUTPUT_SLICE  = NO
 #
 # Note see also the list of default file extension mappings.
 
-EXTENSION_MAPPING      =
+EXTENSION_MAPPING      = *.c \
+                         *.h \
+
 
 # If the MARKDOWN_SUPPORT tag is enabled then doxygen pre-processes all comments
 # according to the Markdown format, which allows for more readable
@@ -485,31 +487,31 @@ NUM_PROC_THREADS       = 1
 # normally produced when WARNINGS is set to YES.
 # The default value is: NO.
 
-EXTRACT_ALL            = NO
+EXTRACT_ALL            = YES
 
 # If the EXTRACT_PRIVATE tag is set to YES, all private members of a class will
 # be included in the documentation.
 # The default value is: NO.
 
-EXTRACT_PRIVATE        = NO
+EXTRACT_PRIVATE        = YES
 
 # If the EXTRACT_PRIV_VIRTUAL tag is set to YES, documented private virtual
 # methods of a class will be included in the documentation.
 # The default value is: NO.
 
-EXTRACT_PRIV_VIRTUAL   = NO
+EXTRACT_PRIV_VIRTUAL   = YES
 
 # If the EXTRACT_PACKAGE tag is set to YES, all members with package or internal
 # scope will be included in the documentation.
 # The default value is: NO.
 
-EXTRACT_PACKAGE        = NO
+EXTRACT_PACKAGE        = YES
 
 # If the EXTRACT_STATIC tag is set to YES, all static members of a file will be
 # included in the documentation.
 # The default value is: NO.
 
-EXTRACT_STATIC         = NO
+EXTRACT_STATIC         = YES
 
 # If the EXTRACT_LOCAL_CLASSES tag is set to YES, classes (and structs) defined
 # locally in source files will be included in the documentation. If set to NO,
@@ -525,7 +527,7 @@ EXTRACT_LOCAL_CLASSES  = YES
 # included.
 # The default value is: NO.
 
-EXTRACT_LOCAL_METHODS  = NO
+EXTRACT_LOCAL_METHODS  = YES
 
 # If this flag is set to YES, the members of anonymous namespaces will be
 # extracted and appear in the documentation as a namespace called
@@ -894,50 +896,8 @@ INPUT_ENCODING         = UTF-8
 # *.ucf, *.qsf and *.ice.
 
 FILE_PATTERNS          = *.c \
-                         *.cc \
-                         *.cxx \
-                         *.cpp \
-                         *.c++ \
-                         *.java \
-                         *.ii \
-                         *.ixx \
-                         *.ipp \
-                         *.i++ \
-                         *.inl \
-                         *.idl \
-                         *.ddl \
-                         *.odl \
                          *.h \
-                         *.hh \
-                         *.hxx \
-                         *.hpp \
-                         *.h++ \
-                         *.cs \
-                         *.d \
-                         *.php \
-                         *.php4 \
-                         *.php5 \
-                         *.phtml \
-                         *.inc \
-                         *.m \
-                         *.markdown \
-                         *.md \
-                         *.mm \
-                         *.dox \
-                         *.py \
-                         *.pyw \
-                         *.f90 \
-                         *.f95 \
-                         *.f03 \
-                         *.f08 \
-                         *.f18 \
-                         *.f \
-                         *.for \
-                         *.vhd \
-                         *.vhdl \
-                         *.ucf \
-                         *.qsf \
-                         *.ice
+
 
 # The RECURSIVE tag can be used to specify whether or not subdirectories should
 # be searched for input files as well.
@@ -1026,7 +986,8 @@ IMAGE_PATH             =
 # need to set EXTENSION_MAPPING for the extension otherwise the files are not
 # properly processed by doxygen.
 
-INPUT_FILTER           =
+INPUT_FILTER           = *.c \
+                         *.h \
 
 # The FILTER_PATTERNS tag can be used to specify filters on a per file pattern
 # basis. Doxygen will compare the file name with each pattern and apply the
@@ -1039,7 +1000,8 @@ INPUT_FILTER           =
 # need to set EXTENSION_MAPPING for the extension otherwise the files are not
 # properly processed by doxygen.
 
-FILTER_PATTERNS        =
+FILTER_PATTERNS        = *.c \
+                         *.h \
 
 # If the FILTER_SOURCE_FILES tag is set to YES, the input filter (if set using
 # INPUT_FILTER) will also be used to filter the input files that are used for
@@ -1897,7 +1859,7 @@ LATEX_FOOTER           = YES
 # list).
 # This tag requires that the tag GENERATE_LATEX is set to YES.
 
-LATEX_EXTRA_STYLESHEET = YES
+LATEX_EXTRA_STYLESHEET = NO
 
 # The LATEX_EXTRA_FILES tag can be used to specify one or more extra images or
 # other source files which should be copied to the LATEX_OUTPUT output

@@ -1,3 +1,13 @@
+/**
+ * @file Automate.h
+ * @author your name (you@domain.com)
+ * @brief 
+ * @version 0.1
+ * @date 2024-01-11
+ * 
+ * @copyright Copyright (c) 2024
+ * 
+ */
 #ifndef H_AUTOMATE_H
 #define H_AUTOMATE_H
 
