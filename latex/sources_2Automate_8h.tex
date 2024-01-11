@@ -1,0 +1,1159 @@
+\hypertarget{sources_2Automate_8h}{}\doxysection{sources/\+Automate.h File Reference}
+\label{sources_2Automate_8h}\index{sources/Automate.h@{sources/Automate.h}}
+{\ttfamily \#include \char`\"{}automate.\+c\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}main.\+c\char`\"{}}\newline
+Include dependency graph for Automate.\+h\+:
+% FIG 0
+This graph shows which files directly or indirectly include this file\+:
+% FIG 1
+\doxysubsection*{Data Structures}
+\begin{DoxyCompactItemize}
+\item 
+struct \mbox{\hyperlink{sources_2Automate_8h_structautomate}{automate}}
+\item 
+struct \mbox{\hyperlink{sources_2Automate_8h_structtable__de__lecture__automate}{table\+\_\+de\+\_\+lecture\+\_\+automate}}
+\item 
+struct \mbox{\hyperlink{sources_2Automate_8h_structmot}{mot}}
+\end{DoxyCompactItemize}
+\doxysubsection*{Typedefs}
+\begin{DoxyCompactItemize}
+\item 
+typedef struct \mbox{\hyperlink{sources_2Automate_8h_structautomate}{automate}} \mbox{\hyperlink{sources_2Automate_8h_a72f52bf7d172e0be96c5212d72708512}{automate}}
+\item 
+typedef struct \mbox{\hyperlink{sources_2Automate_8h_structtable__de__lecture__automate}{table\+\_\+de\+\_\+lecture\+\_\+automate}} \mbox{\hyperlink{sources_2Automate_8h_a0b19884cf22c6f9d7c389673576c9306}{etats\+\_\+lus}}
+\item 
+typedef struct \mbox{\hyperlink{sources_2Automate_8h_structmot}{mot}} \mbox{\hyperlink{sources_2Automate_8h_a3628a6af19e2c6eef1fc15a4b09c87a6}{mot}}
+\end{DoxyCompactItemize}
+\doxysubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{sources_2Automate_8h_a0d5a0863ec42c8946cc09e78e059b392}{affichage\+\_\+1D}} (int $\ast$tab, int dim\+\_\+tab\+\_\+1D)
+\item 
+void \mbox{\hyperlink{sources_2Automate_8h_a419c0626c79858637e801366cc96cc34}{affichage\+\_\+case\+\_\+tab\+\_\+1D}} (int $\ast$tab, int position, int dim\+\_\+tab\+\_\+1D)
+\item 
+void \mbox{\hyperlink{sources_2Automate_8h_a25fe212d661648222dd310d2ac7e463f}{affichage\+\_\+2D}} (int $\ast$$\ast$tab, int dim\+\_\+tab\+\_\+2\+D\+\_\+ligne, int dim\+\_\+tab\+\_\+2\+D\+\_\+col)
+\item 
+void \mbox{\hyperlink{sources_2Automate_8h_a8d620948c2543b08d7162e774883226d}{affichage\+\_\+case\+\_\+tab\+\_\+2D}} (int $\ast$$\ast$tab, int position\+\_\+line, int position\+\_\+col, int dim\+\_\+tab\+\_\+2\+D\+\_\+ligne, int dim\+\_\+tab\+\_\+2\+D\+\_\+col)
+\item 
+void \mbox{\hyperlink{sources_2Automate_8h_af3d0fa75952b38bde8fdd18d914d123e}{affichage\+\_\+ligne\+\_\+mat}} (int $\ast$$\ast$$\ast$tab, int position\+\_\+line, int dim\+\_\+tab\+\_\+3\+D\+\_\+ligne, int dim\+\_\+tab\+\_\+3\+D\+\_\+col)
+\item 
+void \mbox{\hyperlink{sources_2Automate_8h_ab07e3b708f1d62b21b5edcbbe7268825}{affichage\+\_\+col\+\_\+mat}} (int $\ast$$\ast$$\ast$tab, int position\+\_\+col, int dim\+\_\+tab\+\_\+3\+D\+\_\+ligne, int dim\+\_\+tab\+\_\+3\+D\+\_\+col)
+\item 
+void \mbox{\hyperlink{sources_2Automate_8h_aac3ff6bc8320d17466a68a9f2988b6aa}{affichage\+\_\+case\+\_\+mat}} (int $\ast$$\ast$$\ast$tab, int position\+\_\+line, int position\+\_\+col, int dim\+\_\+tab\+\_\+3\+D\+\_\+ligne, int dim\+\_\+tab\+\_\+3\+D\+\_\+col)
+\item 
+void \mbox{\hyperlink{sources_2Automate_8h_ace696bfe40cb3a31629fae125aeb95d3}{affichage\+\_\+automate}} (\mbox{\hyperlink{sources_2Automate_8h_structautomate}{automate}} a)
+\item 
+void \mbox{\hyperlink{sources_2Automate_8h_a89ad2febfaf0b797a98476872910379b}{lecture\+\_\+etats\+\_\+finaux}} (\mbox{\hyperlink{sources_2Automate_8h_structautomate}{automate}} a)
+\item 
+void \mbox{\hyperlink{sources_2Automate_8h_a9c47d36957d027d0ce79b2c7e4f5e571}{echange}} (int $\ast$a, int $\ast$b)
+\item 
+void \mbox{\hyperlink{sources_2Automate_8h_a9e647a4e63ae7971376c5e77011d07c3}{affichage\+\_\+mot}} (\mbox{\hyperlink{sources_2Automate_8h_structmot}{mot}} $\ast$\mbox{\hyperlink{sources_2Automate_8h_structmot}{mot}})
+\item 
+void \mbox{\hyperlink{sources_2Automate_8h_a9a3c26e26500d12d03aff30a5df55a32}{lecture\+\_\+mot}} (\mbox{\hyperlink{sources_2Automate_8h_structmot}{mot}} m)
+\item 
+int \mbox{\hyperlink{sources_2Automate_8h_ad770b7fe6cecfdabad9c539aee9bf4d7}{est\+\_\+deterministe}} (\mbox{\hyperlink{sources_2Automate_8h_structautomate}{automate}} a)
+\item 
+int \mbox{\hyperlink{sources_2Automate_8h_a0667aeb62228642b98a1421a6051ac6c}{est\+\_\+complet}} (\mbox{\hyperlink{sources_2Automate_8h_structautomate}{automate}} a)
+\item 
+int \mbox{\hyperlink{sources_2Automate_8h_a6ffeb6b8d643521d92f4ecd955a6a2cb}{est\+\_\+un\+\_\+etat\+\_\+final}} (\mbox{\hyperlink{sources_2Automate_8h_structautomate}{automate}} a, int etat)
+\item 
+int \mbox{\hyperlink{sources_2Automate_8h_a389707956230acf9fcdc5e48e9fc87bb}{exist\+\_\+state\+\_\+in\+\_\+tab\+\_\+transi}} (\mbox{\hyperlink{sources_2Automate_8h_structautomate}{automate}} a, int state\+\_\+touch, int $\ast$$\ast$$\ast$tab1)
+\item 
+int \mbox{\hyperlink{sources_2Automate_8h_a85e9beca23a16a9027e4cad186426571}{Next\+\_\+one\+\_\+state\+\_\+touch}} (\mbox{\hyperlink{sources_2Automate_8h_structautomate}{automate}} a, int state\+\_\+start, int symbol\+\_\+apply)
+\item 
+int \mbox{\hyperlink{sources_2Automate_8h_a5849dc3b8f0128d2bd7d9d4bf3e22f8d}{calculte\+\_\+number\+\_\+states\+\_\+touch}} (\mbox{\hyperlink{sources_2Automate_8h_structautomate}{automate}} a, int $\ast$tab\+\_\+states\+\_\+touch)
+\item 
+int \mbox{\hyperlink{sources_2Automate_8h_a5ae7e01db468d561ae1d19ef664c3f36}{start\+\_\+with\+\_\+tow}} (int etat\+\_\+initial\+\_\+a, int etat\+\_\+initial\+\_\+b)
+\item 
+int \mbox{\hyperlink{sources_2Automate_8h_a5341784ae05d8a193087a058832505b6}{retourne\+\_\+etat\+\_\+couant}} (\mbox{\hyperlink{sources_2Automate_8h_structautomate}{automate}} a, int curent\+\_\+state, int curent\+\_\+symbol)
+\item 
+int \mbox{\hyperlink{sources_2Automate_8h_af6cdbec2ab1252ff952915ccc6eef9b8}{est\+\_\+reconnu}} (\mbox{\hyperlink{sources_2Automate_8h_structmot}{mot}} m, \mbox{\hyperlink{sources_2Automate_8h_structautomate}{automate}} a)
+\item 
+int \mbox{\hyperlink{sources_2Automate_8h_a2e785c11d2a9d2a4dc7ae39b55659e83}{serie\+\_\+test\+\_\+reconnaissance}} (\mbox{\hyperlink{sources_2Automate_8h_structautomate}{automate}} a, int n\+\_\+fois)
+\item 
+int \mbox{\hyperlink{sources_2Automate_8h_a0fccbb7bdbbc3c0539255805f9585097}{reconnu\+\_\+v2}} (\mbox{\hyperlink{sources_2Automate_8h_structmot}{mot}} m, \mbox{\hyperlink{sources_2Automate_8h_structautomate}{automate}} a)
+\item 
+int \mbox{\hyperlink{sources_2Automate_8h_abbc6da3bb2b5d1ccb0dab60b88fa0e49}{find\+\_\+next\+\_\+state}} (\mbox{\hyperlink{sources_2Automate_8h_structautomate}{automate}} a, \mbox{\hyperlink{sources_2Automate_8h_structmot}{mot}} m)
+\item 
+int $\ast$ \mbox{\hyperlink{sources_2Automate_8h_ac890091c613188d67965527df5d9653a}{allocation\+\_\+tab\+\_\+1D}} (int t1)
+\item 
+int $\ast$ \mbox{\hyperlink{sources_2Automate_8h_a348e8af2af0d4d1bb86ca00e327ab851}{Next\+\_\+states\+\_\+touch}} (\mbox{\hyperlink{sources_2Automate_8h_structautomate}{automate}} a, int start\+\_\+state, int symbol\+\_\+apply)
+\item 
+int $\ast$ \mbox{\hyperlink{sources_2Automate_8h_a74c3c00ad6a8790fa2b4ba405af24911}{Next\+\_\+states\+\_\+touch\+\_\+not\+\_\+print}} (\mbox{\hyperlink{sources_2Automate_8h_structautomate}{automate}} a, int start\+\_\+state, int symbol\+\_\+apply)
+\item 
+int $\ast$ \mbox{\hyperlink{sources_2Automate_8h_a2c623f76118c6b8fe8be487e6cf25e5a}{Tab\+\_\+states\+\_\+from\+\_\+q0}} (\mbox{\hyperlink{sources_2Automate_8h_structautomate}{automate}} a, int symbol\+\_\+apply)
+\item 
+int $\ast$ \mbox{\hyperlink{sources_2Automate_8h_a97d63c0cec9de906c600c8f1f4fd46b3}{Tab\+\_\+states\+\_\+from\+\_\+q0\+\_\+not\+\_\+print}} (\mbox{\hyperlink{sources_2Automate_8h_structautomate}{automate}} a, int symbol\+\_\+apply)
+\item 
+int $\ast$ \mbox{\hyperlink{sources_2Automate_8h_ae60a07f619dc1d3a4cc0efe8c069761b}{group\+\_\+states\+\_\+by\+\_\+same\+\_\+symbol}} (\mbox{\hyperlink{sources_2Automate_8h_structautomate}{automate}} a, int state\+\_\+apply, int symbol\+\_\+fix)
+\item 
+int $\ast$ \mbox{\hyperlink{sources_2Automate_8h_a41a0834b956a4b13de74bf58d722b873}{group\+\_\+states\+\_\+by\+\_\+same\+\_\+symbol\+\_\+not\+\_\+print}} (\mbox{\hyperlink{sources_2Automate_8h_structautomate}{automate}} a, int state\+\_\+apply, int symbol\+\_\+fix)
+\item 
+int $\ast$ \mbox{\hyperlink{sources_2Automate_8h_a5858ce050840603548137f97fdd1e7a7}{union\+\_\+states\+\_\+of\+\_\+same\+\_\+symbol}} (\mbox{\hyperlink{sources_2Automate_8h_structautomate}{automate}} a, int state\+\_\+apply, int symbol\+\_\+fix)
+\item 
+int $\ast$ \mbox{\hyperlink{sources_2Automate_8h_aaaab1cd561cc16882fb3dbf9fa52c093}{union\+\_\+states\+\_\+of\+\_\+same\+\_\+symbol\+\_\+not\+\_\+print}} (\mbox{\hyperlink{sources_2Automate_8h_structautomate}{automate}} a, int state\+\_\+apply, int symbol\+\_\+fix)
+\item 
+int $\ast$$\ast$ \mbox{\hyperlink{sources_2Automate_8h_a4241a741e146fc640699539401404032}{add\+\_\+state\+\_\+to\+\_\+composite\+\_\+table}} (\mbox{\hyperlink{sources_2Automate_8h_structautomate}{automate}} a, int $\ast$$\ast$tab, int composite\+\_\+state, int position)
+\item 
+int $\ast$$\ast$ \mbox{\hyperlink{sources_2Automate_8h_a41ad955d55eab6536db06f79d174bef1}{copy\+\_\+line\+\_\+mat}} (\mbox{\hyperlink{sources_2Automate_8h_structautomate}{automate}} a, int $\ast$$\ast$$\ast$mat, int position\+\_\+line)
+\item 
+int $\ast$$\ast$ \mbox{\hyperlink{sources_2Automate_8h_a714e649e39d3aefe327b5384df720845}{allocation\+\_\+tab\+\_\+2D}} (int t2, int t3)
+\item 
+int $\ast$$\ast$$\ast$ \mbox{\hyperlink{sources_2Automate_8h_ae87aa6f58c8134e5200da20b91805db5}{allocation\+\_\+mat\+\_\+vide}} (int d1, int d2)
+\item 
+int $\ast$$\ast$$\ast$ \mbox{\hyperlink{sources_2Automate_8h_ade6845593fc16126acfe0784fb308d54}{lecture\+\_\+automate\+\_\+court}} (\mbox{\hyperlink{sources_2Automate_8h_structautomate}{automate}} a)
+\item 
+int $\ast$$\ast$$\ast$ \mbox{\hyperlink{sources_2Automate_8h_a3e66c5a188dc48e86b4f155d62f4b31d}{add\+\_\+state\+\_\+to\+\_\+rename\+\_\+table\+\_\+state}} (\mbox{\hyperlink{sources_2Automate_8h_structautomate}{automate}} a, int $\ast$$\ast$$\ast$tan\+\_\+rename, int new\+\_\+state, int position)
+\item 
+int $\ast$$\ast$$\ast$ \mbox{\hyperlink{sources_2Automate_8h_a4a6fc0a4a37880e45b2be8937275fbe2}{Tab\+\_\+transition\+\_\+automate}} (\mbox{\hyperlink{sources_2Automate_8h_structautomate}{automate}} a)
+\item 
+int $\ast$$\ast$$\ast$ \mbox{\hyperlink{sources_2Automate_8h_a235ccf0cf2e2584290bbbd903b44bfd8}{Tab\+\_\+transition\+\_\+automate\+\_\+not\+\_\+print}} (\mbox{\hyperlink{sources_2Automate_8h_structautomate}{automate}} a)
+\item 
+int $\ast$$\ast$$\ast$ \mbox{\hyperlink{sources_2Automate_8h_a26b717a6eab6ff75360519dda5721b23}{twos\+\_\+symbol\+\_\+apply}} (\mbox{\hyperlink{sources_2Automate_8h_structautomate}{automate}} a, int state\+\_\+1, int state\+\_\+2, int symbol\+\_\+1, int symbol\+\_\+2)
+\item 
+\mbox{\hyperlink{sources_2Automate_8h_structautomate}{automate}} \mbox{\hyperlink{sources_2Automate_8h_aa03266df139325c45fdf1a52703ba7cd}{generate\+\_\+automate\+\_\+null}} (int d1, int d2, int d3)
+\item 
+\mbox{\hyperlink{sources_2Automate_8h_structautomate}{automate}} \mbox{\hyperlink{sources_2Automate_8h_a7f1b978249c1e2742b9d4a1d4c52c666}{generate\+\_\+automate}} ()
+\item 
+\mbox{\hyperlink{sources_2Automate_8h_structautomate}{automate}} \mbox{\hyperlink{sources_2Automate_8h_a4c7b553d858e535081e999f9b4cdb146}{remplir\+\_\+automate}} (\mbox{\hyperlink{sources_2Automate_8h_structautomate}{automate}} m, int val)
+\item 
+\mbox{\hyperlink{sources_2Automate_8h_structautomate}{automate}} \mbox{\hyperlink{sources_2Automate_8h_a9534fc0a06cc12caa056343f733dc2ad}{import\+\_\+automae}} (char path)
+\item 
+\mbox{\hyperlink{sources_2Automate_8h_structautomate}{automate}} \mbox{\hyperlink{sources_2Automate_8h_a839d48901b26385a20b1431fbe540b9b}{modify\+\_\+automate}} (\mbox{\hyperlink{sources_2Automate_8h_structautomate}{automate}} a)
+\item 
+\mbox{\hyperlink{sources_2Automate_8h_structautomate}{automate}} \mbox{\hyperlink{sources_2Automate_8h_a7951d872a550f4afbb9dcf924fbfa855}{save\+\_\+automate}} (\mbox{\hyperlink{sources_2Automate_8h_structautomate}{automate}} a)
+\item 
+\mbox{\hyperlink{sources_2Automate_8h_structautomate}{automate}} \mbox{\hyperlink{sources_2Automate_8h_af02bed80e6d854822e1f5193f62c158e}{del\+\_\+automate}} (\mbox{\hyperlink{sources_2Automate_8h_structautomate}{automate}} a)
+\item 
+\mbox{\hyperlink{sources_2Automate_8h_structautomate}{automate}} \mbox{\hyperlink{sources_2Automate_8h_ab4db036d89240aaea16ece96e095fd0c}{copie\+\_\+automate}} (\mbox{\hyperlink{sources_2Automate_8h_structautomate}{automate}} a)
+\item 
+\mbox{\hyperlink{sources_2Automate_8h_structautomate}{automate}} \mbox{\hyperlink{sources_2Automate_8h_ab862cdb6e1d127b09fa94e67f2a0ec40}{rendre\+\_\+complet}} (\mbox{\hyperlink{sources_2Automate_8h_structautomate}{automate}} a)
+\item 
+\mbox{\hyperlink{sources_2Automate_8h_structautomate}{automate}} \mbox{\hyperlink{sources_2Automate_8h_ac45b6cbb52829009d7f1f16764ed153d}{concat}} (\mbox{\hyperlink{sources_2Automate_8h_structautomate}{automate}} a, \mbox{\hyperlink{sources_2Automate_8h_structautomate}{automate}} b)
+\item 
+\mbox{\hyperlink{sources_2Automate_8h_structautomate}{automate}} \mbox{\hyperlink{sources_2Automate_8h_aa4d379711c88c084d47df6344acf8d78}{complement\+\_\+automate}} (\mbox{\hyperlink{sources_2Automate_8h_structautomate}{automate}} a)
+\item 
+\mbox{\hyperlink{sources_2Automate_8h_structautomate}{automate}} \mbox{\hyperlink{sources_2Automate_8h_abf51d4014099e3e3a1dd5c90e6b0d4ca}{rendre\+\_\+deterministe}} (\mbox{\hyperlink{sources_2Automate_8h_structautomate}{automate}} a)
+\item 
+\mbox{\hyperlink{sources_2Automate_8h_structautomate}{automate}} \mbox{\hyperlink{sources_2Automate_8h_a554de40d0f181edf06aa71632ee9082f}{producte\+\_\+a\+\_\+b}} (\mbox{\hyperlink{sources_2Automate_8h_structautomate}{automate}} a, \mbox{\hyperlink{sources_2Automate_8h_structautomate}{automate}} b)
+\item 
+\mbox{\hyperlink{Projet__C_2sources_2Automate_8h_a0b19884cf22c6f9d7c389673576c9306}{etats\+\_\+lus}} \mbox{\hyperlink{sources_2Automate_8h_a46f808ff7bb2027ba757eca9f508eeb4}{lecture\+\_\+automate\+\_\+long}} (\mbox{\hyperlink{sources_2Automate_8h_structautomate}{automate}} a)
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+\begin{DoxyAuthor}{Author}
+Charly romy TANGA -\/ Abdoulaye MBAYE -\/ Berkehan USLU (\href{mailto:you@domain.com}{\texttt{ you@domain.\+com}}) 
+\end{DoxyAuthor}
+\begin{DoxyVersion}{Version}
+0.\+1 
+\end{DoxyVersion}
+\begin{DoxyDate}{Date}
+2024-\/01-\/11
+\end{DoxyDate}
+\begin{DoxyCopyright}{Copyright}
+Copyright (c) 2024 
+\end{DoxyCopyright}
+
+
+\doxysubsection{Data Structure Documentation}
+\index{automate@{automate}}\label{structautomate}
+\Hypertarget{sources_2Automate_8h_structautomate}
+\doxysubsubsection{struct automate}
+\begin{DoxyFields}{Data Fields}
+\mbox{\Hypertarget{sources_2Automate_8h_ae3ac5c83c5aa6a1fbef3fe68c664460c}\label{sources_2Automate_8h_ae3ac5c83c5aa6a1fbef3fe68c664460c}} 
+int&
+etat\_initial&
+\\
+\hline
+
+\mbox{\Hypertarget{sources_2Automate_8h_a2b6fb7bde348f1d42559f92ea9e7a4ed}\label{sources_2Automate_8h_a2b6fb7bde348f1d42559f92ea9e7a4ed}} 
+int $\ast$&
+Etats\_finaux&
+\\
+\hline
+
+\mbox{\Hypertarget{sources_2Automate_8h_aaf64c8c7eaae013a268342471b42548d}\label{sources_2Automate_8h_aaf64c8c7eaae013a268342471b42548d}} 
+int $\ast$$\ast$$\ast$&
+matrice&
+\\
+\hline
+
+\mbox{\Hypertarget{sources_2Automate_8h_a6d8c3f98bbb4212368325d2e2dad083a}\label{sources_2Automate_8h_a6d8c3f98bbb4212368325d2e2dad083a}} 
+int&
+nb\_Etats&
+\\
+\hline
+
+\mbox{\Hypertarget{sources_2Automate_8h_aff6ee64a9c3a7ff40efce3b88da82867}\label{sources_2Automate_8h_aff6ee64a9c3a7ff40efce3b88da82867}} 
+int&
+nb\_Etats\_finaux&
+\\
+\hline
+
+\mbox{\Hypertarget{sources_2Automate_8h_ab6e420dd9e24241d4a32521b578db808}\label{sources_2Automate_8h_ab6e420dd9e24241d4a32521b578db808}} 
+int&
+nb\_Symboles&
+\\
+\hline
+
+\mbox{\Hypertarget{sources_2Automate_8h_a64e42fa561e8a9118c8ab946b68f4d07}\label{sources_2Automate_8h_a64e42fa561e8a9118c8ab946b68f4d07}} 
+int $\ast$$\ast$$\ast$&
+Table\_transition&
+\\
+\hline
+
+\end{DoxyFields}
+\index{table\_de\_lecture\_automate@{table\_de\_lecture\_automate}}\label{structtable__de__lecture__automate}
+\Hypertarget{sources_2Automate_8h_structtable__de__lecture__automate}
+\doxysubsubsection{struct table\+\_\+de\+\_\+lecture\+\_\+automate}
+\begin{DoxyFields}{Data Fields}
+\mbox{\Hypertarget{sources_2Automate_8h_a597ad2cff1fed32d0d5143a69c3aa09f}\label{sources_2Automate_8h_a597ad2cff1fed32d0d5143a69c3aa09f}} 
+int $\ast$$\ast$$\ast$&
+etat\_lu\_depart&
+\\
+\hline
+
+\mbox{\Hypertarget{sources_2Automate_8h_a3c7ddadde9a9136c0323ad15ac524ffc}\label{sources_2Automate_8h_a3c7ddadde9a9136c0323ad15ac524ffc}} 
+int $\ast$$\ast$$\ast$&
+etats\_lus\_finaux&
+\\
+\hline
+
+\mbox{\Hypertarget{sources_2Automate_8h_aadc73fb5ae087a4883ab7dd2b889e57f}\label{sources_2Automate_8h_aadc73fb5ae087a4883ab7dd2b889e57f}} 
+int $\ast$$\ast$$\ast$&
+etats\_lus\_intermediaires&
+\\
+\hline
+
+\end{DoxyFields}
+\index{mot@{mot}}\label{structmot}
+\Hypertarget{sources_2Automate_8h_structmot}
+\doxysubsubsection{struct mot}
+\begin{DoxyFields}{Data Fields}
+\mbox{\Hypertarget{sources_2Automate_8h_a7408fd9a6be5d73d608fdbf8ea45b782}\label{sources_2Automate_8h_a7408fd9a6be5d73d608fdbf8ea45b782}} 
+int&
+size\_mot&
+\\
+\hline
+
+\mbox{\Hypertarget{sources_2Automate_8h_aa3ab2901aefd8a7cf32b3687a7b017cf}\label{sources_2Automate_8h_aa3ab2901aefd8a7cf32b3687a7b017cf}} 
+int $\ast$&
+Tab\_caract&
+\\
+\hline
+
+\end{DoxyFields}
+
+
+\doxysubsection{Typedef Documentation}
+\mbox{\Hypertarget{sources_2Automate_8h_a72f52bf7d172e0be96c5212d72708512}\label{sources_2Automate_8h_a72f52bf7d172e0be96c5212d72708512}} 
+\index{Automate.h@{Automate.h}!automate@{automate}}
+\index{automate@{automate}!Automate.h@{Automate.h}}
+\doxysubsubsection{\texorpdfstring{automate}{automate}}
+{\footnotesize\ttfamily typedef struct \mbox{\hyperlink{sources_2Automate_8h_structautomate}{automate}} \mbox{\hyperlink{sources_2Automate_8h_structautomate}{automate}}}
+
+\mbox{\Hypertarget{sources_2Automate_8h_a0b19884cf22c6f9d7c389673576c9306}\label{sources_2Automate_8h_a0b19884cf22c6f9d7c389673576c9306}} 
+\index{Automate.h@{Automate.h}!etats\_lus@{etats\_lus}}
+\index{etats\_lus@{etats\_lus}!Automate.h@{Automate.h}}
+\doxysubsubsection{\texorpdfstring{etats\_lus}{etats\_lus}}
+{\footnotesize\ttfamily typedef struct \mbox{\hyperlink{sources_2Automate_8h_structtable__de__lecture__automate}{table\+\_\+de\+\_\+lecture\+\_\+automate}} \mbox{\hyperlink{Projet__C_2sources_2Automate_8h_a0b19884cf22c6f9d7c389673576c9306}{etats\+\_\+lus}}}
+
+\mbox{\Hypertarget{sources_2Automate_8h_a3628a6af19e2c6eef1fc15a4b09c87a6}\label{sources_2Automate_8h_a3628a6af19e2c6eef1fc15a4b09c87a6}} 
+\index{Automate.h@{Automate.h}!mot@{mot}}
+\index{mot@{mot}!Automate.h@{Automate.h}}
+\doxysubsubsection{\texorpdfstring{mot}{mot}}
+{\footnotesize\ttfamily typedef struct \mbox{\hyperlink{sources_2Automate_8h_structmot}{mot}} \mbox{\hyperlink{sources_2Automate_8h_structmot}{mot}}}
+
+
+
+\doxysubsection{Function Documentation}
+\mbox{\Hypertarget{sources_2Automate_8h_a4241a741e146fc640699539401404032}\label{sources_2Automate_8h_a4241a741e146fc640699539401404032}} 
+\index{Automate.h@{Automate.h}!add\_state\_to\_composite\_table@{add\_state\_to\_composite\_table}}
+\index{add\_state\_to\_composite\_table@{add\_state\_to\_composite\_table}!Automate.h@{Automate.h}}
+\doxysubsubsection{\texorpdfstring{add\_state\_to\_composite\_table()}{add\_state\_to\_composite\_table()}}
+{\footnotesize\ttfamily int$\ast$$\ast$ add\+\_\+state\+\_\+to\+\_\+composite\+\_\+table (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{sources_2Automate_8h_structautomate}{automate}}}]{a,  }\item[{int $\ast$$\ast$}]{tab,  }\item[{int}]{composite\+\_\+state,  }\item[{int}]{position }\end{DoxyParamCaption})}
+
+
+\begin{DoxyParams}{Parameters}
+{\em a} & \\
+\hline
+{\em tab} & \\
+\hline
+{\em composite\+\_\+state} & \\
+\hline
+{\em position} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+int$\ast$$\ast$ 
+\end{DoxyReturn}
+\mbox{\Hypertarget{sources_2Automate_8h_a3e66c5a188dc48e86b4f155d62f4b31d}\label{sources_2Automate_8h_a3e66c5a188dc48e86b4f155d62f4b31d}} 
+\index{Automate.h@{Automate.h}!add\_state\_to\_rename\_table\_state@{add\_state\_to\_rename\_table\_state}}
+\index{add\_state\_to\_rename\_table\_state@{add\_state\_to\_rename\_table\_state}!Automate.h@{Automate.h}}
+\doxysubsubsection{\texorpdfstring{add\_state\_to\_rename\_table\_state()}{add\_state\_to\_rename\_table\_state()}}
+{\footnotesize\ttfamily int$\ast$$\ast$$\ast$ add\+\_\+state\+\_\+to\+\_\+rename\+\_\+table\+\_\+state (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{sources_2Automate_8h_structautomate}{automate}}}]{a,  }\item[{int $\ast$$\ast$$\ast$}]{tab\+\_\+rename,  }\item[{int}]{new\+\_\+state,  }\item[{int}]{position }\end{DoxyParamCaption})}
+
+
+\begin{DoxyParams}{Parameters}
+{\em a} & \\
+\hline
+{\em tan\+\_\+rename} & \\
+\hline
+{\em new\+\_\+state} & \\
+\hline
+{\em position} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+int$\ast$$\ast$$\ast$
+\end{DoxyReturn}
+
+\begin{DoxyParams}{Parameters}
+{\em a} & \\
+\hline
+{\em tab\+\_\+rename} & \\
+\hline
+{\em new\+\_\+state} & \\
+\hline
+{\em position} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+int$\ast$$\ast$$\ast$ 
+\end{DoxyReturn}
+\mbox{\Hypertarget{sources_2Automate_8h_a0d5a0863ec42c8946cc09e78e059b392}\label{sources_2Automate_8h_a0d5a0863ec42c8946cc09e78e059b392}} 
+\index{Automate.h@{Automate.h}!affichage\_1D@{affichage\_1D}}
+\index{affichage\_1D@{affichage\_1D}!Automate.h@{Automate.h}}
+\doxysubsubsection{\texorpdfstring{affichage\_1D()}{affichage\_1D()}}
+{\footnotesize\ttfamily void affichage\+\_\+1D (\begin{DoxyParamCaption}\item[{int $\ast$}]{tab,  }\item[{int}]{dim\+\_\+tab\+\_\+1D }\end{DoxyParamCaption})}
+
+
+\begin{DoxyParams}{Parameters}
+{\em tab} & \\
+\hline
+{\em dim\+\_\+tab\+\_\+1D} & \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{sources_2Automate_8h_a25fe212d661648222dd310d2ac7e463f}\label{sources_2Automate_8h_a25fe212d661648222dd310d2ac7e463f}} 
+\index{Automate.h@{Automate.h}!affichage\_2D@{affichage\_2D}}
+\index{affichage\_2D@{affichage\_2D}!Automate.h@{Automate.h}}
+\doxysubsubsection{\texorpdfstring{affichage\_2D()}{affichage\_2D()}}
+{\footnotesize\ttfamily void affichage\+\_\+2D (\begin{DoxyParamCaption}\item[{int $\ast$$\ast$}]{tab,  }\item[{int}]{dim\+\_\+tab\+\_\+2\+D\+\_\+ligne,  }\item[{int}]{dim\+\_\+tab\+\_\+2\+D\+\_\+col }\end{DoxyParamCaption})}
+
+
+\begin{DoxyParams}{Parameters}
+{\em tab} & \\
+\hline
+{\em dim\+\_\+tab\+\_\+2\+D\+\_\+ligne} & \\
+\hline
+{\em dim\+\_\+tab\+\_\+2\+D\+\_\+col} & \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{sources_2Automate_8h_ace696bfe40cb3a31629fae125aeb95d3}\label{sources_2Automate_8h_ace696bfe40cb3a31629fae125aeb95d3}} 
+\index{Automate.h@{Automate.h}!affichage\_automate@{affichage\_automate}}
+\index{affichage\_automate@{affichage\_automate}!Automate.h@{Automate.h}}
+\doxysubsubsection{\texorpdfstring{affichage\_automate()}{affichage\_automate()}}
+{\footnotesize\ttfamily void affichage\+\_\+automate (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{sources_2Automate_8h_structautomate}{automate}}}]{a }\end{DoxyParamCaption})}
+
+
+\begin{DoxyParams}{Parameters}
+{\em a} & \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{sources_2Automate_8h_aac3ff6bc8320d17466a68a9f2988b6aa}\label{sources_2Automate_8h_aac3ff6bc8320d17466a68a9f2988b6aa}} 
+\index{Automate.h@{Automate.h}!affichage\_case\_mat@{affichage\_case\_mat}}
+\index{affichage\_case\_mat@{affichage\_case\_mat}!Automate.h@{Automate.h}}
+\doxysubsubsection{\texorpdfstring{affichage\_case\_mat()}{affichage\_case\_mat()}}
+{\footnotesize\ttfamily void affichage\+\_\+case\+\_\+mat (\begin{DoxyParamCaption}\item[{int $\ast$$\ast$$\ast$}]{tab,  }\item[{int}]{position\+\_\+line,  }\item[{int}]{position\+\_\+col,  }\item[{int}]{dim\+\_\+tab\+\_\+3\+D\+\_\+ligne,  }\item[{int}]{dim\+\_\+tab\+\_\+3\+D\+\_\+col }\end{DoxyParamCaption})}
+
+
+\begin{DoxyParams}{Parameters}
+{\em tab} & \\
+\hline
+{\em position\+\_\+line} & \\
+\hline
+{\em position\+\_\+col} & \\
+\hline
+{\em dim\+\_\+tab\+\_\+3\+D\+\_\+ligne} & \\
+\hline
+{\em dim\+\_\+tab\+\_\+3\+D\+\_\+col} & \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{sources_2Automate_8h_a419c0626c79858637e801366cc96cc34}\label{sources_2Automate_8h_a419c0626c79858637e801366cc96cc34}} 
+\index{Automate.h@{Automate.h}!affichage\_case\_tab\_1D@{affichage\_case\_tab\_1D}}
+\index{affichage\_case\_tab\_1D@{affichage\_case\_tab\_1D}!Automate.h@{Automate.h}}
+\doxysubsubsection{\texorpdfstring{affichage\_case\_tab\_1D()}{affichage\_case\_tab\_1D()}}
+{\footnotesize\ttfamily void affichage\+\_\+case\+\_\+tab\+\_\+1D (\begin{DoxyParamCaption}\item[{int $\ast$}]{tab,  }\item[{int}]{position,  }\item[{int}]{dim\+\_\+tab\+\_\+1D }\end{DoxyParamCaption})}
+
+
+\begin{DoxyParams}{Parameters}
+{\em tab} & \\
+\hline
+{\em position} & \\
+\hline
+{\em dim\+\_\+tab\+\_\+1D} & \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{sources_2Automate_8h_a8d620948c2543b08d7162e774883226d}\label{sources_2Automate_8h_a8d620948c2543b08d7162e774883226d}} 
+\index{Automate.h@{Automate.h}!affichage\_case\_tab\_2D@{affichage\_case\_tab\_2D}}
+\index{affichage\_case\_tab\_2D@{affichage\_case\_tab\_2D}!Automate.h@{Automate.h}}
+\doxysubsubsection{\texorpdfstring{affichage\_case\_tab\_2D()}{affichage\_case\_tab\_2D()}}
+{\footnotesize\ttfamily void affichage\+\_\+case\+\_\+tab\+\_\+2D (\begin{DoxyParamCaption}\item[{int $\ast$$\ast$}]{tab,  }\item[{int}]{position\+\_\+line,  }\item[{int}]{position\+\_\+col,  }\item[{int}]{dim\+\_\+tab\+\_\+2\+D\+\_\+ligne,  }\item[{int}]{dim\+\_\+tab\+\_\+2\+D\+\_\+col }\end{DoxyParamCaption})}
+
+
+\begin{DoxyParams}{Parameters}
+{\em tab} & \\
+\hline
+{\em position\+\_\+line} & \\
+\hline
+{\em position\+\_\+col} & \\
+\hline
+{\em dim\+\_\+tab\+\_\+2\+D\+\_\+ligne} & \\
+\hline
+{\em dim\+\_\+tab\+\_\+2\+D\+\_\+col} & \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{sources_2Automate_8h_ab07e3b708f1d62b21b5edcbbe7268825}\label{sources_2Automate_8h_ab07e3b708f1d62b21b5edcbbe7268825}} 
+\index{Automate.h@{Automate.h}!affichage\_col\_mat@{affichage\_col\_mat}}
+\index{affichage\_col\_mat@{affichage\_col\_mat}!Automate.h@{Automate.h}}
+\doxysubsubsection{\texorpdfstring{affichage\_col\_mat()}{affichage\_col\_mat()}}
+{\footnotesize\ttfamily void affichage\+\_\+col\+\_\+mat (\begin{DoxyParamCaption}\item[{int $\ast$$\ast$$\ast$}]{tab,  }\item[{int}]{position\+\_\+col,  }\item[{int}]{dim\+\_\+tab\+\_\+3\+D\+\_\+ligne,  }\item[{int}]{dim\+\_\+tab\+\_\+3\+D\+\_\+col }\end{DoxyParamCaption})}
+
+
+\begin{DoxyParams}{Parameters}
+{\em tab} & \\
+\hline
+{\em position\+\_\+col} & \\
+\hline
+{\em dim\+\_\+tab\+\_\+3\+D\+\_\+ligne} & \\
+\hline
+{\em dim\+\_\+tab\+\_\+3\+D\+\_\+col} & \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{sources_2Automate_8h_af3d0fa75952b38bde8fdd18d914d123e}\label{sources_2Automate_8h_af3d0fa75952b38bde8fdd18d914d123e}} 
+\index{Automate.h@{Automate.h}!affichage\_ligne\_mat@{affichage\_ligne\_mat}}
+\index{affichage\_ligne\_mat@{affichage\_ligne\_mat}!Automate.h@{Automate.h}}
+\doxysubsubsection{\texorpdfstring{affichage\_ligne\_mat()}{affichage\_ligne\_mat()}}
+{\footnotesize\ttfamily void affichage\+\_\+ligne\+\_\+mat (\begin{DoxyParamCaption}\item[{int $\ast$$\ast$$\ast$}]{tab,  }\item[{int}]{position\+\_\+line,  }\item[{int}]{dim\+\_\+tab\+\_\+3\+D\+\_\+ligne,  }\item[{int}]{dim\+\_\+tab\+\_\+3\+D\+\_\+col }\end{DoxyParamCaption})}
+
+
+\begin{DoxyParams}{Parameters}
+{\em tab} & \\
+\hline
+{\em position\+\_\+line} & \\
+\hline
+{\em dim\+\_\+tab\+\_\+3\+D\+\_\+ligne} & \\
+\hline
+{\em dim\+\_\+tab\+\_\+3\+D\+\_\+col} & \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{sources_2Automate_8h_a9e647a4e63ae7971376c5e77011d07c3}\label{sources_2Automate_8h_a9e647a4e63ae7971376c5e77011d07c3}} 
+\index{Automate.h@{Automate.h}!affichage\_mot@{affichage\_mot}}
+\index{affichage\_mot@{affichage\_mot}!Automate.h@{Automate.h}}
+\doxysubsubsection{\texorpdfstring{affichage\_mot()}{affichage\_mot()}}
+{\footnotesize\ttfamily void affichage\+\_\+mot (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{sources_2Automate_8h_structmot}{mot}} $\ast$}]{mot }\end{DoxyParamCaption})}
+
+
+\begin{DoxyParams}{Parameters}
+{\em mot} & \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{sources_2Automate_8h_ae87aa6f58c8134e5200da20b91805db5}\label{sources_2Automate_8h_ae87aa6f58c8134e5200da20b91805db5}} 
+\index{Automate.h@{Automate.h}!allocation\_mat\_vide@{allocation\_mat\_vide}}
+\index{allocation\_mat\_vide@{allocation\_mat\_vide}!Automate.h@{Automate.h}}
+\doxysubsubsection{\texorpdfstring{allocation\_mat\_vide()}{allocation\_mat\_vide()}}
+{\footnotesize\ttfamily int$\ast$$\ast$$\ast$ allocation\+\_\+mat\+\_\+vide (\begin{DoxyParamCaption}\item[{int}]{d1,  }\item[{int}]{d2 }\end{DoxyParamCaption})}
+
+
+\begin{DoxyParams}{Parameters}
+{\em d1} & \\
+\hline
+{\em d2} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+int$\ast$$\ast$$\ast$ 
+\end{DoxyReturn}
+\mbox{\Hypertarget{sources_2Automate_8h_ac890091c613188d67965527df5d9653a}\label{sources_2Automate_8h_ac890091c613188d67965527df5d9653a}} 
+\index{Automate.h@{Automate.h}!allocation\_tab\_1D@{allocation\_tab\_1D}}
+\index{allocation\_tab\_1D@{allocation\_tab\_1D}!Automate.h@{Automate.h}}
+\doxysubsubsection{\texorpdfstring{allocation\_tab\_1D()}{allocation\_tab\_1D()}}
+{\footnotesize\ttfamily int$\ast$ allocation\+\_\+tab\+\_\+1D (\begin{DoxyParamCaption}\item[{int}]{t1 }\end{DoxyParamCaption})}
+
+
+\begin{DoxyParams}{Parameters}
+{\em t1} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+int$\ast$ 
+\end{DoxyReturn}
+\mbox{\Hypertarget{sources_2Automate_8h_a714e649e39d3aefe327b5384df720845}\label{sources_2Automate_8h_a714e649e39d3aefe327b5384df720845}} 
+\index{Automate.h@{Automate.h}!allocation\_tab\_2D@{allocation\_tab\_2D}}
+\index{allocation\_tab\_2D@{allocation\_tab\_2D}!Automate.h@{Automate.h}}
+\doxysubsubsection{\texorpdfstring{allocation\_tab\_2D()}{allocation\_tab\_2D()}}
+{\footnotesize\ttfamily int$\ast$$\ast$ allocation\+\_\+tab\+\_\+2D (\begin{DoxyParamCaption}\item[{int}]{t2,  }\item[{int}]{t3 }\end{DoxyParamCaption})}
+
+
+\begin{DoxyParams}{Parameters}
+{\em t2} & \\
+\hline
+{\em t3} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+int$\ast$$\ast$ 
+\end{DoxyReturn}
+\mbox{\Hypertarget{sources_2Automate_8h_a5849dc3b8f0128d2bd7d9d4bf3e22f8d}\label{sources_2Automate_8h_a5849dc3b8f0128d2bd7d9d4bf3e22f8d}} 
+\index{Automate.h@{Automate.h}!calculte\_number\_states\_touch@{calculte\_number\_states\_touch}}
+\index{calculte\_number\_states\_touch@{calculte\_number\_states\_touch}!Automate.h@{Automate.h}}
+\doxysubsubsection{\texorpdfstring{calculte\_number\_states\_touch()}{calculte\_number\_states\_touch()}}
+{\footnotesize\ttfamily int calculte\+\_\+number\+\_\+states\+\_\+touch (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{sources_2Automate_8h_structautomate}{automate}}}]{a,  }\item[{int $\ast$}]{tab\+\_\+states\+\_\+touch }\end{DoxyParamCaption})}
+
+
+\begin{DoxyParams}{Parameters}
+{\em a} & \\
+\hline
+{\em tab\+\_\+states\+\_\+touch} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+int 
+\end{DoxyReturn}
+\mbox{\Hypertarget{sources_2Automate_8h_aa4d379711c88c084d47df6344acf8d78}\label{sources_2Automate_8h_aa4d379711c88c084d47df6344acf8d78}} 
+\index{Automate.h@{Automate.h}!complement\_automate@{complement\_automate}}
+\index{complement\_automate@{complement\_automate}!Automate.h@{Automate.h}}
+\doxysubsubsection{\texorpdfstring{complement\_automate()}{complement\_automate()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{sources_2Automate_8h_structautomate}{automate}} complement\+\_\+automate (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{sources_2Automate_8h_structautomate}{automate}}}]{a }\end{DoxyParamCaption})}
+
+
+\begin{DoxyParams}{Parameters}
+{\em a} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+automate 
+\end{DoxyReturn}
+\mbox{\Hypertarget{sources_2Automate_8h_ac45b6cbb52829009d7f1f16764ed153d}\label{sources_2Automate_8h_ac45b6cbb52829009d7f1f16764ed153d}} 
+\index{Automate.h@{Automate.h}!concat@{concat}}
+\index{concat@{concat}!Automate.h@{Automate.h}}
+\doxysubsubsection{\texorpdfstring{concat()}{concat()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{sources_2Automate_8h_structautomate}{automate}} concat (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{sources_2Automate_8h_structautomate}{automate}}}]{a,  }\item[{\mbox{\hyperlink{sources_2Automate_8h_structautomate}{automate}}}]{b }\end{DoxyParamCaption})}
+
+
+\begin{DoxyParams}{Parameters}
+{\em a} & \\
+\hline
+{\em b} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+automate 
+\end{DoxyReturn}
+\mbox{\Hypertarget{sources_2Automate_8h_ab4db036d89240aaea16ece96e095fd0c}\label{sources_2Automate_8h_ab4db036d89240aaea16ece96e095fd0c}} 
+\index{Automate.h@{Automate.h}!copie\_automate@{copie\_automate}}
+\index{copie\_automate@{copie\_automate}!Automate.h@{Automate.h}}
+\doxysubsubsection{\texorpdfstring{copie\_automate()}{copie\_automate()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{sources_2Automate_8h_structautomate}{automate}} copie\+\_\+automate (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{sources_2Automate_8h_structautomate}{automate}}}]{a }\end{DoxyParamCaption})}
+
+
+\begin{DoxyParams}{Parameters}
+{\em a} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+automate 
+\end{DoxyReturn}
+\mbox{\Hypertarget{sources_2Automate_8h_a41ad955d55eab6536db06f79d174bef1}\label{sources_2Automate_8h_a41ad955d55eab6536db06f79d174bef1}} 
+\index{Automate.h@{Automate.h}!copy\_line\_mat@{copy\_line\_mat}}
+\index{copy\_line\_mat@{copy\_line\_mat}!Automate.h@{Automate.h}}
+\doxysubsubsection{\texorpdfstring{copy\_line\_mat()}{copy\_line\_mat()}}
+{\footnotesize\ttfamily int$\ast$$\ast$ copy\+\_\+line\+\_\+mat (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{sources_2Automate_8h_structautomate}{automate}}}]{a,  }\item[{int $\ast$$\ast$$\ast$}]{mat,  }\item[{int}]{position\+\_\+line }\end{DoxyParamCaption})}
+
+
+\begin{DoxyParams}{Parameters}
+{\em a} & \\
+\hline
+{\em mat} & \\
+\hline
+{\em position\+\_\+line} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+int$\ast$$\ast$ 
+\end{DoxyReturn}
+\mbox{\Hypertarget{sources_2Automate_8h_af02bed80e6d854822e1f5193f62c158e}\label{sources_2Automate_8h_af02bed80e6d854822e1f5193f62c158e}} 
+\index{Automate.h@{Automate.h}!del\_automate@{del\_automate}}
+\index{del\_automate@{del\_automate}!Automate.h@{Automate.h}}
+\doxysubsubsection{\texorpdfstring{del\_automate()}{del\_automate()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{sources_2Automate_8h_structautomate}{automate}} del\+\_\+automate (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{sources_2Automate_8h_structautomate}{automate}}}]{a }\end{DoxyParamCaption})}
+
+
+\begin{DoxyParams}{Parameters}
+{\em a} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+automate 
+\end{DoxyReturn}
+\mbox{\Hypertarget{sources_2Automate_8h_a9c47d36957d027d0ce79b2c7e4f5e571}\label{sources_2Automate_8h_a9c47d36957d027d0ce79b2c7e4f5e571}} 
+\index{Automate.h@{Automate.h}!echange@{echange}}
+\index{echange@{echange}!Automate.h@{Automate.h}}
+\doxysubsubsection{\texorpdfstring{echange()}{echange()}}
+{\footnotesize\ttfamily void echange (\begin{DoxyParamCaption}\item[{int $\ast$}]{a,  }\item[{int $\ast$}]{b }\end{DoxyParamCaption})}
+
+
+\begin{DoxyParams}{Parameters}
+{\em a} & \\
+\hline
+{\em b} & \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{sources_2Automate_8h_a0667aeb62228642b98a1421a6051ac6c}\label{sources_2Automate_8h_a0667aeb62228642b98a1421a6051ac6c}} 
+\index{Automate.h@{Automate.h}!est\_complet@{est\_complet}}
+\index{est\_complet@{est\_complet}!Automate.h@{Automate.h}}
+\doxysubsubsection{\texorpdfstring{est\_complet()}{est\_complet()}}
+{\footnotesize\ttfamily int est\+\_\+complet (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{sources_2Automate_8h_structautomate}{automate}}}]{a }\end{DoxyParamCaption})}
+
+
+\begin{DoxyParams}{Parameters}
+{\em a} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+int 
+\end{DoxyReturn}
+\mbox{\Hypertarget{sources_2Automate_8h_ad770b7fe6cecfdabad9c539aee9bf4d7}\label{sources_2Automate_8h_ad770b7fe6cecfdabad9c539aee9bf4d7}} 
+\index{Automate.h@{Automate.h}!est\_deterministe@{est\_deterministe}}
+\index{est\_deterministe@{est\_deterministe}!Automate.h@{Automate.h}}
+\doxysubsubsection{\texorpdfstring{est\_deterministe()}{est\_deterministe()}}
+{\footnotesize\ttfamily int est\+\_\+deterministe (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{sources_2Automate_8h_structautomate}{automate}}}]{a }\end{DoxyParamCaption})}
+
+
+\begin{DoxyParams}{Parameters}
+{\em a} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+int 
+\end{DoxyReturn}
+\mbox{\Hypertarget{sources_2Automate_8h_af6cdbec2ab1252ff952915ccc6eef9b8}\label{sources_2Automate_8h_af6cdbec2ab1252ff952915ccc6eef9b8}} 
+\index{Automate.h@{Automate.h}!est\_reconnu@{est\_reconnu}}
+\index{est\_reconnu@{est\_reconnu}!Automate.h@{Automate.h}}
+\doxysubsubsection{\texorpdfstring{est\_reconnu()}{est\_reconnu()}}
+{\footnotesize\ttfamily int est\+\_\+reconnu (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{sources_2Automate_8h_structmot}{mot}}}]{m,  }\item[{\mbox{\hyperlink{sources_2Automate_8h_structautomate}{automate}}}]{a }\end{DoxyParamCaption})}
+
+
+\begin{DoxyParams}{Parameters}
+{\em m} & \\
+\hline
+{\em a} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+int 
+\end{DoxyReturn}
+\mbox{\Hypertarget{sources_2Automate_8h_a6ffeb6b8d643521d92f4ecd955a6a2cb}\label{sources_2Automate_8h_a6ffeb6b8d643521d92f4ecd955a6a2cb}} 
+\index{Automate.h@{Automate.h}!est\_un\_etat\_final@{est\_un\_etat\_final}}
+\index{est\_un\_etat\_final@{est\_un\_etat\_final}!Automate.h@{Automate.h}}
+\doxysubsubsection{\texorpdfstring{est\_un\_etat\_final()}{est\_un\_etat\_final()}}
+{\footnotesize\ttfamily int est\+\_\+un\+\_\+etat\+\_\+final (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{sources_2Automate_8h_structautomate}{automate}}}]{a,  }\item[{int}]{etat }\end{DoxyParamCaption})}
+
+
+\begin{DoxyParams}{Parameters}
+{\em a} & \\
+\hline
+{\em etat} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+int 
+\end{DoxyReturn}
+\mbox{\Hypertarget{sources_2Automate_8h_a389707956230acf9fcdc5e48e9fc87bb}\label{sources_2Automate_8h_a389707956230acf9fcdc5e48e9fc87bb}} 
+\index{Automate.h@{Automate.h}!exist\_state\_in\_tab\_transi@{exist\_state\_in\_tab\_transi}}
+\index{exist\_state\_in\_tab\_transi@{exist\_state\_in\_tab\_transi}!Automate.h@{Automate.h}}
+\doxysubsubsection{\texorpdfstring{exist\_state\_in\_tab\_transi()}{exist\_state\_in\_tab\_transi()}}
+{\footnotesize\ttfamily int exist\+\_\+state\+\_\+in\+\_\+tab\+\_\+transi (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{sources_2Automate_8h_structautomate}{automate}}}]{a,  }\item[{int}]{state\+\_\+touch,  }\item[{int $\ast$$\ast$$\ast$}]{tab1 }\end{DoxyParamCaption})}
+
+
+\begin{DoxyParams}{Parameters}
+{\em a} & \\
+\hline
+{\em state\+\_\+touch} & \\
+\hline
+{\em tab1} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+int 
+\end{DoxyReturn}
+\mbox{\Hypertarget{sources_2Automate_8h_abbc6da3bb2b5d1ccb0dab60b88fa0e49}\label{sources_2Automate_8h_abbc6da3bb2b5d1ccb0dab60b88fa0e49}} 
+\index{Automate.h@{Automate.h}!find\_next\_state@{find\_next\_state}}
+\index{find\_next\_state@{find\_next\_state}!Automate.h@{Automate.h}}
+\doxysubsubsection{\texorpdfstring{find\_next\_state()}{find\_next\_state()}}
+{\footnotesize\ttfamily int find\+\_\+next\+\_\+state (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{sources_2Automate_8h_structautomate}{automate}}}]{a,  }\item[{\mbox{\hyperlink{sources_2Automate_8h_structmot}{mot}}}]{m }\end{DoxyParamCaption})}
+
+
+\begin{DoxyParams}{Parameters}
+{\em a} & \\
+\hline
+{\em m} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+int 
+\end{DoxyReturn}
+\mbox{\Hypertarget{sources_2Automate_8h_a7f1b978249c1e2742b9d4a1d4c52c666}\label{sources_2Automate_8h_a7f1b978249c1e2742b9d4a1d4c52c666}} 
+\index{Automate.h@{Automate.h}!generate\_automate@{generate\_automate}}
+\index{generate\_automate@{generate\_automate}!Automate.h@{Automate.h}}
+\doxysubsubsection{\texorpdfstring{generate\_automate()}{generate\_automate()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{sources_2Automate_8h_structautomate}{automate}} generate\+\_\+automate (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\begin{DoxyReturn}{Returns}
+automate 
+\end{DoxyReturn}
+\mbox{\Hypertarget{sources_2Automate_8h_aa03266df139325c45fdf1a52703ba7cd}\label{sources_2Automate_8h_aa03266df139325c45fdf1a52703ba7cd}} 
+\index{Automate.h@{Automate.h}!generate\_automate\_null@{generate\_automate\_null}}
+\index{generate\_automate\_null@{generate\_automate\_null}!Automate.h@{Automate.h}}
+\doxysubsubsection{\texorpdfstring{generate\_automate\_null()}{generate\_automate\_null()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{sources_2Automate_8h_structautomate}{automate}} generate\+\_\+automate\+\_\+null (\begin{DoxyParamCaption}\item[{int}]{d1,  }\item[{int}]{d2,  }\item[{int}]{d3 }\end{DoxyParamCaption})}
+
+
+\begin{DoxyParams}{Parameters}
+{\em d1} & \\
+\hline
+{\em d2} & \\
+\hline
+{\em d3} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+automate 
+\end{DoxyReturn}
+\mbox{\Hypertarget{sources_2Automate_8h_ae60a07f619dc1d3a4cc0efe8c069761b}\label{sources_2Automate_8h_ae60a07f619dc1d3a4cc0efe8c069761b}} 
+\index{Automate.h@{Automate.h}!group\_states\_by\_same\_symbol@{group\_states\_by\_same\_symbol}}
+\index{group\_states\_by\_same\_symbol@{group\_states\_by\_same\_symbol}!Automate.h@{Automate.h}}
+\doxysubsubsection{\texorpdfstring{group\_states\_by\_same\_symbol()}{group\_states\_by\_same\_symbol()}}
+{\footnotesize\ttfamily int$\ast$ group\+\_\+states\+\_\+by\+\_\+same\+\_\+symbol (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{sources_2Automate_8h_structautomate}{automate}}}]{a,  }\item[{int}]{state\+\_\+apply,  }\item[{int}]{symbol\+\_\+fix }\end{DoxyParamCaption})}
+
+
+\begin{DoxyParams}{Parameters}
+{\em a} & \\
+\hline
+{\em state\+\_\+apply} & \\
+\hline
+{\em symbol\+\_\+fix} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+int$\ast$ 
+\end{DoxyReturn}
+\mbox{\Hypertarget{sources_2Automate_8h_a41a0834b956a4b13de74bf58d722b873}\label{sources_2Automate_8h_a41a0834b956a4b13de74bf58d722b873}} 
+\index{Automate.h@{Automate.h}!group\_states\_by\_same\_symbol\_not\_print@{group\_states\_by\_same\_symbol\_not\_print}}
+\index{group\_states\_by\_same\_symbol\_not\_print@{group\_states\_by\_same\_symbol\_not\_print}!Automate.h@{Automate.h}}
+\doxysubsubsection{\texorpdfstring{group\_states\_by\_same\_symbol\_not\_print()}{group\_states\_by\_same\_symbol\_not\_print()}}
+{\footnotesize\ttfamily int$\ast$ group\+\_\+states\+\_\+by\+\_\+same\+\_\+symbol\+\_\+not\+\_\+print (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{sources_2Automate_8h_structautomate}{automate}}}]{a,  }\item[{int}]{state\+\_\+apply,  }\item[{int}]{symbol\+\_\+fix }\end{DoxyParamCaption})}
+
+
+\begin{DoxyParams}{Parameters}
+{\em a} & \\
+\hline
+{\em state\+\_\+apply} & \\
+\hline
+{\em symbol\+\_\+fix} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+int$\ast$ 
+\end{DoxyReturn}
+\mbox{\Hypertarget{sources_2Automate_8h_a9534fc0a06cc12caa056343f733dc2ad}\label{sources_2Automate_8h_a9534fc0a06cc12caa056343f733dc2ad}} 
+\index{Automate.h@{Automate.h}!import\_automae@{import\_automae}}
+\index{import\_automae@{import\_automae}!Automate.h@{Automate.h}}
+\doxysubsubsection{\texorpdfstring{import\_automae()}{import\_automae()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{sources_2Automate_8h_structautomate}{automate}} import\+\_\+automae (\begin{DoxyParamCaption}\item[{char}]{path }\end{DoxyParamCaption})}
+
+
+\begin{DoxyParams}{Parameters}
+{\em path} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+automate 
+\end{DoxyReturn}
+\mbox{\Hypertarget{sources_2Automate_8h_ade6845593fc16126acfe0784fb308d54}\label{sources_2Automate_8h_ade6845593fc16126acfe0784fb308d54}} 
+\index{Automate.h@{Automate.h}!lecture\_automate\_court@{lecture\_automate\_court}}
+\index{lecture\_automate\_court@{lecture\_automate\_court}!Automate.h@{Automate.h}}
+\doxysubsubsection{\texorpdfstring{lecture\_automate\_court()}{lecture\_automate\_court()}}
+{\footnotesize\ttfamily int$\ast$$\ast$$\ast$ lecture\+\_\+automate\+\_\+court (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{sources_2Automate_8h_structautomate}{automate}}}]{a }\end{DoxyParamCaption})}
+
+
+\begin{DoxyParams}{Parameters}
+{\em a} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+int$\ast$$\ast$$\ast$ 
+\end{DoxyReturn}
+\mbox{\Hypertarget{sources_2Automate_8h_a46f808ff7bb2027ba757eca9f508eeb4}\label{sources_2Automate_8h_a46f808ff7bb2027ba757eca9f508eeb4}} 
+\index{Automate.h@{Automate.h}!lecture\_automate\_long@{lecture\_automate\_long}}
+\index{lecture\_automate\_long@{lecture\_automate\_long}!Automate.h@{Automate.h}}
+\doxysubsubsection{\texorpdfstring{lecture\_automate\_long()}{lecture\_automate\_long()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{Projet__C_2sources_2Automate_8h_a0b19884cf22c6f9d7c389673576c9306}{etats\+\_\+lus}} lecture\+\_\+automate\+\_\+long (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{sources_2Automate_8h_structautomate}{automate}}}]{a }\end{DoxyParamCaption})}
+
+
+\begin{DoxyParams}{Parameters}
+{\em a} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+etats\+\_\+lus 
+\end{DoxyReturn}
+\mbox{\Hypertarget{sources_2Automate_8h_a89ad2febfaf0b797a98476872910379b}\label{sources_2Automate_8h_a89ad2febfaf0b797a98476872910379b}} 
+\index{Automate.h@{Automate.h}!lecture\_etats\_finaux@{lecture\_etats\_finaux}}
+\index{lecture\_etats\_finaux@{lecture\_etats\_finaux}!Automate.h@{Automate.h}}
+\doxysubsubsection{\texorpdfstring{lecture\_etats\_finaux()}{lecture\_etats\_finaux()}}
+{\footnotesize\ttfamily void lecture\+\_\+etats\+\_\+finaux (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{sources_2Automate_8h_structautomate}{automate}}}]{a }\end{DoxyParamCaption})}
+
+
+\begin{DoxyParams}{Parameters}
+{\em a} & \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{sources_2Automate_8h_a9a3c26e26500d12d03aff30a5df55a32}\label{sources_2Automate_8h_a9a3c26e26500d12d03aff30a5df55a32}} 
+\index{Automate.h@{Automate.h}!lecture\_mot@{lecture\_mot}}
+\index{lecture\_mot@{lecture\_mot}!Automate.h@{Automate.h}}
+\doxysubsubsection{\texorpdfstring{lecture\_mot()}{lecture\_mot()}}
+{\footnotesize\ttfamily void lecture\+\_\+mot (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{sources_2Automate_8h_structmot}{mot}}}]{m }\end{DoxyParamCaption})}
+
+
+\begin{DoxyParams}{Parameters}
+{\em m} & \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{sources_2Automate_8h_a839d48901b26385a20b1431fbe540b9b}\label{sources_2Automate_8h_a839d48901b26385a20b1431fbe540b9b}} 
+\index{Automate.h@{Automate.h}!modify\_automate@{modify\_automate}}
+\index{modify\_automate@{modify\_automate}!Automate.h@{Automate.h}}
+\doxysubsubsection{\texorpdfstring{modify\_automate()}{modify\_automate()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{sources_2Automate_8h_structautomate}{automate}} modify\+\_\+automate (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{sources_2Automate_8h_structautomate}{automate}}}]{a }\end{DoxyParamCaption})}
+
+
+\begin{DoxyParams}{Parameters}
+{\em a} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+automate 
+\end{DoxyReturn}
+\mbox{\Hypertarget{sources_2Automate_8h_a85e9beca23a16a9027e4cad186426571}\label{sources_2Automate_8h_a85e9beca23a16a9027e4cad186426571}} 
+\index{Automate.h@{Automate.h}!Next\_one\_state\_touch@{Next\_one\_state\_touch}}
+\index{Next\_one\_state\_touch@{Next\_one\_state\_touch}!Automate.h@{Automate.h}}
+\doxysubsubsection{\texorpdfstring{Next\_one\_state\_touch()}{Next\_one\_state\_touch()}}
+{\footnotesize\ttfamily int Next\+\_\+one\+\_\+state\+\_\+touch (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{sources_2Automate_8h_structautomate}{automate}}}]{a,  }\item[{int}]{state\+\_\+start,  }\item[{int}]{symbol\+\_\+apply }\end{DoxyParamCaption})}
+
+
+\begin{DoxyParams}{Parameters}
+{\em a} & \\
+\hline
+{\em state\+\_\+start} & \\
+\hline
+{\em symbol\+\_\+apply} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+int 
+\end{DoxyReturn}
+\mbox{\Hypertarget{sources_2Automate_8h_a348e8af2af0d4d1bb86ca00e327ab851}\label{sources_2Automate_8h_a348e8af2af0d4d1bb86ca00e327ab851}} 
+\index{Automate.h@{Automate.h}!Next\_states\_touch@{Next\_states\_touch}}
+\index{Next\_states\_touch@{Next\_states\_touch}!Automate.h@{Automate.h}}
+\doxysubsubsection{\texorpdfstring{Next\_states\_touch()}{Next\_states\_touch()}}
+{\footnotesize\ttfamily int$\ast$ Next\+\_\+states\+\_\+touch (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{sources_2Automate_8h_structautomate}{automate}}}]{a,  }\item[{int}]{start\+\_\+state,  }\item[{int}]{symbol\+\_\+apply }\end{DoxyParamCaption})}
+
+
+\begin{DoxyParams}{Parameters}
+{\em a} & \\
+\hline
+{\em start\+\_\+state} & \\
+\hline
+{\em symbol\+\_\+apply} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+int$\ast$ 
+\end{DoxyReturn}
+\mbox{\Hypertarget{sources_2Automate_8h_a74c3c00ad6a8790fa2b4ba405af24911}\label{sources_2Automate_8h_a74c3c00ad6a8790fa2b4ba405af24911}} 
+\index{Automate.h@{Automate.h}!Next\_states\_touch\_not\_print@{Next\_states\_touch\_not\_print}}
+\index{Next\_states\_touch\_not\_print@{Next\_states\_touch\_not\_print}!Automate.h@{Automate.h}}
+\doxysubsubsection{\texorpdfstring{Next\_states\_touch\_not\_print()}{Next\_states\_touch\_not\_print()}}
+{\footnotesize\ttfamily int$\ast$ Next\+\_\+states\+\_\+touch\+\_\+not\+\_\+print (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{sources_2Automate_8h_structautomate}{automate}}}]{a,  }\item[{int}]{start\+\_\+state,  }\item[{int}]{symbol\+\_\+apply }\end{DoxyParamCaption})}
+
+
+\begin{DoxyParams}{Parameters}
+{\em a} & \\
+\hline
+{\em start\+\_\+state} & \\
+\hline
+{\em symbol\+\_\+apply} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+int$\ast$ 
+\end{DoxyReturn}
+\mbox{\Hypertarget{sources_2Automate_8h_a554de40d0f181edf06aa71632ee9082f}\label{sources_2Automate_8h_a554de40d0f181edf06aa71632ee9082f}} 
+\index{Automate.h@{Automate.h}!producte\_a\_b@{producte\_a\_b}}
+\index{producte\_a\_b@{producte\_a\_b}!Automate.h@{Automate.h}}
+\doxysubsubsection{\texorpdfstring{producte\_a\_b()}{producte\_a\_b()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{sources_2Automate_8h_structautomate}{automate}} producte\+\_\+a\+\_\+b (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{sources_2Automate_8h_structautomate}{automate}}}]{a,  }\item[{\mbox{\hyperlink{sources_2Automate_8h_structautomate}{automate}}}]{b }\end{DoxyParamCaption})}
+
+
+\begin{DoxyParams}{Parameters}
+{\em a} & \\
+\hline
+{\em b} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+automate 
+\end{DoxyReturn}
+\mbox{\Hypertarget{sources_2Automate_8h_a0fccbb7bdbbc3c0539255805f9585097}\label{sources_2Automate_8h_a0fccbb7bdbbc3c0539255805f9585097}} 
+\index{Automate.h@{Automate.h}!reconnu\_v2@{reconnu\_v2}}
+\index{reconnu\_v2@{reconnu\_v2}!Automate.h@{Automate.h}}
+\doxysubsubsection{\texorpdfstring{reconnu\_v2()}{reconnu\_v2()}}
+{\footnotesize\ttfamily int reconnu\+\_\+v2 (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{sources_2Automate_8h_structmot}{mot}}}]{m,  }\item[{\mbox{\hyperlink{sources_2Automate_8h_structautomate}{automate}}}]{a }\end{DoxyParamCaption})}
+
+
+\begin{DoxyParams}{Parameters}
+{\em m} & \\
+\hline
+{\em a} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+int 
+\end{DoxyReturn}
+\mbox{\Hypertarget{sources_2Automate_8h_a4c7b553d858e535081e999f9b4cdb146}\label{sources_2Automate_8h_a4c7b553d858e535081e999f9b4cdb146}} 
+\index{Automate.h@{Automate.h}!remplir\_automate@{remplir\_automate}}
+\index{remplir\_automate@{remplir\_automate}!Automate.h@{Automate.h}}
+\doxysubsubsection{\texorpdfstring{remplir\_automate()}{remplir\_automate()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{sources_2Automate_8h_structautomate}{automate}} remplir\+\_\+automate (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{sources_2Automate_8h_structautomate}{automate}}}]{m,  }\item[{int}]{val }\end{DoxyParamCaption})}
+
+
+\begin{DoxyParams}{Parameters}
+{\em m} & \\
+\hline
+{\em val} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+automate 
+\end{DoxyReturn}
+\mbox{\Hypertarget{sources_2Automate_8h_ab862cdb6e1d127b09fa94e67f2a0ec40}\label{sources_2Automate_8h_ab862cdb6e1d127b09fa94e67f2a0ec40}} 
+\index{Automate.h@{Automate.h}!rendre\_complet@{rendre\_complet}}
+\index{rendre\_complet@{rendre\_complet}!Automate.h@{Automate.h}}
+\doxysubsubsection{\texorpdfstring{rendre\_complet()}{rendre\_complet()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{sources_2Automate_8h_structautomate}{automate}} rendre\+\_\+complet (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{sources_2Automate_8h_structautomate}{automate}}}]{a }\end{DoxyParamCaption})}
+
+
+\begin{DoxyParams}{Parameters}
+{\em a} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+automate 
+\end{DoxyReturn}
+\mbox{\Hypertarget{sources_2Automate_8h_abf51d4014099e3e3a1dd5c90e6b0d4ca}\label{sources_2Automate_8h_abf51d4014099e3e3a1dd5c90e6b0d4ca}} 
+\index{Automate.h@{Automate.h}!rendre\_deterministe@{rendre\_deterministe}}
+\index{rendre\_deterministe@{rendre\_deterministe}!Automate.h@{Automate.h}}
+\doxysubsubsection{\texorpdfstring{rendre\_deterministe()}{rendre\_deterministe()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{sources_2Automate_8h_structautomate}{automate}} rendre\+\_\+deterministe (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{sources_2Automate_8h_structautomate}{automate}}}]{a }\end{DoxyParamCaption})}
+
+
+\begin{DoxyParams}{Parameters}
+{\em a} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+automate 
+\end{DoxyReturn}
+\mbox{\Hypertarget{sources_2Automate_8h_a5341784ae05d8a193087a058832505b6}\label{sources_2Automate_8h_a5341784ae05d8a193087a058832505b6}} 
+\index{Automate.h@{Automate.h}!retourne\_etat\_couant@{retourne\_etat\_couant}}
+\index{retourne\_etat\_couant@{retourne\_etat\_couant}!Automate.h@{Automate.h}}
+\doxysubsubsection{\texorpdfstring{retourne\_etat\_couant()}{retourne\_etat\_couant()}}
+{\footnotesize\ttfamily int retourne\+\_\+etat\+\_\+couant (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{sources_2Automate_8h_structautomate}{automate}}}]{a,  }\item[{int}]{curent\+\_\+state,  }\item[{int}]{curent\+\_\+symbol }\end{DoxyParamCaption})}
+
+
+\begin{DoxyParams}{Parameters}
+{\em a} & \\
+\hline
+{\em curent\+\_\+state} & \\
+\hline
+{\em curent\+\_\+symbol} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+int 
+\end{DoxyReturn}
+\mbox{\Hypertarget{sources_2Automate_8h_a7951d872a550f4afbb9dcf924fbfa855}\label{sources_2Automate_8h_a7951d872a550f4afbb9dcf924fbfa855}} 
+\index{Automate.h@{Automate.h}!save\_automate@{save\_automate}}
+\index{save\_automate@{save\_automate}!Automate.h@{Automate.h}}
+\doxysubsubsection{\texorpdfstring{save\_automate()}{save\_automate()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{sources_2Automate_8h_structautomate}{automate}} save\+\_\+automate (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{sources_2Automate_8h_structautomate}{automate}}}]{a }\end{DoxyParamCaption})}
+
+
+\begin{DoxyParams}{Parameters}
+{\em a} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+automate 
+\end{DoxyReturn}
+\mbox{\Hypertarget{sources_2Automate_8h_a2e785c11d2a9d2a4dc7ae39b55659e83}\label{sources_2Automate_8h_a2e785c11d2a9d2a4dc7ae39b55659e83}} 
+\index{Automate.h@{Automate.h}!serie\_test\_reconnaissance@{serie\_test\_reconnaissance}}
+\index{serie\_test\_reconnaissance@{serie\_test\_reconnaissance}!Automate.h@{Automate.h}}
+\doxysubsubsection{\texorpdfstring{serie\_test\_reconnaissance()}{serie\_test\_reconnaissance()}}
+{\footnotesize\ttfamily int serie\+\_\+test\+\_\+reconnaissance (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{sources_2Automate_8h_structautomate}{automate}}}]{a,  }\item[{int}]{n\+\_\+fois }\end{DoxyParamCaption})}
+
+
+\begin{DoxyParams}{Parameters}
+{\em a} & \\
+\hline
+{\em n\+\_\+fois} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+int 
+\end{DoxyReturn}
+\mbox{\Hypertarget{sources_2Automate_8h_a5ae7e01db468d561ae1d19ef664c3f36}\label{sources_2Automate_8h_a5ae7e01db468d561ae1d19ef664c3f36}} 
+\index{Automate.h@{Automate.h}!start\_with\_tow@{start\_with\_tow}}
+\index{start\_with\_tow@{start\_with\_tow}!Automate.h@{Automate.h}}
+\doxysubsubsection{\texorpdfstring{start\_with\_tow()}{start\_with\_tow()}}
+{\footnotesize\ttfamily int start\+\_\+with\+\_\+tow (\begin{DoxyParamCaption}\item[{int}]{etat\+\_\+initial\+\_\+a,  }\item[{int}]{etat\+\_\+initial\+\_\+b }\end{DoxyParamCaption})}
+
+
+\begin{DoxyParams}{Parameters}
+{\em etat\+\_\+initial\+\_\+a} & \\
+\hline
+{\em etat\+\_\+initial\+\_\+b} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+int 
+\end{DoxyReturn}
+\mbox{\Hypertarget{sources_2Automate_8h_a2c623f76118c6b8fe8be487e6cf25e5a}\label{sources_2Automate_8h_a2c623f76118c6b8fe8be487e6cf25e5a}} 
+\index{Automate.h@{Automate.h}!Tab\_states\_from\_q0@{Tab\_states\_from\_q0}}
+\index{Tab\_states\_from\_q0@{Tab\_states\_from\_q0}!Automate.h@{Automate.h}}
+\doxysubsubsection{\texorpdfstring{Tab\_states\_from\_q0()}{Tab\_states\_from\_q0()}}
+{\footnotesize\ttfamily int$\ast$ Tab\+\_\+states\+\_\+from\+\_\+q0 (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{sources_2Automate_8h_structautomate}{automate}}}]{a,  }\item[{int}]{symbol\+\_\+apply }\end{DoxyParamCaption})}
+
+
+\begin{DoxyParams}{Parameters}
+{\em a} & \\
+\hline
+{\em symbol\+\_\+apply} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+int$\ast$ 
+\end{DoxyReturn}
+\mbox{\Hypertarget{sources_2Automate_8h_a97d63c0cec9de906c600c8f1f4fd46b3}\label{sources_2Automate_8h_a97d63c0cec9de906c600c8f1f4fd46b3}} 
+\index{Automate.h@{Automate.h}!Tab\_states\_from\_q0\_not\_print@{Tab\_states\_from\_q0\_not\_print}}
+\index{Tab\_states\_from\_q0\_not\_print@{Tab\_states\_from\_q0\_not\_print}!Automate.h@{Automate.h}}
+\doxysubsubsection{\texorpdfstring{Tab\_states\_from\_q0\_not\_print()}{Tab\_states\_from\_q0\_not\_print()}}
+{\footnotesize\ttfamily int$\ast$ Tab\+\_\+states\+\_\+from\+\_\+q0\+\_\+not\+\_\+print (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{sources_2Automate_8h_structautomate}{automate}}}]{a,  }\item[{int}]{symbol\+\_\+apply }\end{DoxyParamCaption})}
+
+
+\begin{DoxyParams}{Parameters}
+{\em a} & \\
+\hline
+{\em symbol\+\_\+apply} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+int$\ast$ 
+\end{DoxyReturn}
+\mbox{\Hypertarget{sources_2Automate_8h_a4a6fc0a4a37880e45b2be8937275fbe2}\label{sources_2Automate_8h_a4a6fc0a4a37880e45b2be8937275fbe2}} 
+\index{Automate.h@{Automate.h}!Tab\_transition\_automate@{Tab\_transition\_automate}}
+\index{Tab\_transition\_automate@{Tab\_transition\_automate}!Automate.h@{Automate.h}}
+\doxysubsubsection{\texorpdfstring{Tab\_transition\_automate()}{Tab\_transition\_automate()}}
+{\footnotesize\ttfamily int$\ast$$\ast$$\ast$ Tab\+\_\+transition\+\_\+automate (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{sources_2Automate_8h_structautomate}{automate}}}]{a }\end{DoxyParamCaption})}
+
+
+\begin{DoxyParams}{Parameters}
+{\em a} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+int$\ast$$\ast$$\ast$ 
+\end{DoxyReturn}
+\mbox{\Hypertarget{sources_2Automate_8h_a235ccf0cf2e2584290bbbd903b44bfd8}\label{sources_2Automate_8h_a235ccf0cf2e2584290bbbd903b44bfd8}} 
+\index{Automate.h@{Automate.h}!Tab\_transition\_automate\_not\_print@{Tab\_transition\_automate\_not\_print}}
+\index{Tab\_transition\_automate\_not\_print@{Tab\_transition\_automate\_not\_print}!Automate.h@{Automate.h}}
+\doxysubsubsection{\texorpdfstring{Tab\_transition\_automate\_not\_print()}{Tab\_transition\_automate\_not\_print()}}
+{\footnotesize\ttfamily int$\ast$$\ast$$\ast$ Tab\+\_\+transition\+\_\+automate\+\_\+not\+\_\+print (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{sources_2Automate_8h_structautomate}{automate}}}]{a }\end{DoxyParamCaption})}
+
+
+\begin{DoxyParams}{Parameters}
+{\em a} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+int$\ast$$\ast$$\ast$ 
+\end{DoxyReturn}
+\mbox{\Hypertarget{sources_2Automate_8h_a26b717a6eab6ff75360519dda5721b23}\label{sources_2Automate_8h_a26b717a6eab6ff75360519dda5721b23}} 
+\index{Automate.h@{Automate.h}!twos\_symbol\_apply@{twos\_symbol\_apply}}
+\index{twos\_symbol\_apply@{twos\_symbol\_apply}!Automate.h@{Automate.h}}
+\doxysubsubsection{\texorpdfstring{twos\_symbol\_apply()}{twos\_symbol\_apply()}}
+{\footnotesize\ttfamily int$\ast$$\ast$$\ast$ twos\+\_\+symbol\+\_\+apply (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{sources_2Automate_8h_structautomate}{automate}}}]{a,  }\item[{int}]{state\+\_\+1,  }\item[{int}]{state\+\_\+2,  }\item[{int}]{symbol\+\_\+1,  }\item[{int}]{symbol\+\_\+2 }\end{DoxyParamCaption})}
+
+
+\begin{DoxyParams}{Parameters}
+{\em a} & \\
+\hline
+{\em state\+\_\+1} & \\
+\hline
+{\em state\+\_\+2} & \\
+\hline
+{\em symbol\+\_\+1} & \\
+\hline
+{\em symbol\+\_\+2} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+int$\ast$$\ast$$\ast$ 
+\end{DoxyReturn}
+\mbox{\Hypertarget{sources_2Automate_8h_a5858ce050840603548137f97fdd1e7a7}\label{sources_2Automate_8h_a5858ce050840603548137f97fdd1e7a7}} 
+\index{Automate.h@{Automate.h}!union\_states\_of\_same\_symbol@{union\_states\_of\_same\_symbol}}
+\index{union\_states\_of\_same\_symbol@{union\_states\_of\_same\_symbol}!Automate.h@{Automate.h}}
+\doxysubsubsection{\texorpdfstring{union\_states\_of\_same\_symbol()}{union\_states\_of\_same\_symbol()}}
+{\footnotesize\ttfamily int$\ast$ union\+\_\+states\+\_\+of\+\_\+same\+\_\+symbol (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{sources_2Automate_8h_structautomate}{automate}}}]{a,  }\item[{int}]{state\+\_\+apply,  }\item[{int}]{symbol\+\_\+fix }\end{DoxyParamCaption})}
+
+
+\begin{DoxyParams}{Parameters}
+{\em a} & \\
+\hline
+{\em state\+\_\+apply} & \\
+\hline
+{\em symbol\+\_\+fix} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+int$\ast$ 
+\end{DoxyReturn}
+\mbox{\Hypertarget{sources_2Automate_8h_aaaab1cd561cc16882fb3dbf9fa52c093}\label{sources_2Automate_8h_aaaab1cd561cc16882fb3dbf9fa52c093}} 
+\index{Automate.h@{Automate.h}!union\_states\_of\_same\_symbol\_not\_print@{union\_states\_of\_same\_symbol\_not\_print}}
+\index{union\_states\_of\_same\_symbol\_not\_print@{union\_states\_of\_same\_symbol\_not\_print}!Automate.h@{Automate.h}}
+\doxysubsubsection{\texorpdfstring{union\_states\_of\_same\_symbol\_not\_print()}{union\_states\_of\_same\_symbol\_not\_print()}}
+{\footnotesize\ttfamily int$\ast$ union\+\_\+states\+\_\+of\+\_\+same\+\_\+symbol\+\_\+not\+\_\+print (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{sources_2Automate_8h_structautomate}{automate}}}]{a,  }\item[{int}]{state\+\_\+apply,  }\item[{int}]{symbol\+\_\+fix }\end{DoxyParamCaption})}
+
+
+\begin{DoxyParams}{Parameters}
+{\em a} & \\
+\hline
+{\em state\+\_\+apply} & \\
+\hline
+{\em symbol\+\_\+fix} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+int$\ast$ 
+\end{DoxyReturn}

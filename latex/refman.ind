@@ -1,0 +1,392 @@
+\begin{theindex}
+
+  \item {add\_state\_to\_composite\_table}
+    \subitem {automate.c}, \hyperpage{7}, \hyperpage{29}
+    \subitem {Automate.h}, \hyperpage{51}, \hyperpage{73}
+  \item {add\_state\_to\_rename\_table\_state}
+    \subitem {automate.c}, \hyperpage{8}, \hyperpage{29}
+    \subitem {Automate.h}, \hyperpage{52}, \hyperpage{74}
+  \item {affichage\_1D}
+    \subitem {automate.c}, \hyperpage{8}, \hyperpage{30}
+    \subitem {Automate.h}, \hyperpage{52}, \hyperpage{74}
+  \item {affichage\_2D}
+    \subitem {automate.c}, \hyperpage{8}, \hyperpage{30}
+    \subitem {Automate.h}, \hyperpage{52}, \hyperpage{75}
+  \item {affichage\_automate}
+    \subitem {automate.c}, \hyperpage{9}, \hyperpage{30}
+    \subitem {Automate.h}, \hyperpage{53}, \hyperpage{75}
+  \item {affichage\_case\_mat}
+    \subitem {automate.c}, \hyperpage{9}, \hyperpage{30}
+    \subitem {Automate.h}, \hyperpage{53}, \hyperpage{75}
+  \item {affichage\_case\_tab\_1D}
+    \subitem {automate.c}, \hyperpage{9}, \hyperpage{31}
+    \subitem {Automate.h}, \hyperpage{53}, \hyperpage{75}
+  \item {affichage\_case\_tab\_2D}
+    \subitem {automate.c}, \hyperpage{10}, \hyperpage{31}
+    \subitem {Automate.h}, \hyperpage{54}, \hyperpage{76}
+  \item {affichage\_col\_mat}
+    \subitem {automate.c}, \hyperpage{10}, \hyperpage{31}
+    \subitem {Automate.h}, \hyperpage{54}, \hyperpage{76}
+  \item {affichage\_ligne\_mat}
+    \subitem {automate.c}, \hyperpage{10}, \hyperpage{32}
+    \subitem {Automate.h}, \hyperpage{54}, \hyperpage{77}
+  \item {affichage\_mot}
+    \subitem {automate.c}, \hyperpage{11}, \hyperpage{32}
+    \subitem {Automate.h}, \hyperpage{55}, \hyperpage{77}
+  \item {alloc\_mat\_vide}
+    \subitem {automate.c}, \hyperpage{5}
+  \item {alloc\_tab\_1D}
+    \subitem {automate.c}, \hyperpage{5}
+  \item {allocation\_mat\_vide}
+    \subitem {automate.c}, \hyperpage{11}, \hyperpage{32}
+    \subitem {Automate.h}, \hyperpage{55}, \hyperpage{77}
+  \item {allocation\_tab\_1D}
+    \subitem {automate.c}, \hyperpage{11}, \hyperpage{33}
+    \subitem {Automate.h}, \hyperpage{55}, \hyperpage{77}
+  \item {allocation\_tab\_2D}
+    \subitem {automate.c}, \hyperpage{12}, \hyperpage{33}
+    \subitem {Automate.h}, \hyperpage{56}, \hyperpage{78}
+  \item {automate}, \hyperpage{50}, \hyperpage{72}
+    \subitem {Automate.h}, \hyperpage{51}, \hyperpage{73}
+  \item {automate.c}
+    \subitem {add\_state\_to\_composite\_table}, \hyperpage{7}, 
+		\hyperpage{29}
+    \subitem {add\_state\_to\_rename\_table\_state}, \hyperpage{8}, 
+		\hyperpage{29}
+    \subitem {affichage\_1D}, \hyperpage{8}, \hyperpage{30}
+    \subitem {affichage\_2D}, \hyperpage{8}, \hyperpage{30}
+    \subitem {affichage\_automate}, \hyperpage{9}, \hyperpage{30}
+    \subitem {affichage\_case\_mat}, \hyperpage{9}, \hyperpage{30}
+    \subitem {affichage\_case\_tab\_1D}, \hyperpage{9}, \hyperpage{31}
+    \subitem {affichage\_case\_tab\_2D}, \hyperpage{10}, \hyperpage{31}
+    \subitem {affichage\_col\_mat}, \hyperpage{10}, \hyperpage{31}
+    \subitem {affichage\_ligne\_mat}, \hyperpage{10}, \hyperpage{32}
+    \subitem {affichage\_mot}, \hyperpage{11}, \hyperpage{32}
+    \subitem {alloc\_mat\_vide}, \hyperpage{5}
+    \subitem {alloc\_tab\_1D}, \hyperpage{5}
+    \subitem {allocation\_mat\_vide}, \hyperpage{11}, \hyperpage{32}
+    \subitem {allocation\_tab\_1D}, \hyperpage{11}, \hyperpage{33}
+    \subitem {allocation\_tab\_2D}, \hyperpage{12}, \hyperpage{33}
+    \subitem {calculte\_number\_states\_touch}, \hyperpage{12}, 
+		\hyperpage{33}
+    \subitem {complement\_automate}, \hyperpage{12}, \hyperpage{34}
+    \subitem {concat}, \hyperpage{13}, \hyperpage{34}
+    \subitem {copie\_automate}, \hyperpage{13}, \hyperpage{34}
+    \subitem {copy\_line\_mat}, \hyperpage{13}, \hyperpage{35}
+    \subitem {del\_automate}, \hyperpage{14}, \hyperpage{35}
+    \subitem {echange}, \hyperpage{14}, \hyperpage{35}
+    \subitem {est\_complet}, \hyperpage{14}, \hyperpage{36}
+    \subitem {est\_deterministe}, \hyperpage{14}, \hyperpage{36}
+    \subitem {est\_reconnu}, \hyperpage{15}, \hyperpage{36}
+    \subitem {est\_un\_etat\_final}, \hyperpage{15}, \hyperpage{37}
+    \subitem {exist\_state\_in\_tab\_transi}, \hyperpage{15}, 
+		\hyperpage{37}
+    \subitem {find\_next\_state}, \hyperpage{16}, \hyperpage{37}
+    \subitem {generate\_automate}, \hyperpage{16}, \hyperpage{38}
+    \subitem {generate\_automate\_null}, \hyperpage{16}, \hyperpage{38}
+    \subitem {generator\_automate}, \hyperpage{5}
+    \subitem {group\_states\_by\_same\_symbol}, \hyperpage{17}, 
+		\hyperpage{38}
+    \subitem {group\_states\_by\_same\_symbol\_not\_print}, 
+		\hyperpage{17}, \hyperpage{39}
+    \subitem {import\_automae}, \hyperpage{17}, \hyperpage{39}
+    \subitem {lecture\_automate\_court}, \hyperpage{18}, \hyperpage{39}
+    \subitem {lecture\_automate\_long}, \hyperpage{18}, \hyperpage{40}
+    \subitem {lecture\_etats\_finaux}, \hyperpage{18}, \hyperpage{40}
+    \subitem {lecture\_mot}, \hyperpage{19}, \hyperpage{40}
+    \subitem {modify\_automate}, \hyperpage{19}, \hyperpage{41}
+    \subitem {mot\_saisi}, \hyperpage{19}, \hyperpage{41}
+    \subitem {mot\_saisi\_avant}, \hyperpage{19}, \hyperpage{41}
+    \subitem {Next\_one\_state\_touch}, \hyperpage{19}, \hyperpage{42}
+    \subitem {Next\_states\_touch}, \hyperpage{21}, \hyperpage{42}
+    \subitem {Next\_states\_touch\_not\_print}, \hyperpage{21}, 
+		\hyperpage{42}
+    \subitem {producte\_a\_b}, \hyperpage{21}, \hyperpage{43}
+    \subitem {reconnu\_v2}, \hyperpage{22}, \hyperpage{43}
+    \subitem {remplir\_automate}, \hyperpage{22}, \hyperpage{43}
+    \subitem {rendre\_complet}, \hyperpage{22}, \hyperpage{44}
+    \subitem {rendre\_deterministe}, \hyperpage{23}, \hyperpage{44}
+    \subitem {retourne\_etat\_couant}, \hyperpage{23}, \hyperpage{44}
+    \subitem {save\_automate}, \hyperpage{23}, \hyperpage{45}
+    \subitem {serie\_test\_reconnaissance}, \hyperpage{24}, 
+		\hyperpage{45}
+    \subitem {start\_with\_tow}, \hyperpage{24}, \hyperpage{45}
+    \subitem {Tab\_states\_from\_q0}, \hyperpage{24}, \hyperpage{46}
+    \subitem {Tab\_states\_from\_q0\_not\_print}, \hyperpage{25}, 
+		\hyperpage{46}
+    \subitem {Tab\_transition\_automate}, \hyperpage{25}, 
+		\hyperpage{47}
+    \subitem {Tab\_transition\_automate\_not\_print}, \hyperpage{25}, 
+		\hyperpage{47}
+    \subitem {twos\_symbol\_apply}, \hyperpage{26}, \hyperpage{47}
+    \subitem {union\_states\_of\_same\_symbol}, \hyperpage{26}, 
+		\hyperpage{48}
+    \subitem {union\_states\_of\_same\_symbol\_not\_print}, 
+		\hyperpage{27}, \hyperpage{48}
+  \item {Automate.h}
+    \subitem {add\_state\_to\_composite\_table}, \hyperpage{51}, 
+		\hyperpage{73}
+    \subitem {add\_state\_to\_rename\_table\_state}, \hyperpage{52}, 
+		\hyperpage{74}
+    \subitem {affichage\_1D}, \hyperpage{52}, \hyperpage{74}
+    \subitem {affichage\_2D}, \hyperpage{52}, \hyperpage{75}
+    \subitem {affichage\_automate}, \hyperpage{53}, \hyperpage{75}
+    \subitem {affichage\_case\_mat}, \hyperpage{53}, \hyperpage{75}
+    \subitem {affichage\_case\_tab\_1D}, \hyperpage{53}, \hyperpage{75}
+    \subitem {affichage\_case\_tab\_2D}, \hyperpage{54}, \hyperpage{76}
+    \subitem {affichage\_col\_mat}, \hyperpage{54}, \hyperpage{76}
+    \subitem {affichage\_ligne\_mat}, \hyperpage{54}, \hyperpage{77}
+    \subitem {affichage\_mot}, \hyperpage{55}, \hyperpage{77}
+    \subitem {allocation\_mat\_vide}, \hyperpage{55}, \hyperpage{77}
+    \subitem {allocation\_tab\_1D}, \hyperpage{55}, \hyperpage{77}
+    \subitem {allocation\_tab\_2D}, \hyperpage{56}, \hyperpage{78}
+    \subitem {automate}, \hyperpage{51}, \hyperpage{73}
+    \subitem {calculte\_number\_states\_touch}, \hyperpage{56}, 
+		\hyperpage{78}
+    \subitem {complement\_automate}, \hyperpage{56}, \hyperpage{78}
+    \subitem {concat}, \hyperpage{57}, \hyperpage{79}
+    \subitem {copie\_automate}, \hyperpage{57}, \hyperpage{79}
+    \subitem {copy\_line\_mat}, \hyperpage{57}, \hyperpage{79}
+    \subitem {del\_automate}, \hyperpage{58}, \hyperpage{80}
+    \subitem {echange}, \hyperpage{58}, \hyperpage{80}
+    \subitem {est\_complet}, \hyperpage{58}, \hyperpage{80}
+    \subitem {est\_deterministe}, \hyperpage{59}, \hyperpage{81}
+    \subitem {est\_reconnu}, \hyperpage{59}, \hyperpage{81}
+    \subitem {est\_un\_etat\_final}, \hyperpage{59}, \hyperpage{81}
+    \subitem {etats\_lus}, \hyperpage{51}, \hyperpage{73}
+    \subitem {exist\_state\_in\_tab\_transi}, \hyperpage{60}, 
+		\hyperpage{82}
+    \subitem {find\_next\_state}, \hyperpage{60}, \hyperpage{82}
+    \subitem {generate\_automate}, \hyperpage{60}, \hyperpage{83}
+    \subitem {generate\_automate\_null}, \hyperpage{60}, \hyperpage{83}
+    \subitem {group\_states\_by\_same\_symbol}, \hyperpage{61}, 
+		\hyperpage{83}
+    \subitem {group\_states\_by\_same\_symbol\_not\_print}, 
+		\hyperpage{61}, \hyperpage{84}
+    \subitem {import\_automae}, \hyperpage{62}, \hyperpage{84}
+    \subitem {lecture\_automate\_court}, \hyperpage{62}, \hyperpage{84}
+    \subitem {lecture\_automate\_long}, \hyperpage{62}, \hyperpage{85}
+    \subitem {lecture\_etats\_finaux}, \hyperpage{63}, \hyperpage{85}
+    \subitem {lecture\_mot}, \hyperpage{63}, \hyperpage{85}
+    \subitem {modify\_automate}, \hyperpage{63}, \hyperpage{85}
+    \subitem {mot}, \hyperpage{51}, \hyperpage{73}
+    \subitem {Next\_one\_state\_touch}, \hyperpage{63}, \hyperpage{86}
+    \subitem {Next\_states\_touch}, \hyperpage{64}, \hyperpage{86}
+    \subitem {Next\_states\_touch\_not\_print}, \hyperpage{64}, 
+		\hyperpage{86}
+    \subitem {producte\_a\_b}, \hyperpage{64}, \hyperpage{87}
+    \subitem {reconnu\_v2}, \hyperpage{65}, \hyperpage{87}
+    \subitem {remplir\_automate}, \hyperpage{65}, \hyperpage{88}
+    \subitem {rendre\_complet}, \hyperpage{65}, \hyperpage{88}
+    \subitem {rendre\_deterministe}, \hyperpage{66}, \hyperpage{88}
+    \subitem {retourne\_etat\_couant}, \hyperpage{66}, \hyperpage{89}
+    \subitem {save\_automate}, \hyperpage{66}, \hyperpage{89}
+    \subitem {serie\_test\_reconnaissance}, \hyperpage{67}, 
+		\hyperpage{89}
+    \subitem {start\_with\_tow}, \hyperpage{67}, \hyperpage{90}
+    \subitem {Tab\_states\_from\_q0}, \hyperpage{67}, \hyperpage{90}
+    \subitem {Tab\_states\_from\_q0\_not\_print}, \hyperpage{68}, 
+		\hyperpage{90}
+    \subitem {Tab\_transition\_automate}, \hyperpage{68}, 
+		\hyperpage{91}
+    \subitem {Tab\_transition\_automate\_not\_print}, \hyperpage{68}, 
+		\hyperpage{91}
+    \subitem {twos\_symbol\_apply}, \hyperpage{69}, \hyperpage{91}
+    \subitem {union\_states\_of\_same\_symbol}, \hyperpage{69}, 
+		\hyperpage{92}
+    \subitem {union\_states\_of\_same\_symbol\_not\_print}, 
+		\hyperpage{70}, \hyperpage{92}
+
+  \indexspace
+
+  \item {calculte\_number\_states\_touch}
+    \subitem {automate.c}, \hyperpage{12}, \hyperpage{33}
+    \subitem {Automate.h}, \hyperpage{56}, \hyperpage{78}
+  \item {complement\_automate}
+    \subitem {automate.c}, \hyperpage{12}, \hyperpage{34}
+    \subitem {Automate.h}, \hyperpage{56}, \hyperpage{78}
+  \item {concat}
+    \subitem {automate.c}, \hyperpage{13}, \hyperpage{34}
+    \subitem {Automate.h}, \hyperpage{57}, \hyperpage{79}
+  \item {Contribution au projet/sources/automate.c}, \hyperpage{5}
+  \item {Contribution au projet/sources/Automate.h}, \hyperpage{49}
+  \item {copie\_automate}
+    \subitem {automate.c}, \hyperpage{13}, \hyperpage{34}
+    \subitem {Automate.h}, \hyperpage{57}, \hyperpage{79}
+  \item {copy\_line\_mat}
+    \subitem {automate.c}, \hyperpage{13}, \hyperpage{35}
+    \subitem {Automate.h}, \hyperpage{57}, \hyperpage{79}
+
+  \indexspace
+
+  \item {del\_automate}
+    \subitem {automate.c}, \hyperpage{14}, \hyperpage{35}
+    \subitem {Automate.h}, \hyperpage{58}, \hyperpage{80}
+
+  \indexspace
+
+  \item {echange}
+    \subitem {automate.c}, \hyperpage{14}, \hyperpage{35}
+    \subitem {Automate.h}, \hyperpage{58}, \hyperpage{80}
+  \item {est\_complet}
+    \subitem {automate.c}, \hyperpage{14}, \hyperpage{36}
+    \subitem {Automate.h}, \hyperpage{58}, \hyperpage{80}
+  \item {est\_deterministe}
+    \subitem {automate.c}, \hyperpage{14}, \hyperpage{36}
+    \subitem {Automate.h}, \hyperpage{59}, \hyperpage{81}
+  \item {est\_reconnu}
+    \subitem {automate.c}, \hyperpage{15}, \hyperpage{36}
+    \subitem {Automate.h}, \hyperpage{59}, \hyperpage{81}
+  \item {est\_un\_etat\_final}
+    \subitem {automate.c}, \hyperpage{15}, \hyperpage{37}
+    \subitem {Automate.h}, \hyperpage{59}, \hyperpage{81}
+  \item {etats\_lus}
+    \subitem {Automate.h}, \hyperpage{51}, \hyperpage{73}
+  \item {exist\_state\_in\_tab\_transi}
+    \subitem {automate.c}, \hyperpage{15}, \hyperpage{37}
+    \subitem {Automate.h}, \hyperpage{60}, \hyperpage{82}
+
+  \indexspace
+
+  \item {find\_next\_state}
+    \subitem {automate.c}, \hyperpage{16}, \hyperpage{37}
+    \subitem {Automate.h}, \hyperpage{60}, \hyperpage{82}
+
+  \indexspace
+
+  \item {generate\_automate}
+    \subitem {automate.c}, \hyperpage{16}, \hyperpage{38}
+    \subitem {Automate.h}, \hyperpage{60}, \hyperpage{83}
+  \item {generate\_automate\_null}
+    \subitem {automate.c}, \hyperpage{16}, \hyperpage{38}
+    \subitem {Automate.h}, \hyperpage{60}, \hyperpage{83}
+  \item {generator\_automate}
+    \subitem {automate.c}, \hyperpage{5}
+  \item {group\_states\_by\_same\_symbol}
+    \subitem {automate.c}, \hyperpage{17}, \hyperpage{38}
+    \subitem {Automate.h}, \hyperpage{61}, \hyperpage{83}
+  \item {group\_states\_by\_same\_symbol\_not\_print}
+    \subitem {automate.c}, \hyperpage{17}, \hyperpage{39}
+    \subitem {Automate.h}, \hyperpage{61}, \hyperpage{84}
+
+  \indexspace
+
+  \item {import\_automae}
+    \subitem {automate.c}, \hyperpage{17}, \hyperpage{39}
+    \subitem {Automate.h}, \hyperpage{62}, \hyperpage{84}
+
+  \indexspace
+
+  \item {lecture\_automate\_court}
+    \subitem {automate.c}, \hyperpage{18}, \hyperpage{39}
+    \subitem {Automate.h}, \hyperpage{62}, \hyperpage{84}
+  \item {lecture\_automate\_long}
+    \subitem {automate.c}, \hyperpage{18}, \hyperpage{40}
+    \subitem {Automate.h}, \hyperpage{62}, \hyperpage{85}
+  \item {lecture\_etats\_finaux}
+    \subitem {automate.c}, \hyperpage{18}, \hyperpage{40}
+    \subitem {Automate.h}, \hyperpage{63}, \hyperpage{85}
+  \item {lecture\_mot}
+    \subitem {automate.c}, \hyperpage{19}, \hyperpage{40}
+    \subitem {Automate.h}, \hyperpage{63}, \hyperpage{85}
+
+  \indexspace
+
+  \item {main}
+    \subitem {main.c}, \hyperpage{93}
+  \item {main.c}
+    \subitem {main}, \hyperpage{93}
+  \item {modify\_automate}
+    \subitem {automate.c}, \hyperpage{19}, \hyperpage{41}
+    \subitem {Automate.h}, \hyperpage{63}, \hyperpage{85}
+  \item {mot}, \hyperpage{51}, \hyperpage{72}
+    \subitem {Automate.h}, \hyperpage{51}, \hyperpage{73}
+  \item {mot\_saisi}
+    \subitem {automate.c}, \hyperpage{19}, \hyperpage{41}
+  \item {mot\_saisi\_avant}
+    \subitem {automate.c}, \hyperpage{19}, \hyperpage{41}
+
+  \indexspace
+
+  \item {Next\_one\_state\_touch}
+    \subitem {automate.c}, \hyperpage{19}, \hyperpage{42}
+    \subitem {Automate.h}, \hyperpage{63}, \hyperpage{86}
+  \item {Next\_states\_touch}
+    \subitem {automate.c}, \hyperpage{21}, \hyperpage{42}
+    \subitem {Automate.h}, \hyperpage{64}, \hyperpage{86}
+  \item {Next\_states\_touch\_not\_print}
+    \subitem {automate.c}, \hyperpage{21}, \hyperpage{42}
+    \subitem {Automate.h}, \hyperpage{64}, \hyperpage{86}
+
+  \indexspace
+
+  \item {producte\_a\_b}
+    \subitem {automate.c}, \hyperpage{21}, \hyperpage{43}
+    \subitem {Automate.h}, \hyperpage{64}, \hyperpage{87}
+  \item {Projet\_C/sources/automate.c}, \hyperpage{6}
+  \item {Projet\_C/sources/Automate.h}, \hyperpage{49}
+  \item {Projet\_C/sources/main.c}, \hyperpage{93}
+
+  \indexspace
+
+  \item {README.md}, \hyperpage{94}
+  \item {reconnu\_v2}
+    \subitem {automate.c}, \hyperpage{22}, \hyperpage{43}
+    \subitem {Automate.h}, \hyperpage{65}, \hyperpage{87}
+  \item {remplir\_automate}
+    \subitem {automate.c}, \hyperpage{22}, \hyperpage{43}
+    \subitem {Automate.h}, \hyperpage{65}, \hyperpage{88}
+  \item {rendre\_complet}
+    \subitem {automate.c}, \hyperpage{22}, \hyperpage{44}
+    \subitem {Automate.h}, \hyperpage{65}, \hyperpage{88}
+  \item {rendre\_deterministe}
+    \subitem {automate.c}, \hyperpage{23}, \hyperpage{44}
+    \subitem {Automate.h}, \hyperpage{66}, \hyperpage{88}
+  \item {retourne\_etat\_couant}
+    \subitem {automate.c}, \hyperpage{23}, \hyperpage{44}
+    \subitem {Automate.h}, \hyperpage{66}, \hyperpage{89}
+
+  \indexspace
+
+  \item {save\_automate}
+    \subitem {automate.c}, \hyperpage{23}, \hyperpage{45}
+    \subitem {Automate.h}, \hyperpage{66}, \hyperpage{89}
+  \item {serie\_test\_reconnaissance}
+    \subitem {automate.c}, \hyperpage{24}, \hyperpage{45}
+    \subitem {Automate.h}, \hyperpage{67}, \hyperpage{89}
+  \item {sources/automate.c}, \hyperpage{27}
+  \item {sources/Automate.h}, \hyperpage{70}
+  \item {sources/main.c}, \hyperpage{93}
+  \item {start\_with\_tow}
+    \subitem {automate.c}, \hyperpage{24}, \hyperpage{45}
+    \subitem {Automate.h}, \hyperpage{67}, \hyperpage{90}
+
+  \indexspace
+
+  \item {Tab\_states\_from\_q0}
+    \subitem {automate.c}, \hyperpage{24}, \hyperpage{46}
+    \subitem {Automate.h}, \hyperpage{67}, \hyperpage{90}
+  \item {Tab\_states\_from\_q0\_not\_print}
+    \subitem {automate.c}, \hyperpage{25}, \hyperpage{46}
+    \subitem {Automate.h}, \hyperpage{68}, \hyperpage{90}
+  \item {Tab\_transition\_automate}
+    \subitem {automate.c}, \hyperpage{25}, \hyperpage{47}
+    \subitem {Automate.h}, \hyperpage{68}, \hyperpage{91}
+  \item {Tab\_transition\_automate\_not\_print}
+    \subitem {automate.c}, \hyperpage{25}, \hyperpage{47}
+    \subitem {Automate.h}, \hyperpage{68}, \hyperpage{91}
+  \item {table\_de\_lecture\_automate}, \hyperpage{51}, \hyperpage{72}
+  \item {twos\_symbol\_apply}
+    \subitem {automate.c}, \hyperpage{26}, \hyperpage{47}
+    \subitem {Automate.h}, \hyperpage{69}, \hyperpage{91}
+
+  \indexspace
+
+  \item {union\_states\_of\_same\_symbol}
+    \subitem {automate.c}, \hyperpage{26}, \hyperpage{48}
+    \subitem {Automate.h}, \hyperpage{69}, \hyperpage{92}
+  \item {union\_states\_of\_same\_symbol\_not\_print}
+    \subitem {automate.c}, \hyperpage{27}, \hyperpage{48}
+    \subitem {Automate.h}, \hyperpage{70}, \hyperpage{92}
+
+\end{theindex}
