@@ -1,3 +1,13 @@
+/**
+ * @file automate.c
+ * @author charly romy TANGA  (charlyromytanga.cytech@gmail.com)
+ * @brief 
+ * @version 0.1
+ * @date 2024-01-11
+ * 
+ * @copyright Copyright (c) 2024
+ * 
+ */
 #include "Automate.h"
 
 
@@ -13,7 +23,12 @@
 
 //Sous-bloc de fonction qui ne retourne un tableau_1D
 
-
+/**
+ * @brief 
+ * 
+ * @param t1 
+ * @return int* 
+ */
 int *alloc_tab_1D(int t1){
 
     // Déclaration de variables locales
@@ -40,6 +55,13 @@ int *alloc_tab_1D(int t1){
 
 //Sous-bloc de fonction qui ne retourne un tableau_3D
 /*La fonction qui alloue de la mémoire*/
+/**
+ * @brief 
+ * 
+ * @param d1 
+ * @param d2 
+ * @return int*** 
+ */
 int *** alloc_mat_vide(int d1, int d2){
 
     // Déclaration de variables locales
@@ -81,6 +103,11 @@ int *** alloc_mat_vide(int d1, int d2){
 
 
 /* La fonction qui récupère le nombre d'états et le nombres de symboles et génère un automate*/
+/**
+ * @brief 
+ * 
+ * @return automate 
+ */
 automate generator_automate(){
 
     // Déclaration de variables locales
