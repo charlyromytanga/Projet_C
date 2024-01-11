@@ -1,12 +1,10 @@
 #ifndef H_AUTOMATE_H
 #define H_AUTOMATE_H
 
-/*Include other file*/
-#include "automate.c"
-#include "test_charly.c"
+#include <stdio.h>
+#include <stdlib.h>
+#include "string.h"
 
-
-/* All structure define */
 
 struct automate{
 
@@ -26,6 +24,9 @@ typedef struct automate automate;
 /***********************************/
 
 
+
+
+
 /*Une structure intermédiaire : util pour la lecture d'automate long*/
 /*Ajout d'une structute lecture automate avec trois attributs*/
 
@@ -42,6 +43,9 @@ typedef struct table_de_lecture_automate etats_lus;
 /*************************************/
 
 
+
+
+
 struct mot{
     int size_mot;
     int *Tab_caract;
@@ -50,6 +54,9 @@ struct mot{
 typedef struct mot mot;
 /*--------------------------------*/
 /***********************************/
+
+
+
 
 
 /*############################################################################################################*/
@@ -234,13 +241,6 @@ typedef struct mot mot;
                     transitions du produit relient les états en fonction des transitions des AEFs
                     d'origine.
 
-                -Produit de deux AEFs : Le produit de deux AEFs A et B, noté A * B, est un nouvel
-                    AEF dont les états sont toutes les combinaisons d'états possibles de A et B. Les
-                    états finaux du produit sont ceux pour lesquels les états correspondants de A et B
-                    sont tous deux finaux. Les transitions sont définies de manière similaire, où les
-                    transitions du produit relient les états en fonction des transitions des AEFs
-                    d'origine.
-
                 -Concaténation de deux AEFs : La concaténation de deux AEFs A et B, notée
                     A.B, est un nouvel AEF où les états et transitions de A sont suivis immédiatement
                     par les états et transitions de B. Les états finaux de A.B sont les états finaux de
@@ -251,13 +251,14 @@ typedef struct mot mot;
 */
 
 /*Bloc de fonctions mobilisées  (menu déroulant): */
-    /* La fonction qui génère le complément d'un automate
-    automate complement_automate(automate a)
-    /*La concaténatiion 
-    automate concat(automate a, automate b)
-*/
+
 
 /**************************FIN DE LA PARTIE I**********************************************/
+
+
+
+
+
 
 
 /*************************PARTIE II: Objectif Déterminisme************************/
@@ -265,9 +266,13 @@ typedef struct mot mot;
 /**************************FIN DE LA PARTIE : II **********************************************/
 
 
+
+
+
+
+
 /*************************PARTIE III: BLOC DE PROTOTYPAGE DE FONCTIONS************************/
 
-//Sous-bloc de fonction qui ne retourne rien
 
 /* La fonction qui affiche un tableau_1D*/
 void affichage_1D(int *tab, int dim_tab_1D);
@@ -299,15 +304,8 @@ void lecture_etats_finaux(automate a);
 /*La fonction qui permute deux valeurs*/
 void echange(int *a, int *b);
 
-/* La fonciton qui affiche le mot*/
-void affichage_mot(mot mot);
-
-/* La fonction qui lie un mot et remmplie une matrice D*/
-void  lecture_mot(mot m);
 
 
-
-//Sous-bloc de fonction qui ne retourne un entier
 /*La fonction qui teste si un automate est déterministe ou pas*/
 int est_deterministe(automate a);
 
@@ -326,27 +324,9 @@ int Next_one_state_touch(automate a, int state_start, int symbol_apply);
 /* La fonction qui fait la somme d'apparution du chiffre 1 par appel de la fonction Next_states_touch_not_print*/
 int calculte_number_states_touch(automate a, int *tab_states_touch);
 
-/* La fonction qui commence avec deux états initaux de deux automates dont on fera le produit*/
-int start_with_tow(int etat_initial_a, int etat_initial_b);
-
-/* La fonction qui retourne l'état courant dans la lecture d'un automate*/
-int retourne_etat_couant(automate a, int curent_state, int curent_symbol);
-
-/* La fonction qui dit si un mot est reconnu ou pas par un automate*/
-int est_reconnu(mot m, automate a);
-
-/* La fonction qui réalise un certains nombres de test de la reconnaissance de mots*/
-int serie_test_reconnaissance(automate a, int n_fois);
-
-/* La fonction qui teste si un mot est reconnu Version 2*/
-int reconnu_v2(mot m, automate a);
-
-/* La fonction qui retrouve un état par application d'un symbole du mot*/
-int find_next_state(automate a, mot m);
 
 
 
-//Sous-bloc de fonction qui ne retourne un tableau_1D
 /*Allocation des états finaux*/
 int *allocation_tab_1D(int t1);
 
@@ -377,21 +357,21 @@ int *union_states_of_same_symbol(automate a, int state_apply, int symbol_fix);
 int *union_states_of_same_symbol_not_print(automate a, int state_apply, int symbol_fix);
 
 
-//Sous-bloc de fonction qui ne retourne un tableau_2D
+
+
 /* La fonction qui ajoute un état composite dans une table des états composites*/
 int **add_state_to_composite_table(automate a, int **tab, int composite_state, int position);
 
 /* La fonction qui copie la ligne d'une matrice*/
 int **copy_line_mat(automate a, int ***mat, int position_line);
 
-/* Allocation nombre d'arcs par état*/
-int **allocation_tab_2D(int t2, int t3);
 
 
-
-//Sous-bloc de fonction qui ne retourne un tableau_3D
 /*La fonction qui alloue de la mémoire*/
 int *** allocation_mat_vide(int d1, int d2);
+
+/* Allocation nombre d'arcs par état*/
+int **allocation_tab_2D(int t2, int t3);
 
 /* La fonction qui lie un automate à ne pas trop utiliser car il va lister tous les chemins possibles*/
 int ***lecture_automate_court(automate a);
@@ -410,7 +390,7 @@ int ***twos_symbol_apply(automate a,  int state_1, int state_2, int symbol_1, in
 
 
 
-//Sous-bloc de fonction qui ne retourne un automate
+
 /* La fonction qui génère la matrice nulle d'un automate dit nul*/
 automate generate_automate_null(int d1, int d2, int d3);
 
@@ -447,27 +427,125 @@ automate complement_automate(automate a);
 /* La fonction qui rend un automate déterministe*/
 automate rendre_deterministe(automate a);
 
-/* La fonction qui fait le produit de deux automates et retourne une automate*/
-automate producte_a_b(automate a, automate b);
 
-/**********Fonction reposant sur une structure intermediaire*******************************************/
+/**********Fonction reposant sur une structure*********************************************************/
 /*-----------------------------------------------------------------------------------------------------*/
 /*Ajout d'une structute lecture automate avec trois attributs*/
 
 /* La fonction qui lie un automate à ne pas trop utiliser car il va lister tous les chemins possibles*/
 /* Sa nautre : etats_lus*/
+
 etats_lus lecture_automate_long(automate a);
+/*-----------------------------------------------------------------------------------------------------*/
+/***************************************FIN Ajout d'une structure intermediaire*************************/
 
 
-//Sous-bloc de fonction qui ne retourne un mot
-/*La fonction qui saisi le mot*/
-mot mot_saisi_avant(automate a);
-mot  mot_saisi(automate a);
-
-
-
-
-//Sous-bloc de fonction qui ne retourne un mot
 /*************************FIN DU BLOC DE PROTOTYPAGE DE FONCTIONS************************/
+
+
+
+/**************************FIN POUR L'AUTOMATE**********************************************/
+/*############################################################################################################*/
+
+
+
+
+
+
+
+
+
+
+/*############################################################################################################*/
+/*************************DEBUT MOT*******************************************************/
+
+
+
+/*************************PARTIE I: Objectif maîtrise de la structure  MOT************************/
+
+/*--> Question 2 : Reconnaissance d'un mot par un automate*/
+/**************************FIN DE LA PARTIE I**********************************************/
+
+
+
+
+
+
+/*************************PARTIE II: Objectif Aller un peu plus loin************************/
+
+/**************************FIN DE LA PARTIE : II **********************************************/
+
+
+
+
+
+
+
+
+/*************************PARTIE III: BLOC DE PROTOTYPAGE DE FONCTIONS************************/
+
+/* La fonciton qui affiche le mot*/
+void affichage_mot(mot *mot);
+
+/* La fonction qui lie un mot et remmplie une matrice D*/
+void  lecture_mot(mot m);
+
+
+
+/* La fonction qui retourne l'état courant dans la lecture d'un automate*/
+int retourne_etat_couant(automate a, int curent_state, int curent_symbol);
+
+/* La fonction qui dit si un mot est reconnu ou pas par un automate*/
+int est_reconnu(mot m, automate a);
+
+/* La fonction qui réalise un certains nombres de test de la reconnaissance de mots*/
+int serie_test_reconnaissance(automate a, int n_fois);
+
+/* La fonction qui teste si un mot est reconnu Version 2*/
+int reconnu_v2(mot m, automate a);
+
+/* La fonction qui retrouve un état par application d'un symbole du mot*/
+int find_next_state(automate a, mot m);
+
+
+
+/*La fonction qui saisi le mot*/
+mot *mot_saisi_avant(automate a);
+
+mot  *mot_saisi(automate a);
+
+/*
+    Étape reconnaître un mot :
+
+La fonction est reconnue :
+
+En fonction de la taille du mot, une boucle est effectuée
+Boucle faite sur la taille du mot.
+Trois paramètres sont pris en compte
+Etat courant mis a q0 au départ
+Symbole mis aTab_mot[i=0]
+Etat suivant mis a :
+Automa.matrice[q0][symbole]
+
+Dans cette boucle deux conditions sont établies :
+
+Avant toute chose : on test si le dernier symbole du mot correspond 
+à une transition qui conduit a un état final.
+Si tel est le cas alors il y a des chances que ce mot soit reconnu.
+
+Si la valeur retournée par Etat suivant vaut 1
+Alors on avance et on met à jour :
+Etat courant, il prend la valeur de était suivant 
+Symbole, elle prend la valeur de Tab_mot[i+1]
+*/
+
+/*************************FIN DU BLOC DE PROTOTYPAGE DE FONCTIONS************************/
+
+
+
+/**************************FIN MOT**********************************************************/
+/*############################################################################################################*/
+
+
 
 #endif

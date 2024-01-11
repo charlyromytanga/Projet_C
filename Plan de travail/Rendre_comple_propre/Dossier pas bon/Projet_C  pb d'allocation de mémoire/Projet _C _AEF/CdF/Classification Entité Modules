@@ -1,0 +1,194 @@
+Project C
+
+A- Les entités : 
+	- automate
+	- états
+	- transition
+	- matrice
+	- utilisateur
+	- mot
+	
+	
+B- Les modules par entité :
+
+	1- Entité automate :
+		1.1- module renseigner un automate
+		1.2- module caractériser un automate
+		1.3- module transformation d'un automate
+		1.4- module opérer des automates
+		
+	2- Entité états :
+		2.1- module renseigner des états
+		2.2- module caractériser des états
+		2.3- transformation des états
+		2.4- opérer des états
+		
+	3- Entité transition 
+		3.1- module renseigner des transitions
+		3.2- module caracatériser des transitions
+		3.3- module opérer des transitions
+		
+	4- Entité matrice :
+		4.1- module renseigner une matrice
+		4.2- module caractériser une matrice
+		4.3- module transformer un matrice
+		4.4- module opérer des matrices
+		
+	5- Entité mot : 
+		5.1- module renseigner un mot
+		5.2- module reconnaissance d'un mot
+		
+	6- Entité expression régulière :
+		6.1- module renseigner une expression régulière d'un automate
+		6.2- module mot et expression régulière
+		
+	7- Entité langage :
+		7.1- module langage d'un automate
+		7.2- module equivalence d'automate
+		
+	8- Entité utilisateur :
+		8.1- module saisir un automate
+		8.2- module modifier
+		
+	9- Entité affichage : 
+		9.1- module automate
+		9.2- module matrice
+		9.3- module etats
+		9.4- module symbole
+		9.5- module transition
+		9.6- module mot
+		9.7- module expression régulière
+		9.8- module langage
+		9.9- module utilisateur
+		
+C- FIchier par module d'une entité : 
+
+	- module 1.1 :
+		- rensigner_automate.h
+		- renseigner_automate.c
+	- module 1.2 :
+		- caract_automate.h
+		- caract_automate.C
+	- module 1.3 :
+		- transfor_automate.h
+		- transfor_automate.c
+	- module 1.4 :
+		- opérer_automate.h
+		- opérer_automate.c
+		
+	******************************************
+	
+	- module 2.1 :
+		- renseigner_etat.h
+		- renseigner_etat.c
+	- module 2.2 :
+		- caract_etat.h
+		- caract_etat.c
+	- module 2.3 :
+		- transfor_etat.h
+		- transfor_etat.c
+	- module 2.4 : 
+		- opere_etat.h
+		- opere_etat.c
+	
+	********************************************
+	
+	- module 3.1 : 
+		- renseigner_transition.h
+		- renseigner_transition.c
+	- module 3.2 :
+		- caract_transition.h
+		- caract_transition.c
+	- module 3.3 :
+		- opere_transitions.h
+		- opere_transitons.c
+	
+	*********************************************
+	
+	- module 4.1 :
+		- renseigner_matrice.h
+		- renseigner_matrice.c
+	- module 4.2 :
+		- caract_matrice.h
+		- caract_matrice.c
+	- module 4.3 :
+		- transfor_matrice.h
+		- transfor_matrice.c
+	- module 4.4 :
+		- operer_matrice.h
+		- operer_matrice.c
+	
+	************************************************
+	
+	- module 5.1 : 
+		- renseigner_mot.h
+		- reneigner_mot.c
+	- moduel 5.2 :
+		- reconnaitre_mot.h
+		- reconnaitre_mot.c
+		
+	***********************************************
+	
+	- module 6.1 : 
+		- renseigner_exp_regul.h
+		- renseigner_exp_regul.c
+	- module 6.2 :
+		- mot_appartenant_exp_regul.h
+		- mot_appartenat_expregul.c
+	
+	**********************************************
+	
+	- module 7.1 :
+		- lagage_automate.h
+		- langage_automate.c
+	- module 7.2 :
+		- equivalence_automate.h
+		- equivalence_automate.c
+		
+	*************************************************
+	
+	- module 8.1 :
+		- utilisateur_saisi.h
+		- utilisateur_saisi.c
+	- module 8.2 :
+		- utilisateur_modifi.h
+		- utilisateur_modifi.c
+	
+	*************************************************
+	
+	- module 9.1 :
+		- affichage_automate.h
+		- affichage_automate.c
+	- moule 9.2 :
+		- affichage_matrice.h
+		- afficahge_matrice.c
+	- module 9.2 :
+		- affichage_etat.h
+		- affichage_etat.c
+	- module 9.3 :
+		- afficahage_symbole.h
+		- affichage_symbole.c
+	- module 9.4 :
+		- affichage_transition.h
+		- affichage_transition.c
+	- module 9.5 : 
+		- affichage_mot.h
+		- affichage_mot.c
+	- module 9.6 :
+		- affichage_exp_regul.h
+		- affichage_exp_regul.c
+	- module 9.7 :
+		- affichage_langage.h
+		- affichage_langage.c
+	- module 9.8 :
+		- affichage_user.h
+		- afficher_user.c
+		
+	****************************************************
+	
+	
+D- Fonction par module :
+
+	- module 1.4 :
+		- est_complet
+		- rendre_complet
