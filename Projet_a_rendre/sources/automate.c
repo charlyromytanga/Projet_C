@@ -6,12 +6,10 @@
 #include "Automate.h"
 #include "main.c"
 
+/* Code de chaque fonction prototypée dans le .h*/
 
+//Sous-bloc de fonction qui ne retourne rien
 
-
-/*############################################################################################################*/
-
-/*************************PARTIE BLOC DE PROTOTYPAGE DE FONCTIONS AUTOMATE ************************/
 /* La fonction qui affiche un tableau_1D*/
 void affichage_1D(int *tab, int dim_tab_1D){
 
@@ -23,11 +21,8 @@ void affichage_1D(int *tab, int dim_tab_1D){
         printf("%d", tab[i]);
     }
     printf("]\n");
-
-    // La fonction retourne : RIEN
-    
+    // La fonction retourne :
 }
-
 
 /*  La fonction qui affiche une case d'un tableau_1D*/
 void affichage_case_tab_1D(int *tab, int position, int dim_tab_1D){
@@ -35,15 +30,11 @@ void affichage_case_tab_1D(int *tab, int position, int dim_tab_1D){
     // Déclaration de variables locales
 
     // Instructions
-    printf("Elément recherché dans tab_1D:");
     for(int i=0; i<dim_tab_1D; i++){
         printf("Tab_1D[%d]=%d\n", position, tab[position]);
     }
-
-    // La fonction retourne
-    
+    // La fonction retourne :
 }
-
 
 /* La fonction qui affiche un tableau_2D*/
 void affichage_2D(int **tab, int dim_tab_2D_ligne, int dim_tab_2D_col){
@@ -63,14 +54,12 @@ void affichage_2D(int **tab, int dim_tab_2D_ligne, int dim_tab_2D_col){
         }
         printf(" ]\n"); 
     }
-    // La fonction retourne : RIEN
-    
+    // La fonction retourne :
 }
-
 
 /* La fonction qui affiche un élément d'un tableau_2D*/
 void affichage_case_tab_2D(int **tab, int position_line, int position_col, int dim_tab_2D_ligne, int dim_tab_2D_col){
-    
+
     // Déclaration de variables locales
 
     // Instructions
@@ -85,9 +74,8 @@ void affichage_case_tab_2D(int **tab, int position_line, int position_col, int d
         printf("\n");
         
     }
-    // La fonction retourne
+    // La fonction retourne :
 }
-
 
 /* La fonction qui affiche une ligne donnée d'une matrice*/
 void affichage_ligne_mat(int ***tab, int position_line, int dim_tab_3D_ligne, int dim_tab_3D_col){
@@ -112,15 +100,15 @@ void affichage_ligne_mat(int ***tab, int position_line, int dim_tab_3D_ligne, in
         printf("\n");
         
     }
-    // La fonction retourne
+    // La fonction retourne :
 }
-
-
 
 /* La fonction qui affiche une colonne donnée d'une matrice*/
 void affichage_col_mat(int ***tab, int position_col, int dim_tab_3D_ligne, int dim_tab_3D_col){
 
     // Déclaration de variables locales
+
+    // Instructions
     printf("Colonne sélectionnée dans mat_3D : \n");
     printf("\n");
     // Instructions
@@ -139,10 +127,8 @@ void affichage_col_mat(int ***tab, int position_col, int dim_tab_3D_ligne, int d
         printf("\n");
         
     }
-    // La fonction retourne
-    
+    // La fonction retourne :
 }
-
 
 /* La fonction qui affiche une case d'une matrice*/
 void affichage_case_mat(int ***tab, int position_line, int position_col, int dim_tab_3D_ligne, int dim_tab_3D_col){
@@ -150,7 +136,6 @@ void affichage_case_mat(int ***tab, int position_line, int position_col, int dim
     // Déclaration de variables locales
 
     // Instructions
-
     affichage_1D(tab[position_line][position_col], dim_tab_3D_ligne);
 
 
@@ -168,14 +153,15 @@ void affichage_case_mat(int ***tab, int position_line, int position_col, int dim
         }
         
     } */
-
-    // La fonction retourne
-    
+    // La fonction retourne :
 }
 
 /*La fonction qui affiche la matrice 3D*/
 void  affichage_automate(automate a){
 
+    // Déclaration de variables locales
+
+    // Instructions
     // Caractéristiques de l'automate
     printf("\n");
     printf("Les caractéristiques de l'automate sont : \n");
@@ -228,23 +214,19 @@ void  affichage_automate(automate a){
         printf("L'automate a %d états finaux\n", a.nb_Etats_finaux);
         printf("\n");
     }
-    
-    // La fonction retourne : RIEN
+    // La fonction retourne :
 }
-
-
 
 /* La fonction qui les états finaux*/
 void lecture_etats_finaux(automate a){
 
-    //Déclaration de varibales locales
+    // Déclaration de variables locales
 
-    // Instructionsx
-
+    // Instructions
     /*Option 1 en commit*/
         /*printf("Les états finaux sont :\n");
         for(int i =0; i<a.nb_Etats; i++){
-            printf("[ i:%d -> %d ]", i, a.Etats_finaux[i]);
+            printf("[ i:%d . %d ]", i, a.Etats_finaux[i]);
         }
         printf("\n");
     */
@@ -275,37 +257,61 @@ void lecture_etats_finaux(automate a){
         // La fonction retourne : RIEN
 
     }
-   
-
-    // La fonction retourne
-    
+    // La fonction retourne :
 }
-
-
-
 
 /*La fonction qui permute deux valeurs*/
 void echange(int *a, int *b){
 
-    // Déclaration de varaibles locales
-    
+    // Déclaration de variables locales
+
     // Instructions
     int tmp =*a;
 
     *b = *a;
 
     *b=tmp;
+    // La fonction retourne :
+}
 
-    // La fonction retourne : RIEN
+/* La fonciton qui affiche le mot*/
+void affichage_mot(mot *mot){
 
+    // Déclaration de variables locales
+
+    // Instructions
+
+    // La fonction retourne :
+}
+
+/* La fonction qui lie un mot et remmplie une matrice D*/
+void  lecture_mot(mot m){
+
+    // Déclaration de variables locales
+    
+    // Instructions
+    // La valeur 100 est mis pour la limte de mot
+    printf(" Le mot saisi est : ");
+    for(int i=0; i<(m.size_mot); i++){
+
+        /* code */
+        printf("a%d", m.Tab_caract[i]);
+
+        
+    }
+    printf("\n");
+    
+    // La fonction retourne :
 }
 
 
 
+//Sous-bloc de fonction qui ne retourne un entier
 /*La fonction qui teste si un automate est déterministe ou pas*/
 int est_deterministe(automate a){
 
-    //Déclaration de variables locales
+    // Déclaration de variables locales
+    int res;
     int count=0;
 
     // Instructions
@@ -339,23 +345,20 @@ int est_deterministe(automate a){
             //count=0;
         }
     }
-    
-
-    // La fonction retourne 1 si elle est déterministe et 0 si elle est NON déterministe
+    // La fonction retourne :
     printf("L'automate est déterministe\n");
     printf("\n");
+    return 1;
 }
-
-
-
 
 /*La fonction qui examine si l'automate est complet*/
 int est_complet(automate a){
 
-    /*Déclaration de varaibles locales*/
-    int nb_Etats = a.nb_Etats, nb_Symboles = a.nb_Symboles;
+    // Déclaration de variables locales
+   int nb_Etats = a.nb_Etats, nb_Symboles = a.nb_Symboles;
+    int res;
 
-    /*Instructions*/
+    // Instructions
     for(int i=0; i<nb_Etats; i++){
 
         for(int j=0; j<nb_Symboles; j++){
@@ -373,18 +376,16 @@ int est_complet(automate a){
     printf("\n");
     //printf("L'automate est déjà complet\n");
 
-    /*La fonction retroune : */
-    return 1;
+    // La fonction retourne :
+    return res;
 }
-
-
-
 
 /* La fonction teste si un état est un final*/
 int est_un_etat_final(automate a, int etat){
 
-    // Déclartion de variable
-    
+    // Déclaration de variables locales
+    int res;
+
     // Instructions
     for(int i = 0; i<a.nb_Etats; i++){
 
@@ -394,16 +395,16 @@ int est_un_etat_final(automate a, int etat){
         }
     }
     return 0;
+    // La fonction retourne :
 
-    // La fonctio retoune
+
 }
-
-
 
 /* La fonction qui vérifie si un éatat existe dans la table des transition passée en paramètre*/
 int exist_state_in_tab_transi(automate a, int state_touch, int ***tab1){
 
     // Déclaration de variables locales
+    int res;
 
     // Instructions
     for(int i=0; i<a.nb_Etats; i++){
@@ -421,23 +422,18 @@ int exist_state_in_tab_transi(automate a, int state_touch, int ***tab1){
         }
         
     }
-
-    // La fonction retourne 
+    // La fonction retourne :
     return 1;
 }
-
-
-
 
 /* La fonction qui retourne la position de l'état atteint par application d'un symbole partant d'un état donné*/
 int Next_one_state_touch(automate a, int state_start, int symbol_apply){
 
-    //Déclaration de variables locales
+    // Déclaration de variables locales
     int state_result;
     int cpt_state_touch = 0;
 
-    //Instructions
-
+    // Instructions
     for(int k=0; k<a.nb_Etats; k++){
 
         if(a.matrice[state_start][symbol_apply][k]==1){
@@ -446,17 +442,14 @@ int Next_one_state_touch(automate a, int state_start, int symbol_apply){
             //printf("state_touch = %d\n", state_result);
         }
     }
-    
-
-    //La fonctio retourne
+    // La fonction retourne :
     return state_result;
 }
 
 /* La fonction qui fait la somme d'apparution du chiffre 1 par appel de la fonction Next_states_touch_not_print*/
 int calculte_number_states_touch(automate a, int *tab_states_touch){
 
-    // Déclaration de varialbes locales
-
+    // Déclaration de variables locales
     /*Décompte du nombre d'états atteint pour chaque symbole considéré*/
     int total_states=0;
 
@@ -472,12 +465,10 @@ int calculte_number_states_touch(automate a, int *tab_states_touch){
             }
         }
     }
-
     
-    // La fonction retourne
+    // La fonction retourne :
     return total_states;
 }
-
 
 /* La fonction qui commence avec deux états initaux de deux automates dont on fera le produit*/
 int start_with_tow(int etat_initial_a, int etat_initial_b){
@@ -487,19 +478,192 @@ int start_with_tow(int etat_initial_a, int etat_initial_b){
 
     // Instructions
 
-    // La fonction retourne
-
+    // La fonction retourne :
     return s_a_b;
+}
+
+/* La fonction qui retourne l'état courant dans la lecture d'un automate*/
+int retourne_etat_couant(automate a, int curent_state, int curent_symbol){
+
+    // Déclaration de variables locales
+    int etat_courant = curent_state, symbole_courant = curent_symbol;
+    
+
+    // Instructions
+    int *States = a.matrice[etat_courant][symbole_courant];
+
+    int state = 0;
+
+    /*Si l'état passé en arg est déjà le dernier de l'automate*/
+    if(curent_state == (a.nb_Etats-1)){
+        state = a.nb_Etats;
+    }
+    
+    for( int i =0; i<a.nb_Etats; i++){
+
+        if(States[i]==1){
+
+            state = i;
+        }
+    }
+    // La fonction retourne :
+    return state;
+}
+
+/* La fonction qui dit si un mot est reconnu ou pas par un automate*/
+int est_reconnu(mot m, automate a){
+
+    // Déclaration de variables locales
+    int curent_state = 0, curent_symbol = m.Tab_caract[0];
+
+    // Instructions
+    int i=0;
+    while (/* condition */ 1==1)
+    {
+        /* code */
+        curent_state = retourne_etat_couant(a, curent_state, curent_symbol);
+        printf("état suivant : %d | symbole associé %d\n", curent_state, curent_symbol);
+        
+
+        if(curent_state == 0){
+
+            printf("Mot non reconnu\n");
+            return 0;
+        }
+        int final = est_un_etat_final(a, curent_state);
+        if((curent_state == (a.nb_Etats-1)) || final==1){
+
+            printf("val : %d\n", final);
+            if(final==1){
+
+                printf("Mot reconnu\n");
+                printf("Final = %d\n", final);
+                return 1;
+            }
+            printf("Le mot n'est pas reconnu\n");
+            printf("Final = %d\n", final);
+            return 0;   
+        }
+        i += 1;
+        curent_symbol = m.Tab_caract[i];
+        printf("curent syombol avant tour suivant : %d\n", curent_symbol);
+        printf("Etat suivant avant tout : %d\n", curent_state);
+        final=0;
+    }
+    // La fonction retourne :
 
 }
 
+/* La fonction qui réalise un certains nombres de test de la reconnaissance de mots*/
+int serie_test_reconnaissance(automate a, int n_fois){
+
+    // Déclaration de variables locales
+    mot *m;
+    int res;
+
+    // Instructions
+    for(int i=0; i<n_fois; i++){
+
+        m = mot_saisi_avant(a);
+        if(est_reconnu(*m, a)==1){
+
+            printf("Le mot : ");
+            affichage_mot(m);
+            printf("est reconnu\n");
+        }
+        printf("Le mot : ");
+        affichage_mot(m);
+        printf("n'est pas reconnu\n");
+        
+
+    }
+    // La fonction retourne :
+    return 1;
+}
+
+/* La fonction qui teste si un mot est reconnu Version 2*/
+int reconnu_v2(mot m, automate a){
+
+    // Déclaration de variables locales
+    int curent_state = 0;
+    int next_state;
+    int symbole_mot = m.Tab_caract[0];
+
+    // Instructions
+    if(m.size_mot==1){
+        for(int i=0; i<a.nb_Etats; i++){
+
+            if((a.Etats_finaux[i]==1) || i==m.Tab_caract[0]){
+                printf("Oui\n");
+                return 1;
+            }
+            printf(" Là reconnu\n");
+            return 0;
+        }
+
+    }
+
+    int last_symbol_mot = m.Tab_caract[m.size_mot-1];
+
+    int proba_state_final = find_next_state(a, m);
+
+    if(m.size_mot>=2 || a.nb_Etats>=3){
+
+        if(est_un_etat_final(a, proba_state_final)==0){
+            printf("Le mot non \n");
+            return 0;
+        }
+        else if (est_un_etat_final(a, proba_state_final)==1){
+            
+            for(int i=0; i<m.size_mot-1; i++){
+                
+                next_state = retourne_etat_couant(a, curent_state, m.Tab_caract[i]);
+                if(next_state==1){
+                    
+                    /* Si val =1, alors cet état est attient on continue*/
+                    curent_state = i;
+                }
+
+                else{
+                    /* Ce i-ème état n'est pas ettient ce qui fait que le mot n'est pas reconnu*/
+                    printf("Pas reconnu\n");
+                    return 0;
+                }
+                
+            }
+            printf("Finalement OUI\n");
+            return 1;
+        }
+    }
+    // La fonction retourne :
+
+}
+
+/* La fonction qui retrouve un état par application d'un symbole du mot*/
+int find_next_state(automate a, mot m){
+
+    // Déclaration de variables locales
+    int res;
+
+    // Instructions
+
+    // La fonction retourne :
+    return res;
+}
+
+
+
+
+
+
+
+//Sous-bloc de fonction qui ne retourne un tableau_1D
 
 /*Allocation des états finaux*/
 int *allocation_tab_1D(int t1){
 
-    // Déclartion de variables locales
+    // Déclaration de variables locales
     int *Tab_1D;
-
 
     // Instructions
     Tab_1D = malloc(t1*sizeof(int));
@@ -512,25 +676,19 @@ int *allocation_tab_1D(int t1){
 
         Tab_1D[i] = 0;
     }
-
-    // La fonction retourne
-
+    // La fonction retourne :
     return Tab_1D;
 }
-
-
-
-
 
 /* La fonction qui produit tous les états atteints par application d'un symbole à un état donnée*/
 int *Next_states_touch(automate a, int start_state, int symbol_apply){
 
-    //Déclaration de variables locales
+    // Déclaration de variables locales
     int state_result;
     int *tab_all_states_touch;
     int cpt_state_touch = 0;
 
-    //Instructions
+    // Instructions
     /*On compte dans un premier temps pour les états attients par le symbole passé en paramètre*/
     int *tab_memory_state_get = allocation_tab_1D(a.nb_Etats);
 
@@ -584,24 +742,18 @@ int *Next_states_touch(automate a, int start_state, int symbol_apply){
     }
     printf("\n");
     printf("\n");
-
-
-
-    //La fonctio retourne
+    // La fonction retourne :
     return tab_all_states_touch;
 }
-
-
-
 
 /* La fonction qui retrouve tous les états atteints par application d'un symbole à un état donnée*/
 int *Next_states_touch_not_print(automate a, int start_state, int symbol_apply){
 
-    //Déclaration de variables locales
+    // Déclaration de variables locales
     int *tab_all_states_touch;
     int cpt_state_touch = 0;
 
-    //Instructions
+    // Instructions
     /*Position de l'état atteint*/
     int *tab_memory_state_get = allocation_tab_1D(a.nb_Etats);
 
@@ -637,60 +789,49 @@ int *Next_states_touch_not_print(automate a, int start_state, int symbol_apply){
 
         return tab_all_states_touch;
     }
-    
-    //La fonctio retourne
+    // La fonction retourne :
+
 }
-
-
 
 /* La fonction qui contrtui la table des états obtenus à partir de l' état initial*/
 int *Tab_states_from_q0(automate a, int symbol_apply){
 
-    //Déclaration de variables locales
-    /*L'état de départ est q0*/
+    // Déclaration de variables locales
     int start_state = 0;
     int * tab_all_states_touched = allocation_tab_1D(a.nb_Etats);
 
-    //Instructions
- 
+
+    // Instructions
     tab_all_states_touched = Next_states_touch(a, start_state, symbol_apply );
 
-    //La fonctio retourne
+    // La fonction retourne :
     return tab_all_states_touched;
 }
-
-
-
 
 /* La fonction qui contrtui la table des états obtenus à partir de l' état initial par application d'un symbole donné usage pour la fonction rendre déterministe*/
 int *Tab_states_from_q0_not_print(automate a, int symbol_apply){
 
-    //Déclaration de variables locales
-    /*L'état de départ est q0*/
+    // Déclaration de variables locales
     int start_state = 0;
     int * tab_all_states_touched = allocation_tab_1D(a.nb_Etats);
 
-    //Instructions
- 
+
+    // Instructions
     tab_all_states_touched = Next_states_touch_not_print(a, start_state, symbol_apply );
 
-    //La fonctio retourne
+    // La fonction retourne :
     return tab_all_states_touched;
 }
-
-
-
 
 /* La fonction qui regoupe les états atteints par le même symbole depuis l'état initial*/
 int *group_states_by_same_symbol(automate a, int state_apply, int symbol_fix){
 
-    //Déclaration de variables locales
+    // Déclaration de variables locales
     int *Tab_global_by_same_symbol = allocation_tab_1D(a.nb_Etats);
     int cpt_state_get=0;
     int state_get;
 
-
-    //Instructions
+    // Instructions
     /*Capture des états atteint pur le symbole fixé*/
     for(int j=0; j<a.nb_Symboles; j++){
 
@@ -745,22 +886,19 @@ int *group_states_by_same_symbol(automate a, int state_apply, int symbol_fix){
         printf("\n");
         return Tab_global_by_same_symbol;
     }
+    // La fonction retourne :
 
-    //La fonctio retourne
 }
-
-
-
 
 /* La fonction qui regoupe les états atteints par le même symbole depuis l'état initial*/
 /* La fonction qui est appelée dans la fonction Tab_transition car elle n'imprime rien*/
 int *group_states_by_same_symbol_not_print(automate a, int state_apply, int symbol_fix){
 
-    //Déclaration de variables locales
+    // Déclaration de variables locales
     int *Tab_global_by_same_symbol = allocation_tab_1D(a.nb_Etats);
 
 
-    //Instructions
+    // Instructions
     /*Capture des états atteint pur le symbole fixé*/
     for(int k=0; k<a.nb_Etats; k++){
 
@@ -770,13 +908,9 @@ int *group_states_by_same_symbol_not_print(automate a, int state_apply, int symb
             //printf("k=%d\n", k);
         }
     }
-    
-    //La fonctio retourne
+    // La fonction retourne :
     return Tab_global_by_same_symbol;
 }
-
-
-
 
 /*La fonction qui réalise la réunion d'états obtenus par application d'un symbole identique partant d'un état donné*/
 int *union_states_of_same_symbol(automate a, int state_apply, int symbol_fix){
@@ -788,6 +922,7 @@ int *union_states_of_same_symbol(automate a, int state_apply, int symbol_fix){
     int cpt=0;
 
     int *tab_union = allocation_tab_1D(a.nb_Etats);
+
 
     // Instructions
     /*Table de traitement*/
@@ -826,13 +961,9 @@ int *union_states_of_same_symbol(automate a, int state_apply, int symbol_fix){
         printf("\n");
     }
 
-
-    // La fonction retourne
+    // La fonction retourne :
     return tab_union;
 }
-
-
-
 
 /*La fonction qui réalise la réunion d'états obtenus par application d'un symbole identique partant d'un état donné*/
 /* La fonction qui est appelée dans la fonction Tab_transition car elle n'imprime rien*/
@@ -847,7 +978,6 @@ int *union_states_of_same_symbol_not_print(automate a, int state_apply, int symb
     int *tab_union = allocation_tab_1D(a.nb_Etats);
 
     // Instructions
-
     /*Table de traitement*/
 
     int *tab_traitement = allocation_tab_1D(a.nb_Etats);
@@ -875,18 +1005,20 @@ int *union_states_of_same_symbol_not_print(automate a, int state_apply, int symb
         /*Cas d'une réunion de plus d'un état*/
         return tab_union;
     }
+    // La fonction retourne :
 
-    // La fonction retourne
 }
 
 
 
 
 
+//Sous-bloc de fonction qui ne retourne un tableau_2D
+
 /* La fonction qui ajoute un état composite dans une table des états composites*/
 int **add_state_to_composite_table(automate a, int **tab, int composite_state, int position){
 
-    // Déclaration de varibles locales
+    // Déclaration de variables locales
     int **tab_res = allocation_tab_2D(a.nb_Etats, a.nb_Etats);
 
     // Instructions
@@ -908,26 +1040,19 @@ int **add_state_to_composite_table(automate a, int **tab, int composite_state, i
 
         }
     }
-
-    // La fonction retourne une table d'états composite mise à jour
+    // La fonction retourne :
     return tab_res;
 }
-
-
-
-
-
 
 /* La fonction qui copie la ligne d'une matrice*/
 int **copy_line_mat(automate a, int ***mat, int position_line){
 
-    // Déclaration de variable locales
+    // Déclaration de variables locales
     automate a_traitement;
     int **tab_line = allocation_tab_2D(a.nb_Etats, a.nb_Symboles);
 
-    // Instructions 
 
-
+    // Instructions
     /*Par prudence on réalision une copie de cet automate avant de le manipuler*/
     //a_traitement = copie_automate(a);
 
@@ -950,7 +1075,7 @@ int **copy_line_mat(automate a, int ***mat, int position_line){
             }
         }
     }
-
+    // La fonction retourne :
     // La fonction retourne : un tableau
     //affichage_2D(tab_line, a.nb_Etats, a.nb_Symboles);
     return tab_line;
@@ -958,15 +1083,27 @@ int **copy_line_mat(automate a, int ***mat, int position_line){
 
 
 
+/* Allocation nombre d'arcs par état*/
+int **allocation_tab_2D(int t2, int t3){
+
+    // Déclaration de variables locales
+    int **res;
+
+    // Instructions
+
+    // La fonction retourne :
+    return res;
+}
+
+
+//Sous-bloc de fonction qui ne retourne un tableau_3D
 /*La fonction qui alloue de la mémoire*/
 int *** allocation_mat_vide(int d1, int d2){
 
-    // Déclartion de variables locales
-    
+    // Déclaration de variables locales
     int ***m;
-
-    // Instructions 
     
+    // Instructions
     m= malloc(d1*sizeof(int **));
     
     // Test d'allocation de mémoire
@@ -995,45 +1132,9 @@ int *** allocation_mat_vide(int d1, int d2){
             }
         }
     }
-
-    // La fonction retourne
+    // La fonction retourne :
     return m;
 }
-
-
-
-
-/* Allocation nombre d'arcs par état*/
-int **allocation_tab_2D(int t2, int t3){
-
-    // Déclaration de varibles locales
-    int **Tab_2D;
-
-    // Instructions
-    Tab_2D = malloc(t2*sizeof(int *));
-    // Test d'allocation de mémoire
-    if(Tab_2D==NULL){
-        printf("L'allocation de mémoire_2D a échoué !!!\n");
-        exit(1);
-    }
-    for(int i=0; i<t2; i++){
-        
-        Tab_2D[i] = malloc((t3*t2)*sizeof(int));
-        // Test d'allocation de mémoire
-        if(Tab_2D==NULL){
-            printf("L'allocation de mémoire_2D a échoué !!!\n");
-            exit(1);
-        }
-        for(int j=0; j<(t3*t2); j++){
-            
-            Tab_2D[i][j] = 0;
-            
-        }
-    }
-    // La fonction retourne un tableau 2D
-    return Tab_2D;
-}
-
 
 
 /* La fonction qui lie un automate à ne pas trop utiliser car il va lister tous les chemins possibles*/
@@ -1041,7 +1142,6 @@ int ***lecture_automate_court(automate a){
 
     // Déclaration de variables locales
     automate m_au;
-
     int nb_Etats = a.nb_Etats, nb_Symboles = a.nb_Symboles;
     int etat_initial = a.etat_initial;
     int *Tab_Etats_finaux = a.Etats_finaux;
@@ -1130,21 +1230,15 @@ int ***lecture_automate_court(automate a){
     }
     printf("\n");
 
-
-
-    // La fonction retourne 3 tableaux
+    // La fonction retourne :
     return Tab_start; 
 }
-
-
-
 
 /* la fonction  qui ajoute un état  dans une table des états renommés*/
 int ***add_state_to_rename_table_state(automate a, int ***tab_rename, int new_state, int position){
 
-    // Déclartion de variables locales
+    // Déclaration de variables locales
     int ***tab_res = allocation_mat_vide(a.nb_Etats, a.nb_Symboles);
-
 
     // Instructions
     for(int i1=0; i1<a.nb_Etats; i1++){
@@ -1166,15 +1260,13 @@ int ***add_state_to_rename_table_state(automate a, int ***tab_rename, int new_st
         }
 
     }
-    // La fonction retourne
+    // La fonction retourne :
     return tab_res;
 }
 
-
-
-
 /* La fonction qui contruit la table des transitions de l'autome*/
 int ***Tab_transition_automate(automate a){
+
     // Déclaration de variables locales
     int ***tab_transition = allocation_mat_vide(a.nb_Etats, a.nb_Symboles);
 
@@ -1251,21 +1343,15 @@ int ***Tab_transition_automate(automate a){
     printf("\n");
     /* Fin affichage de la table des transitions*/
 
-
+    // La fonction retourne :
     return tab_transition;
-
 }
-
-
-
-
 
 /* La fonction qui contruit la table des transitions d'un automate passé en paramètre sans imprimer*/
 int ***Tab_transition_automate_not_print(automate a){
 
     // Déclaration de variables locales
-    int ***tab_transition = allocation_mat_vide(a.nb_Etats, a.nb_Symboles);
-
+   int ***tab_transition = allocation_mat_vide(a.nb_Etats, a.nb_Symboles);
 
     // Instructions
     //automate a_manip  = copie_automate(a);
@@ -1316,41 +1402,25 @@ int ***Tab_transition_automate_not_print(automate a){
     }
     //printf("\n");
 
-
-
-    //La fonction retourne
-
+    // La fonction retourne :
     return tab_transition;
 }
-
-
-
-
 
 /* La fonction qui retourne les états atteints par application simultannée d'un symbole partant d'une paire  états ou pas*/
 int ***twos_symbol_apply(automate a,  int state_1, int state_2, int symbol_1, int symbol_2){
 
-    //Déclaration de variables locales
-    int *result_state_1, *result_state_2;
-    int **tab_summariz = allocation_tab_2D(a.nb_Etats, a.nb_Symboles);
+    // Déclaration de variables locales
+    int ***res;
 
-    //Instructions
+    // Instructions
 
-    /*Si la paire d'états de départ est identiques*/
-    if(state_1==state_2){
-
-    }
-    /*Tables de récupération avant traitement*/
-    int *tab1=allocation_tab_1D(a.nb_Etats), *tab2=allocation_tab_1D(a.nb_Etats);
-
-    tab1 = Next_states_touch(a, state_1, symbol_1), tab2=Next_states_touch(a, state_2, symbol_2);
-
-
-    //La fonctio retourne
+    // La fonction retourne :
+    return res;
 }
 
 
 
+//Sous-bloc de fonction qui ne retourne un automate
 
 
 /* La fonction qui génère la matrice nulle d'un automate dit nul*/
@@ -1376,19 +1446,19 @@ automate generate_automate_null(int d1, int d2, int d3){
     a_null.matrice = matrice;
     a_null.Table_transition = Table_transition;
 
-    // La fonction retourne un automate null au sens de sa matrice
+    // La fonction retourne :
     return a_null;
 }
 
 /* La fonction qui récupère le nombre d'états et le nombres de symboles et génère un automate*/
 automate generate_automate(){
 
-    /*Déclaration des variables locales*/
+    // Déclaration de variables locales
     int d1, d2;
     int ***m;
     automate a;
 
-    /*Instructions*/
+    // Instructions
     //Nombre total d'arcs via un compteur nombre d'arcs par état de l'automate et
     //int *nb_Arcs_tot;
     //int cpt=0;
@@ -1414,9 +1484,6 @@ automate generate_automate(){
     //les acrs partant de cet etat
 
     // La taille de l'allocation :
-    
-
-
     printf("Création d'une matrice : \n");
     printf("Quel est le nombre d'états ? : ");
     scanf("%d", &d1);
@@ -1524,47 +1591,66 @@ automate generate_automate(){
         }
     }
     a.nb_Etats_finaux = cpt;
-    /* La valeur retournée par la fonction*/
+
+    // La fonction retourne :
     return a;
 }
-
-
-
 
 /* La fonction qui remplis une matrice avec les réponses fournies par un utilisateur*/
 automate remplir_automate(automate m, int val){
 
     // Déclaration de variables locales
-
+    automate res;
     // Instructions
 
-    // La fonction retourne le même automate avec sa matrice mis à jour
-    return m;
+    // La fonction retourne :
+    return res;
 }
-
-
 
 /*La fonction qui importe un automate depuis un fichier txt*/
 automate import_automae(char path){
 
+    // Déclaration de variables locales
+    automate res;
+
+    // Instructions
+
+    // La fonction retourne :
+    return res;
 }
 
 /*La fonction qui modifie un automate*/
 automate modify_automate(automate a){
 
+    // Déclaration de variables locales
+    automate res;
+    // Instructions
+
+    // La fonction retourne :
+    return res;
 }
 
-/*La fonction qui sauvegarde un automate dans un fichier*/
+/*La fonction qui sauvegarde un automate dans un fichier text*/
 automate save_automate(automate a){
 
+    // Déclaration de variables locales
+    automate res;
+    // Instructions
+
+    // La fonction retourne :
+    return res;
 }
 
 /*La fonction qui supprime un automate*/
 automate del_automate(automate a){
 
+    // Déclaration de variables locales
+    automate res;
+    // Instructions
+
+    // La fonction retourne :
+    return res;
 }
-
-
 
 /*La fonction qui copie l'automate dans le but d'en faire une copie*/
 automate copie_automate(automate a){
@@ -1575,16 +1661,13 @@ automate copie_automate(automate a){
     // consiste à faire un copie res de l'automate de départ puis une seconde
     // copie à partir de l'automate res et tester si ça marche
 
-    // Déclaration de varaibles locales
 
+    // Déclaration de variables locales
     /* Automate retourné ; b*/
     automate b;
     int nb_Etats_b = b.nb_Etats, nb_Symboles_b=b.nb_Symboles;
 
     int etat_initial_b = b.etat_initial, nb_Etats_finaux_b = b.nb_Etats_finaux;
-
-
-
 
     /*  Automate de la copie intermédiaire */
     automate midel; 
@@ -1593,9 +1676,7 @@ automate copie_automate(automate a){
 
     int etat_initial_midel = midel.etat_initial, nb_Etats_finaux_midel = midel.nb_Etats_finaux;
 
-
     // Instructions
-
     /*1ere copie orgine vers intermédiaire*/
 
     /*Des attributs de types entiers*/
@@ -1685,12 +1766,9 @@ automate copie_automate(automate a){
     m_b = b.matrice;
     Tab_transi_b = b.Table_transition;
 
-    // La fonction retourne
+    // La fonction retourne :
     return b;
-
 }
-
-
 
 /*La fonction qui rend complet un automate*/
 automate rendre_complet(automate a){
@@ -1699,9 +1777,9 @@ automate rendre_complet(automate a){
         printf("L'automate est complet\n");
         return a;
     }
-    /*Déclaration de varaibles locales*/
-    automate copie; 
 
+    // Déclaration de variables locales
+    automate copie; 
     int nb_Etats = a.nb_Etats+1, nb_Symboles = a.nb_Symboles;
     int etat_initial;
     int *Tab_Etats_finaux;
@@ -1713,8 +1791,7 @@ automate rendre_complet(automate a){
     copie.Etats_finaux = Tab_Etats_finaux;
     copie.etat_initial = etat_initial;
 
-    /*Instructions*/
-
+    // Instructions
     for(int i=0; i<nb_Etats-1; i++){
 
         for(int j=0; j<nb_Symboles; j++){
@@ -1747,16 +1824,15 @@ automate rendre_complet(automate a){
         copie.Etats_finaux[i] = a.Etats_finaux[i];
     }
 
+    // La fonction retourne :
     return copie;
 }
-
-
-
 
 /*La concaténatiion */
 automate concat(automate a, automate b){
 
-    // Déclaration de varaibles locales
+
+    // Déclaration de variables locales
     automate res;
     int nb_Etats = a.nb_Etats + b.nb_Etats;
     int nb_Symboles = (a.nb_Symboles, b.nb_Symboles) +1;
@@ -1764,25 +1840,19 @@ automate concat(automate a, automate b){
     int ***m_concat = allocation_mat_vide(nb_Etats, nb_Symboles);
     res.matrice = m_concat;
 
-
-    // Instructions 
-    
+    // Instructions
     for(int i=0; i<nb_Etats-1; i++){
 
         for(int i_1=0; i<a.nb_Etats; );
     }
-
-    // La fonction retourne un automate 
+    // La fonction retourne :
     return res;
 }
-
-
-
 
 /* La fonction qui génère le complément d'un automate*/
 automate complement_automate(automate a){
 
-    // Déclaraiton de varaibles locales
+    // Déclaration de variables locales
     automate a_complement;
     if(est_complet(a)==0){
         a_complement = rendre_complet(a);
@@ -1805,8 +1875,6 @@ automate complement_automate(automate a){
             }
         }
     }
-
-
     // Instructions
     // Changement des états finaux en états initaux
     for(int i=0; i<a_complement.nb_Etats; i++){
@@ -1820,8 +1888,7 @@ automate complement_automate(automate a){
         
 
     }
-
-    // La fonction retourne un automate
+    // La fonction retourne :
     return a_complement;
 }
 
@@ -1829,97 +1896,18 @@ automate complement_automate(automate a){
 automate rendre_deterministe(automate a){
 
     // Déclaration de variables locales
-    int test =0;
-
+    automate res;
 
     // Instructions
-    /* Table des transition à retouner*/
-    int ***t = allocation_mat_vide(a.nb_Etats, a.nb_Symboles);
 
-
-    /*Table des lignes composite */
-    int **t_ligne_etat_composite = allocation_tab_2D(a.nb_Etats, a.nb_Etats);
-
-
-    /* Table de renommage de nouveaux états composite*/
-    int ***t_r = allocation_mat_vide(a.nb_Etats, a.nb_Symboles);
-
-    
-
-    
-
-    /*Test avant de rendre déterministe si l'automate l'est ou pas O=NON déterministe*/
-    if(est_deterministe(a) == 0){
-
-        
-        /*On le rend déterministe*/
-
-        /*Etape0 : Copie de la ligne de q0 en vue d'une examination*/
-
-        int **test = allocation_tab_2D(a.nb_Etats, a.nb_Symboles);
-
-        test = copy_line_mat(a, Tab_transition_automate_not_print(a), 0);
-        
-        affichage_2D(test, a.nb_Etats, a.nb_Symboles);
-        
-        
-        affichage_case_mat(a.Table_transition, 0, 0, a.nb_Etats, a.nb_Symboles);
-        
-        
-        for(int j=0; j<a.nb_Symboles; j++){
-
-            int position=0;
-            for(int k=1; k<a.nb_Etats; k++){
-
-                position = Next_states_touch_not_print(a, 0, j)[k];
-
-                /*Mise à jour du renommage des états composites*/
-                for(int i=0; i<a.nb_Etats; i++){
-
-                    t_r[0][j][k]=position;
-                    //printf("t_r=%d\n", t_r[0][j][k]);
-
-                }
-                if(k==position){
-                    t_ligne_etat_composite[k][k] = position;
-                    //printf("c=%d\n",  t_ligne_etat_composite[k][k]);
-                }
-            }
-        }
-
-    }else{
-
-        printf("L'automate est déjà déterministe\n");
-        return a;
-    }
-
-
-    // La fonction retourne un automate avec sa structure complète et de plus déterministe
-
+    // La fonction retourne :
+    return res;
 }
-
-
-/**********Fonction reposant sur une structure*********************************************************/
-/*-----------------------------------------------------------------------------------------------------*/
-/*Ajout d'une structute lecture automate avec trois attributs*/
-
-/* La fonction qui lie un automate à ne pas trop utiliser car il va lister tous les chemins possibles*/
-/* Sa nautre : etats_lus*/
-
-etats_lus lecture_automate_long(automate a){
-
-}
-/*-----------------------------------------------------------------------------------------------------*/
-/***************************************FIN Ajout d'une structure intermediaire*************************/
-
-
 
 /* La fonction qui fait le produit de deux automates et retourne une automate*/
-/* Adoptons une convention : les indices de l'autmate B débutent avec un zéro*/
-/* Ainsi les trois valeurs lues dans le l'automate produit sera issu des deux automates de départ*/
 automate producte_a_b(automate a, automate b){
 
-    // Déclaration de varaibles locales
+    // Déclaration de variables locales
     automate a_b;
 
     /* a structure*/
@@ -1964,7 +1952,7 @@ automate producte_a_b(automate a, automate b){
         
     }
 
-    // Instructions 
+    // Instructions
     while (1==1)
     {
         /* code */
@@ -1972,286 +1960,69 @@ automate producte_a_b(automate a, automate b){
         
     }
     
-
-    // La fonction retourne un automate
+    // La fonction retourne :
     return a_b;
 }
 
+/**********Fonction reposant sur une structure intermediaire*******************************************/
+/*-----------------------------------------------------------------------------------------------------*/
+/*Ajout d'une structute lecture automate avec trois attributs*/
 
+/* La fonction qui lie un automate à ne pas trop utiliser car il va lister tous les chemins possibles*/
+/* Sa nautre : etats_lus*/
 
-/*************************PARTIE BLOC DE PROTOTYPAGE DE FONCTIONS AUTOMATE ************************/
-
-/*############################################################################################################*/
-
-
-
-
-
-
-/*############################################################################################################*/
-
-/*************************PARTIE BLOC DE PROTOTYPAGE DE FONCTIONS MOT ************************/
-/* La fonciton qui affiche le mot*/
-void affichage_mot(mot *m){
+etats_lus lecture_automate_long(automate a){
 
     // Déclaration de variables locales
-
-
+    etats_lus res;
     // Instructions
-    // La valeur 100 est mis pour la limte de mot
-    printf(" Le mot saisi est : ");
-    for(int i=0; i<(m->size_mot); i++){
 
-        /* code */
-        printf("a%d", m->Tab_caract[i]);
-
-        
-    }
-    printf("\n");
-    
-    // La fonction retourne : rien
+    // La fonction retourne :
+    return res;
 }
 
 
 
 
-/* La fonction qui lie un mot et remmplie une matrice D*/
-void  lecture_mot(mot m){
+//Sous-bloc de fonction qui ne retourne un mot
 
-    // Déclaration de variable
-
-    // Instructions
-    printf("Les caractères du mot sont :\n");
-
-    for(int i =0; i<(m.size_mot); i++){
-
-        printf("[ a:%d -> %d ]", i, m.Tab_caract[i]);
-    }
-    printf("\n");
-
-
-    // La fonction retourne
-}
-
-
-
-
-
-/* La fonction qui retourne l'état courant dans la lecture d'un automate*/
-int retourne_etat_couant(automate a, int curent_state, int curent_symbol){
-
-    // L'automate doit être déterministe
+/*La fonction qui saisi le mot deux version*/
+mot mot_saisi_avant(automate a){
 
     // Déclaration de variables locales
-    int etat_courant = curent_state, symbole_courant = curent_symbol;
-    
-    // Instructions
-    int *States = a.matrice[etat_courant][symbole_courant];
-
-    int state = 0;
-
-    /*Si l'état passé en arg est déjà le dernier de l'automate*/
-    if(curent_state == (a.nb_Etats-1)){
-        state = a.nb_Etats;
-    }
-    
-    for( int i =0; i<a.nb_Etats; i++){
-
-        if(States[i]==1){
-
-            state = i;
-        }
-    }
-
-    return state;
-}
-
-
-
-
-/* La fonction qui dit si un mot est reconnu ou pas par un automate*/
-int est_reconnu(mot m, automate a){
-
-    // Il faut l'appeler avec un automate déterministe
-    
-    // Déclaration de variables locales
-    int curent_state = 0, curent_symbol = m.Tab_caract[0];
+    mot mot_saisi;
 
     // Instructions
-    int i=0;
-    while (/* condition */ 1==1)
-    {
-        /* code */
-        curent_state = retourne_etat_couant(a, curent_state, curent_symbol);
-        printf("état suivant : %d | symbole associé %d\n", curent_state, curent_symbol);
-        
-
-        if(curent_state == 0){
-
-            printf("Mot non reconnu\n");
-            return 0;
-        }
-        int final = est_un_etat_final(a, curent_state);
-        if((curent_state == (a.nb_Etats-1)) || final==1){
-
-            printf("val : %d\n", final);
-            if(final==1){
-
-                printf("Mot reconnu\n");
-                printf("Final = %d\n", final);
-                return 1;
-            }
-            printf("Le mot n'est pas reconnu\n");
-            printf("Final = %d\n", final);
-            return 0;   
-        }
-        i += 1;
-        curent_symbol = m.Tab_caract[i];
-        printf("curent syombol avant tour suivant : %d\n", curent_symbol);
-        printf("Etat suivant avant tout : %d\n", curent_state);
-        final=0;
-    }
-          
-    // La fonction retourne 
-}
-
-
-
-
-/* La fonction qui réalise un certains nombres de test de la reconnaissance de mots*/
-int serie_test_reconnaissance(automate a, int n_fois){
-
-    // Déclaration de variables locales
-    mot *m;
-    int res;
-
-    // Instructions
-    for(int i=0; i<n_fois; i++){
-
-        m = mot_saisi_avant(a);
-        if(est_reconnu(*m, a)==1){
-
-            printf("Le mot : ");
-            affichage_mot(m);
-            printf("est reconnu\n");
-        }
-        printf("Le mot : ");
-        affichage_mot(m);
-        printf("n'est pas reconnu\n");
-        
-
-    }
-
-    // La fonction retourne
-    return 1;
-}
-
-
-
-/* La fonction qui teste si un mot est reconnu Version 2*/
-int reconnu_v2(mot m, automate a){
-
-    //Déclaratoin de variables locales
-    int curent_state = 0;
-    int next_state;
-    int symbole_mot = m.Tab_caract[0];
-
-    //instructions
-    if(m.size_mot==1){
-        for(int i=0; i<a.nb_Etats; i++){
-
-            if((a.Etats_finaux[i]==1) || i==m.Tab_caract[0]){
-                printf("Oui\n");
-                return 1;
-            }
-            printf(" Là reconnu\n");
-            return 0;
-        }
-
-    }
-
-    int last_symbol_mot = m.Tab_caract[m.size_mot-1];
-
-    int proba_state_final = find_next_state(a, m);
-
-    if(m.size_mot>=2 || a.nb_Etats>=3){
-
-        if(est_un_etat_final(a, proba_state_final)==0){
-            printf("Le mot non \n");
-            return 0;
-        }
-        else if (est_un_etat_final(a, proba_state_final)==1){
-            
-            for(int i=0; i<m.size_mot-1; i++){
-                
-                next_state = retourne_etat_couant(a, curent_state, m.Tab_caract[i]);
-                if(next_state==1){
-                    
-                    /* Si val =1, alors cet état est attient on continue*/
-                    curent_state = i;
-                }
-
-                else{
-                    /* Ce i-ème état n'est pas ettient ce qui fait que le mot n'est pas reconnu*/
-                    printf("Pas reconnu\n");
-                    return 0;
-                }
-                
-            }
-            printf("Finalement OUI\n");
-            return 1;
-        }
-    }
-    // La fonction retourne
-}
-
-/* La fonction qui retrouve un état par application d'un symbole du mot*/
-int find_next_state(automate a, mot m){
-
-}
-
-
-
-
-/*La fonction qui saisi le mot*/
-mot *mot_saisi_avant(automate a){
-
-    // Déclaration de variables
-    mot *mot_saisi;
-
-
-    // Instructions
-
     printf("Quelle est la taille de votre mot : ");
-    scanf("%d", &mot_saisi->size_mot);
+    scanf("%d", &mot_saisi.size_mot);
     printf( "\n");
     
     // Traitons les mots à un caractère
-    if(mot_saisi->size_mot == 1){
+    if(mot_saisi.size_mot == 1){
 
-        mot_saisi->Tab_caract = allocation_tab_1D(((mot_saisi->size_mot)+1));
+        mot_saisi.Tab_caract = allocation_tab_1D(((mot_saisi.size_mot)+1));
         printf("Veillez saisir votre mot : \n"); 
-        scanf("%d", ((mot_saisi->Tab_caract)));
+        scanf("%d", ((mot_saisi.Tab_caract)));
     }
 
     // Mot avec plus d'un caractère
     else{
-        printf("La taille de votre mot est : %d\n", mot_saisi->size_mot);
-        mot_saisi->Tab_caract = allocation_tab_1D(((mot_saisi->size_mot)+1));
+        printf("La taille de votre mot est : %d\n", mot_saisi.size_mot);
+        mot_saisi.Tab_caract = allocation_tab_1D(((mot_saisi.size_mot)+1));
 
         printf("Veillez saisir votre mot : \n"); 
 
-        printf("L'indice de chaque caractère est à chosisr entere [ %d et %d ]\n",0 ,((mot_saisi->size_mot)-1));
+        printf("L'indice de chaque caractère est à chosisr entere [ %d et %d ]\n",0 ,((mot_saisi.size_mot)-1));
         printf("Après chaque caractère appyez sur la touche Entrer\n");
 
-        int cpt=mot_saisi->size_mot;
+        int cpt=mot_saisi.size_mot;
 
         while (cpt!=0)
         {
             /* code */
-            for(int i=0; i<(mot_saisi->size_mot); i++){
+            for(int i=0; i<(mot_saisi.size_mot); i++){
             // chaque saisi est sauvegardé dans le tableau
-            scanf("%d", ((mot_saisi->Tab_caract) +i));
+            scanf("%d", ((mot_saisi.Tab_caract) +i));
             cpt -= 1;
             }
             
@@ -2259,29 +2030,26 @@ mot *mot_saisi_avant(automate a){
         printf("\n");
 
         // Pour marquer la fin du mot dans sa table de caractère
-        mot_saisi->Tab_caract[(mot_saisi->size_mot)+1] =-1;
+        mot_saisi.Tab_caract[(mot_saisi.size_mot)+1] =-1;
 
         // Mise à jour de la structure mot
     }
 
-    // La fonction retourne
+    // La fonction retourne :
     return mot_saisi;
 }
 
+mot  mot_saisi(automate a){
 
-
-
-mot  *mot_saisi(automate a){
-
-    // Déclaration de variables
-    mot *m;
+    // Déclaration de variables locales
+    mot m;
     int taille;
 
     // Instructions
     printf("Entrer la taille du mot à lire\n");
     scanf("%d", &taille);
-    m->Tab_caract = allocation_tab_1D(taille);
-    m->size_mot = taille;
+    m.Tab_caract = allocation_tab_1D(taille);
+    m.size_mot = taille;
 
     printf("Les symboles à saisir sont dans l'intervalle : [ 0, %d]\n", a.nb_Symboles-1);
 
@@ -2294,21 +2062,16 @@ mot  *mot_saisi(automate a){
             scanf("%d", &x);
 
             if(x>=0 && x<a.nb_Symboles){
-                m->Tab_caract[i] = x;
+                m.Tab_caract[i] = x;
                 break;
             }
 
         }
         
     }
-
-    // La fonction retourne
+    // La fonction retourne :
     return m;
 }
 
-
-/*************************PARTIE BLOC DE PROTOTYPAGE DE FONCTIONS MOT ************************/
-
-/*############################################################################################################*/
 
 
