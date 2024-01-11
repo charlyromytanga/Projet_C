@@ -1,3 +1,13 @@
+/**
+ * @file automate.c
+ * @author Charly romy TANGA - Abdoulaye MBAYE - Berkehan USLU (you@domain.com)
+ * @brief 
+ * @version 0.1
+ * @date 2024-01-11
+ * 
+ * @copyright Copyright (c) 2024
+ * 
+ */
 #include <stdio.h>
 #include <string.h>
 #include <stdlib.h>

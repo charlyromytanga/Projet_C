@@ -1,6 +1,6 @@
 /**
  * @file Automate.h
- * @author your name (you@domain.com)
+ * @author Charly romy TANGA - Abdoulaye MBAYE - Berkehan USLU (you@domain.com)
  * @brief 
  * @version 0.1
  * @date 2024-01-11
