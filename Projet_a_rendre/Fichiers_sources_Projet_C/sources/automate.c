@@ -4,7 +4,7 @@
 #include <math.h>
 
 #include "Automate.h"
-#include "test_charly.c"
+#include "main.c"
 
 
 
@@ -244,7 +244,7 @@ void lecture_etats_finaux(automate a){
     /*Option 1 en commit*/
         /*printf("Les états finaux sont :\n");
         for(int i =0; i<a.nb_Etats; i++){
-            printf("[ i:%d . %d ]", i, a.Etats_finaux[i]);
+            printf("[ i:%d -> %d ]", i, a.Etats_finaux[i]);
         }
         printf("\n");
     */
@@ -1992,7 +1992,7 @@ automate producte_a_b(automate a, automate b){
 
 /*************************PARTIE BLOC DE PROTOTYPAGE DE FONCTIONS MOT ************************/
 /* La fonciton qui affiche le mot*/
-void affichage_mot(mot m){
+void affichage_mot(mot *m){
 
     // Déclaration de variables locales
 
@@ -2000,10 +2000,10 @@ void affichage_mot(mot m){
     // Instructions
     // La valeur 100 est mis pour la limte de mot
     printf(" Le mot saisi est : ");
-    for(int i=0; i<(m.size_mot); i++){
+    for(int i=0; i<(m->size_mot); i++){
 
         /* code */
-        printf("a%d", m.Tab_caract[i]);
+        printf("a%d", m->Tab_caract[i]);
 
         
     }
@@ -2025,7 +2025,7 @@ void  lecture_mot(mot m){
 
     for(int i =0; i<(m.size_mot); i++){
 
-        printf("[ a:%d . %d ]", i, m.Tab_caract[i]);
+        printf("[ a:%d -> %d ]", i, m.Tab_caract[i]);
     }
     printf("\n");
 
@@ -2122,14 +2122,14 @@ int est_reconnu(mot m, automate a){
 int serie_test_reconnaissance(automate a, int n_fois){
 
     // Déclaration de variables locales
-    mot m;
+    mot *m;
     int res;
 
     // Instructions
     for(int i=0; i<n_fois; i++){
 
         m = mot_saisi_avant(a);
-        if(est_reconnu(m, a)==1){
+        if(est_reconnu(*m, a)==1){
 
             printf("Le mot : ");
             affichage_mot(m);
@@ -2214,44 +2214,44 @@ int find_next_state(automate a, mot m){
 
 
 /*La fonction qui saisi le mot*/
-mot mot_saisi_avant(automate a){
+mot *mot_saisi_avant(automate a){
 
     // Déclaration de variables
-    mot m;
+    mot *mot_saisi;
 
 
     // Instructions
 
     printf("Quelle est la taille de votre mot : ");
-    scanf("%d", &m.size_mot);
+    scanf("%d", &mot_saisi->size_mot);
     printf( "\n");
     
     // Traitons les mots à un caractère
-    if(m.size_mot == 1){
+    if(mot_saisi->size_mot == 1){
 
-        m.Tab_caract = allocation_tab_1D(((m.size_mot)+1));
+        mot_saisi->Tab_caract = allocation_tab_1D(((mot_saisi->size_mot)+1));
         printf("Veillez saisir votre mot : \n"); 
-        scanf("%d", ((m.Tab_caract)));
+        scanf("%d", ((mot_saisi->Tab_caract)));
     }
 
     // Mot avec plus d'un caractère
     else{
-        printf("La taille de votre mot est : %d\n", m.size_mot);
-        m.Tab_caract = allocation_tab_1D(((m.size_mot)+1));
+        printf("La taille de votre mot est : %d\n", mot_saisi->size_mot);
+        mot_saisi->Tab_caract = allocation_tab_1D(((mot_saisi->size_mot)+1));
 
         printf("Veillez saisir votre mot : \n"); 
 
-        printf("L'indice de chaque caractère est à chosisr entere [ %d et %d ]\n",0 ,((m.size_mot)-1));
+        printf("L'indice de chaque caractère est à chosisr entere [ %d et %d ]\n",0 ,((mot_saisi->size_mot)-1));
         printf("Après chaque caractère appyez sur la touche Entrer\n");
 
-        int cpt=m.size_mot;
+        int cpt=mot_saisi->size_mot;
 
         while (cpt!=0)
         {
             /* code */
-            for(int i=0; i<(m.size_mot); i++){
+            for(int i=0; i<(mot_saisi->size_mot); i++){
             // chaque saisi est sauvegardé dans le tableau
-            scanf("%d", ((m.Tab_caract) +i));
+            scanf("%d", ((mot_saisi->Tab_caract) +i));
             cpt -= 1;
             }
             
@@ -2259,29 +2259,29 @@ mot mot_saisi_avant(automate a){
         printf("\n");
 
         // Pour marquer la fin du mot dans sa table de caractère
-        m.Tab_caract[(m.size_mot)+1] =-1;
+        mot_saisi->Tab_caract[(mot_saisi->size_mot)+1] =-1;
 
         // Mise à jour de la structure mot
     }
 
     // La fonction retourne
-    return m;
+    return mot_saisi;
 }
 
 
 
 
-mot  mot_saisi(automate a){
+mot  *mot_saisi(automate a){
 
     // Déclaration de variables
-    mot m;
+    mot *m;
     int taille;
 
     // Instructions
     printf("Entrer la taille du mot à lire\n");
     scanf("%d", &taille);
-    m.Tab_caract = allocation_tab_1D(taille);
-    m.size_mot = taille;
+    m->Tab_caract = allocation_tab_1D(taille);
+    m->size_mot = taille;
 
     printf("Les symboles à saisir sont dans l'intervalle : [ 0, %d]\n", a.nb_Symboles-1);
 
@@ -2294,7 +2294,7 @@ mot  mot_saisi(automate a){
             scanf("%d", &x);
 
             if(x>=0 && x<a.nb_Symboles){
-                m.Tab_caract[i] = x;
+                m->Tab_caract[i] = x;
                 break;
             }
 

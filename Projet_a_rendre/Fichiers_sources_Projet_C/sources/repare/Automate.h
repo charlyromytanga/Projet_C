@@ -3,7 +3,7 @@
 
 /*Include other file*/
 #include "automate.c"
-#include "test_charly.c"
+#include "main.c"
 
 
 /* All structure define */
@@ -300,7 +300,7 @@ void lecture_etats_finaux(automate a);
 void echange(int *a, int *b);
 
 /* La fonciton qui affiche le mot*/
-void affichage_mot(mot mot);
+void affichage_mot(mot *mot);
 
 /* La fonction qui lie un mot et remmplie une matrice D*/
 void  lecture_mot(mot m);
@@ -457,13 +457,6 @@ automate producte_a_b(automate a, automate b);
 /* La fonction qui lie un automate à ne pas trop utiliser car il va lister tous les chemins possibles*/
 /* Sa nautre : etats_lus*/
 etats_lus lecture_automate_long(automate a);
-
-
-//Sous-bloc de fonction qui ne retourne un mot
-/*La fonction qui saisi le mot*/
-mot mot_saisi_avant(automate a);
-mot  mot_saisi(automate a);
-
 
 
 

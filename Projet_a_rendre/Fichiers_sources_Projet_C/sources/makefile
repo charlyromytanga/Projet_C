@@ -10,7 +10,7 @@
 #__Définition des varaibles : 
 # $@ : pour ne plus écrire la variable
 # $< : 1ere dépendance : ici l'unique dépendance Automate.h
-# $^ : La liste des dépendances : utile pour lister tous les .o qui seront exécutés
+# $^ : La liste des dépendance : utile pour lister tous les .o qui seront exécutés
 
 
 
@@ -53,13 +53,13 @@
 
 #__Les autres cibles
 
-#Test.o: main.c Automate.h
+#Test.o: Test.c Automate.h
 #		gcc -c $< -o $@
 	
 #automate.o: automate.c Automate.h
 #			gcc -c $< -o $@
 
-#exec: main.o automate.o#
+#exec: Test.o automate.o
 #		gcc $^ -o $@
 #*********************************
 
@@ -68,11 +68,11 @@
 #__Après : DYNAMIQUE 
 
 CC = gcc
-SRC = $(wildcard *.c)
-OBJ = $(SRC :.c=.o)
+SRF = $(wildcard *.c)
+OBJ = $(SRC: .c =.o)
 
 #nom repertoire
-BUILD_DIR = cytech@student-laptop:~/Projet_C
+BUILD_DIR = build
 
 #mise à jour liste obj avec nom dossier
 OBJ2 = $(addprefix $(BUILD_DIR)/, $(OBJ))
@@ -80,39 +80,16 @@ OBJ2 = $(addprefix $(BUILD_DIR)/, $(OBJ))
 all : $(BUILD_DIR)/exec
 
 #BUILD_DIR sert de dépendance
-$(BUILD_DIR)/.o : .c Automate.h $(OBJ)
+$(BUILD_DIR)/%.o : %.c Automate.h $(BUILD_DIR)
 		$(CC) -c $< -o $@
 
-#$(BUILD_DIR)/exec: $(OBJ2)
-		$(CC)  $^ -o $@
+$(BUILD_DIR)/exec: $(OBJ2)
+		$(CC) $^ -o $@
 
 #creation repertoire
 $(BUILD_DIR):
 		mkdir -p $(BUILD_DIR)/
-#**************************************************
 
 
-#**************************************************
-#__Lorsque le dynamique ne marche pas encore 
-
-
-#CC=gcc
-
-#Liste des fichiers .c
-#SRC=$(wildcard *.c)
-
-#Subsitution : on obtient la liste des fichers .o
-#OBJ = $(SRC :.c=.o)
-
-#all: exec
-
-#test_charly.o: $(SRC) Automate.h
-				$(CC) -c $< -o $@
-
-#automate.o:    $(SRC) Automate.h
-				$(CC) -c $< -o $@
-
-#exec: $(OBJ)
-		$(CC) $^ -o $@
 
 
