@@ -1,0 +1,113 @@
+\hypertarget{Contribution_01au_01projet_2sources_2Automate_8h}{}\doxysection{Contribution au projet/sources/\+Automate.h File Reference}
+\label{Contribution_01au_01projet_2sources_2Automate_8h}\index{Contribution au projet/sources/Automate.h@{Contribution au projet/sources/Automate.h}}
+{\ttfamily \#include \char`\"{}automate.\+c\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}main.\+c\char`\"{}}\newline
+Include dependency graph for Automate.\+h\+:
+% FIG 0
+This graph shows which files directly or indirectly include this file\+:
+% FIG 1
+\doxysubsection*{Data Structures}
+\begin{DoxyCompactItemize}
+\item 
+struct \mbox{\hyperlink{sources_2Automate_8h_structautomate}{automate}}
+\end{DoxyCompactItemize}
+\doxysubsection*{Typedefs}
+\begin{DoxyCompactItemize}
+\item 
+typedef struct \mbox{\hyperlink{sources_2Automate_8h_structautomate}{automate}} \mbox{\hyperlink{Contribution_01au_01projet_2sources_2Automate_8h_a72f52bf7d172e0be96c5212d72708512}{automate}}
+\end{DoxyCompactItemize}
+\doxysubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+int $\ast$ \mbox{\hyperlink{Contribution_01au_01projet_2sources_2Automate_8h_a291328ee8be1cab3c86864371a6d3220}{alloc\+\_\+tab\+\_\+1D}} (int t1)
+\item 
+int $\ast$$\ast$$\ast$ \mbox{\hyperlink{Contribution_01au_01projet_2sources_2Automate_8h_a4334f9fdeb5b504275edb55d6f14533b}{alloc\+\_\+mat\+\_\+vide}} (int d1, int d2)
+\item 
+\mbox{\hyperlink{sources_2Automate_8h_structautomate}{automate}} \mbox{\hyperlink{Contribution_01au_01projet_2sources_2Automate_8h_a66f04d40f7d27e643347f29895f5b0eb}{generator\+\_\+automate}} ()
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Data Structure Documentation}
+\index{automate@{automate}}\label{structautomate}
+\Hypertarget{sources_2Automate_8h_structautomate}
+\doxysubsubsection{struct automate}
+\begin{DoxyFields}{Data Fields}
+\mbox{\Hypertarget{sources_2Automate_8h_ae3ac5c83c5aa6a1fbef3fe68c664460c}\label{sources_2Automate_8h_ae3ac5c83c5aa6a1fbef3fe68c664460c}} 
+int&
+etat\_initial&
+\\
+\hline
+
+\mbox{\Hypertarget{sources_2Automate_8h_a2b6fb7bde348f1d42559f92ea9e7a4ed}\label{sources_2Automate_8h_a2b6fb7bde348f1d42559f92ea9e7a4ed}} 
+int $\ast$&
+Etats\_finaux&
+\\
+\hline
+
+\mbox{\Hypertarget{sources_2Automate_8h_aaf64c8c7eaae013a268342471b42548d}\label{sources_2Automate_8h_aaf64c8c7eaae013a268342471b42548d}} 
+int $\ast$$\ast$$\ast$&
+matrice&
+\\
+\hline
+
+\mbox{\Hypertarget{sources_2Automate_8h_a6d8c3f98bbb4212368325d2e2dad083a}\label{sources_2Automate_8h_a6d8c3f98bbb4212368325d2e2dad083a}} 
+int&
+nb\_Etats&
+\\
+\hline
+
+\mbox{\Hypertarget{sources_2Automate_8h_aff6ee64a9c3a7ff40efce3b88da82867}\label{sources_2Automate_8h_aff6ee64a9c3a7ff40efce3b88da82867}} 
+int&
+nb\_Etats\_finaux&
+\\
+\hline
+
+\mbox{\Hypertarget{sources_2Automate_8h_ab6e420dd9e24241d4a32521b578db808}\label{sources_2Automate_8h_ab6e420dd9e24241d4a32521b578db808}} 
+int&
+nb\_Symboles&
+\\
+\hline
+
+\mbox{\Hypertarget{sources_2Automate_8h_a64e42fa561e8a9118c8ab946b68f4d07}\label{sources_2Automate_8h_a64e42fa561e8a9118c8ab946b68f4d07}} 
+int $\ast$$\ast$$\ast$&
+Table\_transition&
+\\
+\hline
+
+\end{DoxyFields}
+
+
+\doxysubsection{Typedef Documentation}
+\mbox{\Hypertarget{Contribution_01au_01projet_2sources_2Automate_8h_a72f52bf7d172e0be96c5212d72708512}\label{Contribution_01au_01projet_2sources_2Automate_8h_a72f52bf7d172e0be96c5212d72708512}} 
+\index{Automate.h@{Automate.h}!automate@{automate}}
+\index{automate@{automate}!Automate.h@{Automate.h}}
+\doxysubsubsection{\texorpdfstring{automate}{automate}}
+{\footnotesize\ttfamily typedef struct \mbox{\hyperlink{sources_2Automate_8h_structautomate}{automate}} \mbox{\hyperlink{sources_2Automate_8h_structautomate}{automate}}}
+
+
+
+\doxysubsection{Function Documentation}
+\mbox{\Hypertarget{Contribution_01au_01projet_2sources_2Automate_8h_a4334f9fdeb5b504275edb55d6f14533b}\label{Contribution_01au_01projet_2sources_2Automate_8h_a4334f9fdeb5b504275edb55d6f14533b}} 
+\index{Automate.h@{Automate.h}!alloc\_mat\_vide@{alloc\_mat\_vide}}
+\index{alloc\_mat\_vide@{alloc\_mat\_vide}!Automate.h@{Automate.h}}
+\doxysubsubsection{\texorpdfstring{alloc\_mat\_vide()}{alloc\_mat\_vide()}}
+{\footnotesize\ttfamily int$\ast$$\ast$$\ast$ alloc\+\_\+mat\+\_\+vide (\begin{DoxyParamCaption}\item[{int}]{d1,  }\item[{int}]{d2 }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{Contribution_01au_01projet_2sources_2Automate_8h_a291328ee8be1cab3c86864371a6d3220}\label{Contribution_01au_01projet_2sources_2Automate_8h_a291328ee8be1cab3c86864371a6d3220}} 
+\index{Automate.h@{Automate.h}!alloc\_tab\_1D@{alloc\_tab\_1D}}
+\index{alloc\_tab\_1D@{alloc\_tab\_1D}!Automate.h@{Automate.h}}
+\doxysubsubsection{\texorpdfstring{alloc\_tab\_1D()}{alloc\_tab\_1D()}}
+{\footnotesize\ttfamily int$\ast$ alloc\+\_\+tab\+\_\+1D (\begin{DoxyParamCaption}\item[{int}]{t1 }\end{DoxyParamCaption})}
+
+\begin{DoxyReturn}{Returns}
+
+\end{DoxyReturn}
+\mbox{\Hypertarget{Contribution_01au_01projet_2sources_2Automate_8h_a66f04d40f7d27e643347f29895f5b0eb}\label{Contribution_01au_01projet_2sources_2Automate_8h_a66f04d40f7d27e643347f29895f5b0eb}} 
+\index{Automate.h@{Automate.h}!generator\_automate@{generator\_automate}}
+\index{generator\_automate@{generator\_automate}!Automate.h@{Automate.h}}
+\doxysubsubsection{\texorpdfstring{generator\_automate()}{generator\_automate()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{sources_2Automate_8h_structautomate}{automate}} generator\+\_\+automate (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\begin{DoxyReturn}{Returns}
+
+\end{DoxyReturn}

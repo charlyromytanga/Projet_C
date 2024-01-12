@@ -1,0 +1,273 @@
+\@ifundefined {etoctocstyle}{\let \etoc@startlocaltoc \@gobble \let \etoc@settocdepth \@gobble \let \etoc@depthtag \@gobble \let \etoc@setlocaltop \@gobble }{}
+\contentsline {chapter}{\numberline {1}README}{1}{chapter.1}%
+\contentsline {chapter}{\numberline {2}File Index}{3}{chapter.2}%
+\contentsline {section}{\numberline {2.1}File List}{3}{section.2.1}%
+\contentsline {chapter}{\numberline {3}File Documentation}{5}{chapter.3}%
+\contentsline {section}{\numberline {3.1}Contribution au projet/sources/automate.c File Reference}{5}{section.3.1}%
+\contentsline {subsection}{\numberline {3.1.1}Function Documentation}{5}{subsection.3.1.1}%
+\contentsline {subsubsection}{\numberline {3.1.1.1}alloc\_mat\_vide()}{5}{subsubsection.3.1.1.1}%
+\contentsline {subsubsection}{\numberline {3.1.1.2}alloc\_tab\_1D()}{5}{subsubsection.3.1.1.2}%
+\contentsline {subsubsection}{\numberline {3.1.1.3}generator\_automate()}{6}{subsubsection.3.1.1.3}%
+\contentsline {section}{\numberline {3.2}Projet\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}\_\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}C/sources/automate.c File Reference}{6}{section.3.2}%
+\contentsline {subsection}{\numberline {3.2.1}Function Documentation}{7}{subsection.3.2.1}%
+\contentsline {subsubsection}{\numberline {3.2.1.1}add\_state\_to\_composite\_table()}{7}{subsubsection.3.2.1.1}%
+\contentsline {subsubsection}{\numberline {3.2.1.2}add\_state\_to\_rename\_table\_state()}{8}{subsubsection.3.2.1.2}%
+\contentsline {subsubsection}{\numberline {3.2.1.3}affichage\_1D()}{8}{subsubsection.3.2.1.3}%
+\contentsline {subsubsection}{\numberline {3.2.1.4}affichage\_2D()}{8}{subsubsection.3.2.1.4}%
+\contentsline {subsubsection}{\numberline {3.2.1.5}affichage\_automate()}{9}{subsubsection.3.2.1.5}%
+\contentsline {subsubsection}{\numberline {3.2.1.6}affichage\_case\_mat()}{9}{subsubsection.3.2.1.6}%
+\contentsline {subsubsection}{\numberline {3.2.1.7}affichage\_case\_tab\_1D()}{9}{subsubsection.3.2.1.7}%
+\contentsline {subsubsection}{\numberline {3.2.1.8}affichage\_case\_tab\_2D()}{10}{subsubsection.3.2.1.8}%
+\contentsline {subsubsection}{\numberline {3.2.1.9}affichage\_col\_mat()}{10}{subsubsection.3.2.1.9}%
+\contentsline {subsubsection}{\numberline {3.2.1.10}affichage\_ligne\_mat()}{10}{subsubsection.3.2.1.10}%
+\contentsline {subsubsection}{\numberline {3.2.1.11}affichage\_mot()}{11}{subsubsection.3.2.1.11}%
+\contentsline {subsubsection}{\numberline {3.2.1.12}allocation\_mat\_vide()}{11}{subsubsection.3.2.1.12}%
+\contentsline {subsubsection}{\numberline {3.2.1.13}allocation\_tab\_1D()}{11}{subsubsection.3.2.1.13}%
+\contentsline {subsubsection}{\numberline {3.2.1.14}allocation\_tab\_2D()}{12}{subsubsection.3.2.1.14}%
+\contentsline {subsubsection}{\numberline {3.2.1.15}calculte\_number\_states\_touch()}{12}{subsubsection.3.2.1.15}%
+\contentsline {subsubsection}{\numberline {3.2.1.16}complement\_automate()}{12}{subsubsection.3.2.1.16}%
+\contentsline {subsubsection}{\numberline {3.2.1.17}concat()}{13}{subsubsection.3.2.1.17}%
+\contentsline {subsubsection}{\numberline {3.2.1.18}copie\_automate()}{13}{subsubsection.3.2.1.18}%
+\contentsline {subsubsection}{\numberline {3.2.1.19}copy\_line\_mat()}{13}{subsubsection.3.2.1.19}%
+\contentsline {subsubsection}{\numberline {3.2.1.20}del\_automate()}{14}{subsubsection.3.2.1.20}%
+\contentsline {subsubsection}{\numberline {3.2.1.21}echange()}{14}{subsubsection.3.2.1.21}%
+\contentsline {subsubsection}{\numberline {3.2.1.22}est\_complet()}{14}{subsubsection.3.2.1.22}%
+\contentsline {subsubsection}{\numberline {3.2.1.23}est\_deterministe()}{15}{subsubsection.3.2.1.23}%
+\contentsline {subsubsection}{\numberline {3.2.1.24}est\_reconnu()}{15}{subsubsection.3.2.1.24}%
+\contentsline {subsubsection}{\numberline {3.2.1.25}est\_un\_etat\_final()}{15}{subsubsection.3.2.1.25}%
+\contentsline {subsubsection}{\numberline {3.2.1.26}exist\_state\_in\_tab\_transi()}{16}{subsubsection.3.2.1.26}%
+\contentsline {subsubsection}{\numberline {3.2.1.27}find\_next\_state()}{16}{subsubsection.3.2.1.27}%
+\contentsline {subsubsection}{\numberline {3.2.1.28}generate\_automate()}{16}{subsubsection.3.2.1.28}%
+\contentsline {subsubsection}{\numberline {3.2.1.29}generate\_automate\_null()}{16}{subsubsection.3.2.1.29}%
+\contentsline {subsubsection}{\numberline {3.2.1.30}group\_states\_by\_same\_symbol()}{17}{subsubsection.3.2.1.30}%
+\contentsline {subsubsection}{\numberline {3.2.1.31}group\_states\_by\_same\_symbol\_not\_print()}{17}{subsubsection.3.2.1.31}%
+\contentsline {subsubsection}{\numberline {3.2.1.32}import\_automae()}{18}{subsubsection.3.2.1.32}%
+\contentsline {subsubsection}{\numberline {3.2.1.33}lecture\_automate\_court()}{18}{subsubsection.3.2.1.33}%
+\contentsline {subsubsection}{\numberline {3.2.1.34}lecture\_automate\_long()}{18}{subsubsection.3.2.1.34}%
+\contentsline {subsubsection}{\numberline {3.2.1.35}lecture\_etats\_finaux()}{18}{subsubsection.3.2.1.35}%
+\contentsline {subsubsection}{\numberline {3.2.1.36}lecture\_mot()}{19}{subsubsection.3.2.1.36}%
+\contentsline {subsubsection}{\numberline {3.2.1.37}modify\_automate()}{19}{subsubsection.3.2.1.37}%
+\contentsline {subsubsection}{\numberline {3.2.1.38}mot\_saisi()}{19}{subsubsection.3.2.1.38}%
+\contentsline {subsubsection}{\numberline {3.2.1.39}mot\_saisi\_avant()}{19}{subsubsection.3.2.1.39}%
+\contentsline {subsubsection}{\numberline {3.2.1.40}Next\_one\_state\_touch()}{20}{subsubsection.3.2.1.40}%
+\contentsline {subsubsection}{\numberline {3.2.1.41}Next\_states\_touch()}{21}{subsubsection.3.2.1.41}%
+\contentsline {subsubsection}{\numberline {3.2.1.42}Next\_states\_touch\_not\_print()}{21}{subsubsection.3.2.1.42}%
+\contentsline {subsubsection}{\numberline {3.2.1.43}producte\_a\_b()}{22}{subsubsection.3.2.1.43}%
+\contentsline {subsubsection}{\numberline {3.2.1.44}reconnu\_v2()}{22}{subsubsection.3.2.1.44}%
+\contentsline {subsubsection}{\numberline {3.2.1.45}remplir\_automate()}{22}{subsubsection.3.2.1.45}%
+\contentsline {subsubsection}{\numberline {3.2.1.46}rendre\_complet()}{23}{subsubsection.3.2.1.46}%
+\contentsline {subsubsection}{\numberline {3.2.1.47}rendre\_deterministe()}{23}{subsubsection.3.2.1.47}%
+\contentsline {subsubsection}{\numberline {3.2.1.48}retourne\_etat\_couant()}{23}{subsubsection.3.2.1.48}%
+\contentsline {subsubsection}{\numberline {3.2.1.49}save\_automate()}{24}{subsubsection.3.2.1.49}%
+\contentsline {subsubsection}{\numberline {3.2.1.50}serie\_test\_reconnaissance()}{24}{subsubsection.3.2.1.50}%
+\contentsline {subsubsection}{\numberline {3.2.1.51}start\_with\_tow()}{24}{subsubsection.3.2.1.51}%
+\contentsline {subsubsection}{\numberline {3.2.1.52}Tab\_states\_from\_q0()}{25}{subsubsection.3.2.1.52}%
+\contentsline {subsubsection}{\numberline {3.2.1.53}Tab\_states\_from\_q0\_not\_print()}{25}{subsubsection.3.2.1.53}%
+\contentsline {subsubsection}{\numberline {3.2.1.54}Tab\_transition\_automate()}{25}{subsubsection.3.2.1.54}%
+\contentsline {subsubsection}{\numberline {3.2.1.55}Tab\_transition\_automate\_not\_print()}{26}{subsubsection.3.2.1.55}%
+\contentsline {subsubsection}{\numberline {3.2.1.56}twos\_symbol\_apply()}{26}{subsubsection.3.2.1.56}%
+\contentsline {subsubsection}{\numberline {3.2.1.57}union\_states\_of\_same\_symbol()}{26}{subsubsection.3.2.1.57}%
+\contentsline {subsubsection}{\numberline {3.2.1.58}union\_states\_of\_same\_symbol\_not\_print()}{27}{subsubsection.3.2.1.58}%
+\contentsline {section}{\numberline {3.3}sources/automate.c File Reference}{27}{section.3.3}%
+\contentsline {subsection}{\numberline {3.3.1}Detailed Description}{28}{subsection.3.3.1}%
+\contentsline {subsection}{\numberline {3.3.2}Function Documentation}{29}{subsection.3.3.2}%
+\contentsline {subsubsection}{\numberline {3.3.2.1}add\_state\_to\_composite\_table()}{29}{subsubsection.3.3.2.1}%
+\contentsline {subsubsection}{\numberline {3.3.2.2}add\_state\_to\_rename\_table\_state()}{29}{subsubsection.3.3.2.2}%
+\contentsline {subsubsection}{\numberline {3.3.2.3}affichage\_1D()}{30}{subsubsection.3.3.2.3}%
+\contentsline {subsubsection}{\numberline {3.3.2.4}affichage\_2D()}{30}{subsubsection.3.3.2.4}%
+\contentsline {subsubsection}{\numberline {3.3.2.5}affichage\_automate()}{30}{subsubsection.3.3.2.5}%
+\contentsline {subsubsection}{\numberline {3.3.2.6}affichage\_case\_mat()}{30}{subsubsection.3.3.2.6}%
+\contentsline {subsubsection}{\numberline {3.3.2.7}affichage\_case\_tab\_1D()}{31}{subsubsection.3.3.2.7}%
+\contentsline {subsubsection}{\numberline {3.3.2.8}affichage\_case\_tab\_2D()}{31}{subsubsection.3.3.2.8}%
+\contentsline {subsubsection}{\numberline {3.3.2.9}affichage\_col\_mat()}{32}{subsubsection.3.3.2.9}%
+\contentsline {subsubsection}{\numberline {3.3.2.10}affichage\_ligne\_mat()}{32}{subsubsection.3.3.2.10}%
+\contentsline {subsubsection}{\numberline {3.3.2.11}affichage\_mot()}{32}{subsubsection.3.3.2.11}%
+\contentsline {subsubsection}{\numberline {3.3.2.12}allocation\_mat\_vide()}{32}{subsubsection.3.3.2.12}%
+\contentsline {subsubsection}{\numberline {3.3.2.13}allocation\_tab\_1D()}{33}{subsubsection.3.3.2.13}%
+\contentsline {subsubsection}{\numberline {3.3.2.14}allocation\_tab\_2D()}{33}{subsubsection.3.3.2.14}%
+\contentsline {subsubsection}{\numberline {3.3.2.15}calculte\_number\_states\_touch()}{34}{subsubsection.3.3.2.15}%
+\contentsline {subsubsection}{\numberline {3.3.2.16}complement\_automate()}{34}{subsubsection.3.3.2.16}%
+\contentsline {subsubsection}{\numberline {3.3.2.17}concat()}{34}{subsubsection.3.3.2.17}%
+\contentsline {subsubsection}{\numberline {3.3.2.18}copie\_automate()}{35}{subsubsection.3.3.2.18}%
+\contentsline {subsubsection}{\numberline {3.3.2.19}copy\_line\_mat()}{35}{subsubsection.3.3.2.19}%
+\contentsline {subsubsection}{\numberline {3.3.2.20}del\_automate()}{35}{subsubsection.3.3.2.20}%
+\contentsline {subsubsection}{\numberline {3.3.2.21}echange()}{36}{subsubsection.3.3.2.21}%
+\contentsline {subsubsection}{\numberline {3.3.2.22}est\_complet()}{36}{subsubsection.3.3.2.22}%
+\contentsline {subsubsection}{\numberline {3.3.2.23}est\_deterministe()}{36}{subsubsection.3.3.2.23}%
+\contentsline {subsubsection}{\numberline {3.3.2.24}est\_reconnu()}{36}{subsubsection.3.3.2.24}%
+\contentsline {subsubsection}{\numberline {3.3.2.25}est\_un\_etat\_final()}{37}{subsubsection.3.3.2.25}%
+\contentsline {subsubsection}{\numberline {3.3.2.26}exist\_state\_in\_tab\_transi()}{37}{subsubsection.3.3.2.26}%
+\contentsline {subsubsection}{\numberline {3.3.2.27}find\_next\_state()}{38}{subsubsection.3.3.2.27}%
+\contentsline {subsubsection}{\numberline {3.3.2.28}generate\_automate()}{38}{subsubsection.3.3.2.28}%
+\contentsline {subsubsection}{\numberline {3.3.2.29}generate\_automate\_null()}{38}{subsubsection.3.3.2.29}%
+\contentsline {subsubsection}{\numberline {3.3.2.30}group\_states\_by\_same\_symbol()}{38}{subsubsection.3.3.2.30}%
+\contentsline {subsubsection}{\numberline {3.3.2.31}group\_states\_by\_same\_symbol\_not\_print()}{39}{subsubsection.3.3.2.31}%
+\contentsline {subsubsection}{\numberline {3.3.2.32}import\_automae()}{39}{subsubsection.3.3.2.32}%
+\contentsline {subsubsection}{\numberline {3.3.2.33}lecture\_automate\_court()}{40}{subsubsection.3.3.2.33}%
+\contentsline {subsubsection}{\numberline {3.3.2.34}lecture\_automate\_long()}{40}{subsubsection.3.3.2.34}%
+\contentsline {subsubsection}{\numberline {3.3.2.35}lecture\_etats\_finaux()}{40}{subsubsection.3.3.2.35}%
+\contentsline {subsubsection}{\numberline {3.3.2.36}lecture\_mot()}{40}{subsubsection.3.3.2.36}%
+\contentsline {subsubsection}{\numberline {3.3.2.37}modify\_automate()}{41}{subsubsection.3.3.2.37}%
+\contentsline {subsubsection}{\numberline {3.3.2.38}mot\_saisi()}{41}{subsubsection.3.3.2.38}%
+\contentsline {subsubsection}{\numberline {3.3.2.39}mot\_saisi\_avant()}{41}{subsubsection.3.3.2.39}%
+\contentsline {subsubsection}{\numberline {3.3.2.40}Next\_one\_state\_touch()}{42}{subsubsection.3.3.2.40}%
+\contentsline {subsubsection}{\numberline {3.3.2.41}Next\_states\_touch()}{42}{subsubsection.3.3.2.41}%
+\contentsline {subsubsection}{\numberline {3.3.2.42}Next\_states\_touch\_not\_print()}{42}{subsubsection.3.3.2.42}%
+\contentsline {subsubsection}{\numberline {3.3.2.43}producte\_a\_b()}{43}{subsubsection.3.3.2.43}%
+\contentsline {subsubsection}{\numberline {3.3.2.44}reconnu\_v2()}{43}{subsubsection.3.3.2.44}%
+\contentsline {subsubsection}{\numberline {3.3.2.45}remplir\_automate()}{44}{subsubsection.3.3.2.45}%
+\contentsline {subsubsection}{\numberline {3.3.2.46}rendre\_complet()}{44}{subsubsection.3.3.2.46}%
+\contentsline {subsubsection}{\numberline {3.3.2.47}rendre\_deterministe()}{44}{subsubsection.3.3.2.47}%
+\contentsline {subsubsection}{\numberline {3.3.2.48}retourne\_etat\_couant()}{45}{subsubsection.3.3.2.48}%
+\contentsline {subsubsection}{\numberline {3.3.2.49}save\_automate()}{45}{subsubsection.3.3.2.49}%
+\contentsline {subsubsection}{\numberline {3.3.2.50}serie\_test\_reconnaissance()}{45}{subsubsection.3.3.2.50}%
+\contentsline {subsubsection}{\numberline {3.3.2.51}start\_with\_tow()}{46}{subsubsection.3.3.2.51}%
+\contentsline {subsubsection}{\numberline {3.3.2.52}Tab\_states\_from\_q0()}{46}{subsubsection.3.3.2.52}%
+\contentsline {subsubsection}{\numberline {3.3.2.53}Tab\_states\_from\_q0\_not\_print()}{46}{subsubsection.3.3.2.53}%
+\contentsline {subsubsection}{\numberline {3.3.2.54}Tab\_transition\_automate()}{47}{subsubsection.3.3.2.54}%
+\contentsline {subsubsection}{\numberline {3.3.2.55}Tab\_transition\_automate\_not\_print()}{47}{subsubsection.3.3.2.55}%
+\contentsline {subsubsection}{\numberline {3.3.2.56}twos\_symbol\_apply()}{47}{subsubsection.3.3.2.56}%
+\contentsline {subsubsection}{\numberline {3.3.2.57}union\_states\_of\_same\_symbol()}{48}{subsubsection.3.3.2.57}%
+\contentsline {subsubsection}{\numberline {3.3.2.58}union\_states\_of\_same\_symbol\_not\_print()}{48}{subsubsection.3.3.2.58}%
+\contentsline {section}{\numberline {3.4}Contribution au projet/sources/\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Automate.h File Reference}{49}{section.3.4}%
+\contentsline {section}{\numberline {3.5}Projet\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}\_\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}C/sources/\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Automate.h File Reference}{49}{section.3.5}%
+\contentsline {subsection}{\numberline {3.5.1}Data Structure Documentation}{50}{subsection.3.5.1}%
+\contentsline {subsubsection}{\numberline {3.5.1.1}struct automate}{50}{subsubsection.3.5.1.1}%
+\contentsline {subsubsection}{\numberline {3.5.1.2}struct table\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}\_\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}de\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}\_\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}lecture\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}\_\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}automate}{51}{subsubsection.3.5.1.2}%
+\contentsline {subsubsection}{\numberline {3.5.1.3}struct mot}{51}{subsubsection.3.5.1.3}%
+\contentsline {subsection}{\numberline {3.5.2}Typedef Documentation}{51}{subsection.3.5.2}%
+\contentsline {subsubsection}{\numberline {3.5.2.1}automate}{51}{subsubsection.3.5.2.1}%
+\contentsline {subsubsection}{\numberline {3.5.2.2}etats\_lus}{51}{subsubsection.3.5.2.2}%
+\contentsline {subsubsection}{\numberline {3.5.2.3}mot}{51}{subsubsection.3.5.2.3}%
+\contentsline {subsection}{\numberline {3.5.3}Function Documentation}{51}{subsection.3.5.3}%
+\contentsline {subsubsection}{\numberline {3.5.3.1}add\_state\_to\_composite\_table()}{51}{subsubsection.3.5.3.1}%
+\contentsline {subsubsection}{\numberline {3.5.3.2}add\_state\_to\_rename\_table\_state()}{52}{subsubsection.3.5.3.2}%
+\contentsline {subsubsection}{\numberline {3.5.3.3}affichage\_1D()}{52}{subsubsection.3.5.3.3}%
+\contentsline {subsubsection}{\numberline {3.5.3.4}affichage\_2D()}{53}{subsubsection.3.5.3.4}%
+\contentsline {subsubsection}{\numberline {3.5.3.5}affichage\_automate()}{53}{subsubsection.3.5.3.5}%
+\contentsline {subsubsection}{\numberline {3.5.3.6}affichage\_case\_mat()}{53}{subsubsection.3.5.3.6}%
+\contentsline {subsubsection}{\numberline {3.5.3.7}affichage\_case\_tab\_1D()}{53}{subsubsection.3.5.3.7}%
+\contentsline {subsubsection}{\numberline {3.5.3.8}affichage\_case\_tab\_2D()}{54}{subsubsection.3.5.3.8}%
+\contentsline {subsubsection}{\numberline {3.5.3.9}affichage\_col\_mat()}{54}{subsubsection.3.5.3.9}%
+\contentsline {subsubsection}{\numberline {3.5.3.10}affichage\_ligne\_mat()}{55}{subsubsection.3.5.3.10}%
+\contentsline {subsubsection}{\numberline {3.5.3.11}affichage\_mot()}{55}{subsubsection.3.5.3.11}%
+\contentsline {subsubsection}{\numberline {3.5.3.12}allocation\_mat\_vide()}{55}{subsubsection.3.5.3.12}%
+\contentsline {subsubsection}{\numberline {3.5.3.13}allocation\_tab\_1D()}{55}{subsubsection.3.5.3.13}%
+\contentsline {subsubsection}{\numberline {3.5.3.14}allocation\_tab\_2D()}{56}{subsubsection.3.5.3.14}%
+\contentsline {subsubsection}{\numberline {3.5.3.15}calculte\_number\_states\_touch()}{56}{subsubsection.3.5.3.15}%
+\contentsline {subsubsection}{\numberline {3.5.3.16}complement\_automate()}{56}{subsubsection.3.5.3.16}%
+\contentsline {subsubsection}{\numberline {3.5.3.17}concat()}{57}{subsubsection.3.5.3.17}%
+\contentsline {subsubsection}{\numberline {3.5.3.18}copie\_automate()}{57}{subsubsection.3.5.3.18}%
+\contentsline {subsubsection}{\numberline {3.5.3.19}copy\_line\_mat()}{57}{subsubsection.3.5.3.19}%
+\contentsline {subsubsection}{\numberline {3.5.3.20}del\_automate()}{58}{subsubsection.3.5.3.20}%
+\contentsline {subsubsection}{\numberline {3.5.3.21}echange()}{58}{subsubsection.3.5.3.21}%
+\contentsline {subsubsection}{\numberline {3.5.3.22}est\_complet()}{58}{subsubsection.3.5.3.22}%
+\contentsline {subsubsection}{\numberline {3.5.3.23}est\_deterministe()}{59}{subsubsection.3.5.3.23}%
+\contentsline {subsubsection}{\numberline {3.5.3.24}est\_reconnu()}{59}{subsubsection.3.5.3.24}%
+\contentsline {subsubsection}{\numberline {3.5.3.25}est\_un\_etat\_final()}{59}{subsubsection.3.5.3.25}%
+\contentsline {subsubsection}{\numberline {3.5.3.26}exist\_state\_in\_tab\_transi()}{60}{subsubsection.3.5.3.26}%
+\contentsline {subsubsection}{\numberline {3.5.3.27}find\_next\_state()}{60}{subsubsection.3.5.3.27}%
+\contentsline {subsubsection}{\numberline {3.5.3.28}generate\_automate()}{60}{subsubsection.3.5.3.28}%
+\contentsline {subsubsection}{\numberline {3.5.3.29}generate\_automate\_null()}{61}{subsubsection.3.5.3.29}%
+\contentsline {subsubsection}{\numberline {3.5.3.30}group\_states\_by\_same\_symbol()}{61}{subsubsection.3.5.3.30}%
+\contentsline {subsubsection}{\numberline {3.5.3.31}group\_states\_by\_same\_symbol\_not\_print()}{61}{subsubsection.3.5.3.31}%
+\contentsline {subsubsection}{\numberline {3.5.3.32}import\_automae()}{62}{subsubsection.3.5.3.32}%
+\contentsline {subsubsection}{\numberline {3.5.3.33}lecture\_automate\_court()}{62}{subsubsection.3.5.3.33}%
+\contentsline {subsubsection}{\numberline {3.5.3.34}lecture\_automate\_long()}{62}{subsubsection.3.5.3.34}%
+\contentsline {subsubsection}{\numberline {3.5.3.35}lecture\_etats\_finaux()}{63}{subsubsection.3.5.3.35}%
+\contentsline {subsubsection}{\numberline {3.5.3.36}lecture\_mot()}{63}{subsubsection.3.5.3.36}%
+\contentsline {subsubsection}{\numberline {3.5.3.37}modify\_automate()}{63}{subsubsection.3.5.3.37}%
+\contentsline {subsubsection}{\numberline {3.5.3.38}Next\_one\_state\_touch()}{63}{subsubsection.3.5.3.38}%
+\contentsline {subsubsection}{\numberline {3.5.3.39}Next\_states\_touch()}{64}{subsubsection.3.5.3.39}%
+\contentsline {subsubsection}{\numberline {3.5.3.40}Next\_states\_touch\_not\_print()}{64}{subsubsection.3.5.3.40}%
+\contentsline {subsubsection}{\numberline {3.5.3.41}producte\_a\_b()}{65}{subsubsection.3.5.3.41}%
+\contentsline {subsubsection}{\numberline {3.5.3.42}reconnu\_v2()}{65}{subsubsection.3.5.3.42}%
+\contentsline {subsubsection}{\numberline {3.5.3.43}remplir\_automate()}{65}{subsubsection.3.5.3.43}%
+\contentsline {subsubsection}{\numberline {3.5.3.44}rendre\_complet()}{66}{subsubsection.3.5.3.44}%
+\contentsline {subsubsection}{\numberline {3.5.3.45}rendre\_deterministe()}{66}{subsubsection.3.5.3.45}%
+\contentsline {subsubsection}{\numberline {3.5.3.46}retourne\_etat\_couant()}{66}{subsubsection.3.5.3.46}%
+\contentsline {subsubsection}{\numberline {3.5.3.47}save\_automate()}{67}{subsubsection.3.5.3.47}%
+\contentsline {subsubsection}{\numberline {3.5.3.48}serie\_test\_reconnaissance()}{67}{subsubsection.3.5.3.48}%
+\contentsline {subsubsection}{\numberline {3.5.3.49}start\_with\_tow()}{67}{subsubsection.3.5.3.49}%
+\contentsline {subsubsection}{\numberline {3.5.3.50}Tab\_states\_from\_q0()}{68}{subsubsection.3.5.3.50}%
+\contentsline {subsubsection}{\numberline {3.5.3.51}Tab\_states\_from\_q0\_not\_print()}{68}{subsubsection.3.5.3.51}%
+\contentsline {subsubsection}{\numberline {3.5.3.52}Tab\_transition\_automate()}{68}{subsubsection.3.5.3.52}%
+\contentsline {subsubsection}{\numberline {3.5.3.53}Tab\_transition\_automate\_not\_print()}{69}{subsubsection.3.5.3.53}%
+\contentsline {subsubsection}{\numberline {3.5.3.54}twos\_symbol\_apply()}{69}{subsubsection.3.5.3.54}%
+\contentsline {subsubsection}{\numberline {3.5.3.55}union\_states\_of\_same\_symbol()}{69}{subsubsection.3.5.3.55}%
+\contentsline {subsubsection}{\numberline {3.5.3.56}union\_states\_of\_same\_symbol\_not\_print()}{70}{subsubsection.3.5.3.56}%
+\contentsline {section}{\numberline {3.6}sources/\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Automate.h File Reference}{70}{section.3.6}%
+\contentsline {subsection}{\numberline {3.6.1}Detailed Description}{72}{subsection.3.6.1}%
+\contentsline {subsection}{\numberline {3.6.2}Data Structure Documentation}{72}{subsection.3.6.2}%
+\contentsline {subsubsection}{\numberline {3.6.2.1}struct automate}{72}{subsubsection.3.6.2.1}%
+\contentsline {subsubsection}{\numberline {3.6.2.2}struct table\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}\_\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}de\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}\_\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}lecture\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}\_\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}automate}{72}{subsubsection.3.6.2.2}%
+\contentsline {subsubsection}{\numberline {3.6.2.3}struct mot}{72}{subsubsection.3.6.2.3}%
+\contentsline {subsection}{\numberline {3.6.3}Typedef Documentation}{73}{subsection.3.6.3}%
+\contentsline {subsubsection}{\numberline {3.6.3.1}automate}{73}{subsubsection.3.6.3.1}%
+\contentsline {subsubsection}{\numberline {3.6.3.2}etats\_lus}{73}{subsubsection.3.6.3.2}%
+\contentsline {subsubsection}{\numberline {3.6.3.3}mot}{73}{subsubsection.3.6.3.3}%
+\contentsline {subsection}{\numberline {3.6.4}Function Documentation}{73}{subsection.3.6.4}%
+\contentsline {subsubsection}{\numberline {3.6.4.1}add\_state\_to\_composite\_table()}{73}{subsubsection.3.6.4.1}%
+\contentsline {subsubsection}{\numberline {3.6.4.2}add\_state\_to\_rename\_table\_state()}{74}{subsubsection.3.6.4.2}%
+\contentsline {subsubsection}{\numberline {3.6.4.3}affichage\_1D()}{74}{subsubsection.3.6.4.3}%
+\contentsline {subsubsection}{\numberline {3.6.4.4}affichage\_2D()}{75}{subsubsection.3.6.4.4}%
+\contentsline {subsubsection}{\numberline {3.6.4.5}affichage\_automate()}{75}{subsubsection.3.6.4.5}%
+\contentsline {subsubsection}{\numberline {3.6.4.6}affichage\_case\_mat()}{75}{subsubsection.3.6.4.6}%
+\contentsline {subsubsection}{\numberline {3.6.4.7}affichage\_case\_tab\_1D()}{76}{subsubsection.3.6.4.7}%
+\contentsline {subsubsection}{\numberline {3.6.4.8}affichage\_case\_tab\_2D()}{76}{subsubsection.3.6.4.8}%
+\contentsline {subsubsection}{\numberline {3.6.4.9}affichage\_col\_mat()}{76}{subsubsection.3.6.4.9}%
+\contentsline {subsubsection}{\numberline {3.6.4.10}affichage\_ligne\_mat()}{77}{subsubsection.3.6.4.10}%
+\contentsline {subsubsection}{\numberline {3.6.4.11}affichage\_mot()}{77}{subsubsection.3.6.4.11}%
+\contentsline {subsubsection}{\numberline {3.6.4.12}allocation\_mat\_vide()}{77}{subsubsection.3.6.4.12}%
+\contentsline {subsubsection}{\numberline {3.6.4.13}allocation\_tab\_1D()}{78}{subsubsection.3.6.4.13}%
+\contentsline {subsubsection}{\numberline {3.6.4.14}allocation\_tab\_2D()}{78}{subsubsection.3.6.4.14}%
+\contentsline {subsubsection}{\numberline {3.6.4.15}calculte\_number\_states\_touch()}{78}{subsubsection.3.6.4.15}%
+\contentsline {subsubsection}{\numberline {3.6.4.16}complement\_automate()}{79}{subsubsection.3.6.4.16}%
+\contentsline {subsubsection}{\numberline {3.6.4.17}concat()}{79}{subsubsection.3.6.4.17}%
+\contentsline {subsubsection}{\numberline {3.6.4.18}copie\_automate()}{79}{subsubsection.3.6.4.18}%
+\contentsline {subsubsection}{\numberline {3.6.4.19}copy\_line\_mat()}{80}{subsubsection.3.6.4.19}%
+\contentsline {subsubsection}{\numberline {3.6.4.20}del\_automate()}{80}{subsubsection.3.6.4.20}%
+\contentsline {subsubsection}{\numberline {3.6.4.21}echange()}{80}{subsubsection.3.6.4.21}%
+\contentsline {subsubsection}{\numberline {3.6.4.22}est\_complet()}{81}{subsubsection.3.6.4.22}%
+\contentsline {subsubsection}{\numberline {3.6.4.23}est\_deterministe()}{81}{subsubsection.3.6.4.23}%
+\contentsline {subsubsection}{\numberline {3.6.4.24}est\_reconnu()}{81}{subsubsection.3.6.4.24}%
+\contentsline {subsubsection}{\numberline {3.6.4.25}est\_un\_etat\_final()}{82}{subsubsection.3.6.4.25}%
+\contentsline {subsubsection}{\numberline {3.6.4.26}exist\_state\_in\_tab\_transi()}{82}{subsubsection.3.6.4.26}%
+\contentsline {subsubsection}{\numberline {3.6.4.27}find\_next\_state()}{82}{subsubsection.3.6.4.27}%
+\contentsline {subsubsection}{\numberline {3.6.4.28}generate\_automate()}{83}{subsubsection.3.6.4.28}%
+\contentsline {subsubsection}{\numberline {3.6.4.29}generate\_automate\_null()}{83}{subsubsection.3.6.4.29}%
+\contentsline {subsubsection}{\numberline {3.6.4.30}group\_states\_by\_same\_symbol()}{83}{subsubsection.3.6.4.30}%
+\contentsline {subsubsection}{\numberline {3.6.4.31}group\_states\_by\_same\_symbol\_not\_print()}{84}{subsubsection.3.6.4.31}%
+\contentsline {subsubsection}{\numberline {3.6.4.32}import\_automae()}{84}{subsubsection.3.6.4.32}%
+\contentsline {subsubsection}{\numberline {3.6.4.33}lecture\_automate\_court()}{84}{subsubsection.3.6.4.33}%
+\contentsline {subsubsection}{\numberline {3.6.4.34}lecture\_automate\_long()}{85}{subsubsection.3.6.4.34}%
+\contentsline {subsubsection}{\numberline {3.6.4.35}lecture\_etats\_finaux()}{85}{subsubsection.3.6.4.35}%
+\contentsline {subsubsection}{\numberline {3.6.4.36}lecture\_mot()}{85}{subsubsection.3.6.4.36}%
+\contentsline {subsubsection}{\numberline {3.6.4.37}modify\_automate()}{85}{subsubsection.3.6.4.37}%
+\contentsline {subsubsection}{\numberline {3.6.4.38}Next\_one\_state\_touch()}{86}{subsubsection.3.6.4.38}%
+\contentsline {subsubsection}{\numberline {3.6.4.39}Next\_states\_touch()}{86}{subsubsection.3.6.4.39}%
+\contentsline {subsubsection}{\numberline {3.6.4.40}Next\_states\_touch\_not\_print()}{87}{subsubsection.3.6.4.40}%
+\contentsline {subsubsection}{\numberline {3.6.4.41}producte\_a\_b()}{87}{subsubsection.3.6.4.41}%
+\contentsline {subsubsection}{\numberline {3.6.4.42}reconnu\_v2()}{87}{subsubsection.3.6.4.42}%
+\contentsline {subsubsection}{\numberline {3.6.4.43}remplir\_automate()}{88}{subsubsection.3.6.4.43}%
+\contentsline {subsubsection}{\numberline {3.6.4.44}rendre\_complet()}{88}{subsubsection.3.6.4.44}%
+\contentsline {subsubsection}{\numberline {3.6.4.45}rendre\_deterministe()}{88}{subsubsection.3.6.4.45}%
+\contentsline {subsubsection}{\numberline {3.6.4.46}retourne\_etat\_couant()}{89}{subsubsection.3.6.4.46}%
+\contentsline {subsubsection}{\numberline {3.6.4.47}save\_automate()}{89}{subsubsection.3.6.4.47}%
+\contentsline {subsubsection}{\numberline {3.6.4.48}serie\_test\_reconnaissance()}{89}{subsubsection.3.6.4.48}%
+\contentsline {subsubsection}{\numberline {3.6.4.49}start\_with\_tow()}{90}{subsubsection.3.6.4.49}%
+\contentsline {subsubsection}{\numberline {3.6.4.50}Tab\_states\_from\_q0()}{90}{subsubsection.3.6.4.50}%
+\contentsline {subsubsection}{\numberline {3.6.4.51}Tab\_states\_from\_q0\_not\_print()}{90}{subsubsection.3.6.4.51}%
+\contentsline {subsubsection}{\numberline {3.6.4.52}Tab\_transition\_automate()}{91}{subsubsection.3.6.4.52}%
+\contentsline {subsubsection}{\numberline {3.6.4.53}Tab\_transition\_automate\_not\_print()}{91}{subsubsection.3.6.4.53}%
+\contentsline {subsubsection}{\numberline {3.6.4.54}twos\_symbol\_apply()}{91}{subsubsection.3.6.4.54}%
+\contentsline {subsubsection}{\numberline {3.6.4.55}union\_states\_of\_same\_symbol()}{92}{subsubsection.3.6.4.55}%
+\contentsline {subsubsection}{\numberline {3.6.4.56}union\_states\_of\_same\_symbol\_not\_print()}{92}{subsubsection.3.6.4.56}%
+\contentsline {section}{\numberline {3.7}Projet\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}\_\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}C/sources/main.c File Reference}{93}{section.3.7}%
+\contentsline {subsection}{\numberline {3.7.1}Function Documentation}{93}{subsection.3.7.1}%
+\contentsline {subsubsection}{\numberline {3.7.1.1}main()}{93}{subsubsection.3.7.1.1}%
+\contentsline {section}{\numberline {3.8}sources/main.c File Reference}{93}{section.3.8}%
+\contentsline {subsection}{\numberline {3.8.1}Function Documentation}{93}{subsection.3.8.1}%
+\contentsline {subsubsection}{\numberline {3.8.1.1}main()}{94}{subsubsection.3.8.1.1}%
+\contentsline {section}{\numberline {3.9}README.\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}md File Reference}{94}{section.3.9}%
+\contentsline {chapter}{Index}{95}{section*.12}%
