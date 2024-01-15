@@ -8,7 +8,7 @@
             "name": "(gdb) Lancer",
             "type": "cppdbg",
             "request": "launch",
-            "program": "/home/cytech/Projet_C/test_charly.c",
+            "program": "/home/cytech/Projet_C/Projet_C/sources/main.c",
             "args": [],
             "stopAtEntry": false,
             "cwd": "${fileDirname}",
