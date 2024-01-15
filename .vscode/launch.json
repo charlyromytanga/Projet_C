@@ -5,15 +5,17 @@
     "version": "0.2.0",
     "configurations": [
         {
-            "name": "(gdb) Lancer",
+            "name": "(gdb) Attachement de canal",
             "type": "cppdbg",
-            "request": "launch",
-            "program": "/home/cytech/Projet_C/Projet_C/sources/main.c",
-            "args": [],
-            "stopAtEntry": false,
-            "cwd": "${fileDirname}",
-            "environment": [],
-            "externalConsole": false,
+            "request": "attach",
+            "program": "/home/cytech/Desktop/piste_contournement_pb/test.out",
+            "processId": "${command:pickRemoteProcess}",
+            "pipeTransport": {
+                "debuggerPath": "/usr/bin/gdb",
+                "pipeProgram": "/usr/bin/ssh",
+                "pipeArgs": [],
+                "pipeCwd": ""
+            },
             "MIMode": "gdb",
             "setupCommands": [
                 {
@@ -28,6 +30,7 @@
                 }
             ]
         }
+
 
     ]
 }

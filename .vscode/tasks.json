@@ -4,7 +4,7 @@
         {
             "type": "java (build)",
             "paths": [
-                "$cytech@student-laptop:~/Projet_C"
+                "$cytech@student-laptop:/home/cytech/Desktop/piste_contournement_pb"
             ],
             "isFullBuild": true,
             "group": "build",

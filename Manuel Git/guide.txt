@@ -1,0 +1,149 @@
+Prise de note :
+Création de projet Git sur la base de videos de Grafikart
+
+---------------------------------------------------------------------
+********************************************************************
+
+Git : Versionning distribué : 
+système décentralisé du projet où chaque user à une historique
+le remote sera le serveur central qui va recupérer toutes les données 
+mise à jour par le user
+
+---------------------------------------------------------------------
+********************************************************************
+
+Installation de git
+site : git-scm.com et faire l'installation en fonction de l'OS
+
+Nous c'est sur lunix : 
+utilisation des paquets sinoptiques
+
+sudo apt - get install git
+faire : git --help pour vérifier que la ligne de commande a été bien faites
+double aventage cette commande permet également de lister toutes les commandes
+que l'on pourra faire avec git
+
+---------------------------------------------------------------------
+********************************************************************
+
+Les premières commandes avec git 
+
+Création du premiers dépôt test
+ICI : Tous les tests seront fait dans le dossier master
+
+Ouvrir le terminal et se rendre le terminal
+création d'un nouveau dossier : mon_premier_projet_git
+initialisation : du versionning
+commande : git init
+
+résulat création d'un dossier .git c'est un dossier caché.
+remarque pour toutes les envois sur FTP : Ne jamais inclure ce dossier caché
+
+
+
+
+---------------------------------------------------------------------
+********************************************************************
+
+ Avant de pouvoir travailler avec git il faut le config
+ 
+ help de la commande avant :
+ git --help config.
+ 
+ 
+ 
+ De là : savoir qu'on aura à définir les éléments de config
+ 
+ Important 
+ la vairalbe user.email
+ la variable user.name
+ 
+ Ce qu'il faut faire :
+ 
+ sur le terminal : git config --global user.email "entrer son email"
+ 
+ sur le terminal : git config --global user.name "entrer son nom"
+ 
+
+En plus on peut aussi en option faire une troisième config : les coleurs 
+sur le terminal : git config --global color.ui true
+
+Bilan pour savoir toute les configs qui ont été faire :
+sur le terminal : git config --list
+
+
+---------------------------------------------------------------------
+********************************************************************
+
+Sauvegarde des différentes modifications via soit le terminal ou soit les lignes de commandes
+
+Ici : on ne va le faire uniquement avec les lignes de commandes
+
+1er : création d'un nouveau fichier
+
+nom readme.md et taper un texte
+
+sur le terminal : faire git status pour voir toutes les modifs faites
+
+il y a des fichiers créés mais pas encore tracqué donc en rouge 
+zone de stage avant le commit
+remarque : cette zone porte de le nom de : untracked files
+
+
+pour ajouter le fichier  et faire comprendre à git qu'ils sont prêt à être commit :
+sur le terminal : git add nom_fichier ou *.extention si plusieurs fichiers du même type
+
+Puis un coup de git status : et la couleur passera au vert preuve de la préparation 
+des fichiers pour être commmit
+
+
+---------------------------------------------------------------------
+********************************************************************
+Une fois que c'est bon on peut faire un commit 
+
+Localement, le travail est correct et le commit le rendra visible par les autres users du
+projet dans leur espace perso. 
+
+Réalisaion du commit : git commit "plus un message"
+
+/---Ouverture du logiciel Vi ----/
+Editeur inclut dans le terminal 
+Il va ouvrir un fichier pour y mettre le commit saisi
+
+Faire la touche i pour insertion et tapper votre commi
+
+Faire :wq pour quitter et ce commit saisi est fait automatiquement 
+
+/---- Fin du l'usage du logiciel éditeur de texte intégré ---/
+
+Solution alternative :
+On peut saisir le message lors de la saisi du git
+
+Sur le terminial faire : git commit -m "Saisir le message"
+Il nous est faire un résumé du commit en question
+
+
+Bilan : si le sms du commit est court alors utiliser la commande directement dans le 
+terminal avec git commit -m "sms du commit"
+
+si le sms du commmit est long alors le saisir dans l'éditeur vi
+
+
+
+---------------------------------------------------------------------
+********************************************************************
+
+Util : faire du stage et du commit dans une commande 
+
+git commit -a -m "sms du commit"
+
+---------------------------------------------------------------------
+********************************************************************
+
+
+---------------------------------------------------------------------
+********************************************************************
+Création du fichier qui servira de lister les fichiers à ignorer lors des push dans git.
+
+
+
